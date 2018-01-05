@@ -1,0 +1,41 @@
+/**
+ * ------------------
+ * TABLE DES MATIÈRES
+ * ------------------
+ * LIB -----------
+ ** Normalize
+ * UTILITAIRES
+ ** Functions
+ ** Mixins
+ ** Variables
+ * BASE ----------
+ ** Boutons
+ ** Couleurs
+ ** Form
+ ** Icons
+ ** Media Queries
+ ** Typographie
+ * MODULES --------
+ ** Header
+ ** Footer
+ * RÈGLES GÉNÉRALES --------
+ ** Base
+ */
+
+/****** LIB ******/
+@import "../../bower_components/normalize-scss/sass/normalize";
+
+/****** UTILITIES ******/
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/color';
+@import 'utilities/variables';
+@import 'utilities/mediaquery';
+
+/****** BASE ******/
+@import 'base/button';
+
+/****** MODULES ******/
+@import 'modules/header';
+
+/****** RÈGLES GÉNÉRALES ******/
