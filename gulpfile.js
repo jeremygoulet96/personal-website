@@ -32,7 +32,7 @@ gulp.task('js', function () {
 // Sass-Watch task
 gulp.task('watch', ['sass'], function() {
     gulp.watch("src/scss/**/*.scss", ['sass']);
-    gulp.watch("**/*.html").on('change', browserSync.reload);
+    gulp.watch("**/*.php").on('change', browserSync.reload);
 });
 
 // JS-Watch task
@@ -45,18 +45,7 @@ gulp.task('js-watch', ['js'], function(done) {
 gulp.task('default', ['watch', 'js-watch'], function () {
     // Browser-Sync
     browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+        proxy: "localhost/~jeremygoulet/personal-website/",
+        browser: "google chrome"
     });
-});
-
-// Build task
-gulp.task('build', ['sass', 'js'], function() {
-    return es.concat(
-        gulp.src('assets/js/*.js')
-            .pipe(gulp.dest('../dist/assets/js/')),
-        gulp.src('assets/css/*.css')
-            .pipe(gulp.dest('../dist/assets/css/'))
-    );
 });
