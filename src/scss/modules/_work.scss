@@ -1,0 +1,41 @@
+/****** WORK ******/
+
+// List
+ul.work__list {
+  width: 100%;
+
+  // Item
+  li.work__item {
+    &:not(:first-child) {
+      padding-top: 4rem;
+    }
+
+    // Image
+    img.work__image {
+      display: block;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    // Actions
+    div.actions {
+      // Label
+      label.actions--label {
+        display: block;
+        font-size: $fontSizeSmall;
+        letter-spacing: 0.7px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $grey;
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    // Buttons
+    div.buttonContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
