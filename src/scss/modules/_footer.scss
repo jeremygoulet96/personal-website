@@ -1,0 +1,16 @@
+/****** FOOTER ******/
+
+footer.footer {
+  background-color: $white;
+  box-shadow: 0 -1px 0 0 rgba($black, 0.05);
+  margin-top: 3rem;
+  padding: $paddingGeneral;
+
+  // Small
+  small.footer__copyright {
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
+}

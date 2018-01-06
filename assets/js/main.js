@@ -1,6 +1,1 @@
-define(["require", "exports", "./Validation"], function (require, exports, Validation_1) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    new Validation_1.Validation();
-});
-//# sourceMappingURL=main.js.map
+define(["require","exports","./Header"],function(e,r,t){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),new t.Header});

@@ -1,2 +1,2 @@
-import {Validation} from "./Validation";
-new Validation();
+import {Header} from "./Header";
+new Header();

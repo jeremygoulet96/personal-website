@@ -1,0 +1,31 @@
+/****** NAV ******/
+
+nav.nav {
+  padding: 1.2rem 0;
+  box-shadow: 0 1px 0 0 rgba($black, 0.05);
+  width: 100%;
+  overflow: hidden;
+  transition: $transitionNormal;
+
+  // Nav List
+  ul.nav__list {
+    display: flex;
+    justify-content: space-between;
+    transition: $transitionNormal;
+
+    // Nav link
+    a.nav__link {
+      color: $darkerGrey;
+      text-decoration: none;
+
+      &--active {
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

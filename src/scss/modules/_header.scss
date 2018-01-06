@@ -1,1 +1,71 @@
 /****** HEADER ******/
+
+header.header {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  background-color: $white;
+  padding: $paddingGeneral;
+  box-shadow: 0 1px 0 0 rgba($black, 0.05);
+  transition: $transitionNormal;
+
+  // OPENED
+  &.opened {
+    div.headerContainer {
+      box-shadow: 0 1px 0 0 rgba($black, 0.05);
+    }
+    nav.nav {
+      height: auto;
+      padding: 1rem;
+
+      ul.nav__list {
+        opacity: 1;
+      }
+    }
+  }
+
+  // Header Container
+  div.headerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: $transitionNormal;
+
+    // LOGO
+    h3.header__logo {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    // Header actions
+    a.header__action {
+      display: block;
+      width: 22px;
+      height: 22px;
+      font-size: 0;
+      background: center no-repeat;
+
+      // Hamburger
+      &.header__hamburger {
+        background-image: url(../images/hamburger.svg);
+      }
+
+      // Close
+      &.header__close {
+        background-image: url(../images/close.svg);
+      }
+    }
+  }
+
+  // Basic styles for nav
+  nav.nav {
+    height: 0;
+    padding: 0 1rem;
+
+    ul.nav__list {
+      opacity: 0;
+    }
+  }
+}
