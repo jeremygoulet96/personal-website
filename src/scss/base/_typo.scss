@@ -1,0 +1,48 @@
+/****** TYPOGRAPHY ******/
+
+// Avenir Next
+
+// Regular
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext/AvenirNext-Regular.woff2') format('woff2'),
+  url('../fonts/AvenirNext/AvenirNext-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Italic
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext/AvenirNext-Italic.woff2') format('woff2'),
+  url('../fonts/AvenirNext/AvenirNext-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// Medium (500)
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext/AvenirNext-Medium.woff2') format('woff2'),
+  url('../fonts/AvenirNext/AvenirNext-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// DemiBold (600)
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext/AvenirNext-DemiBold.woff2') format('woff2'),
+  url('../fonts/AvenirNext/AvenirNext-DemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+// Bold (bold)
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext/AvenirNext-Bold.woff2') format('woff2'),
+  url('../fonts/AvenirNext/AvenirNext-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
