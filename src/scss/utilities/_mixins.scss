@@ -1,21 +1,21 @@
 /**
- * ----------------------------
- * TABLE DES MATIÈRES - MIXINS
- * ----------------------------
- * base (BoxSizing, Clearfix)
- * accessibilité
- * typographie
+ * --------------------------
+ * TABLE OF CONTENTS - MIXINS
+ * --------------------------
+ * Base (BoxSizing, Clearfix)
+ * Accessibility
+ * Typography
  */
 
-/******** Utilitaires de base (BoxSizing, Clearfix) *********/
-/* BoxSizing */
+/******** Base (BoxSizing, Clearfix) *********/
+// BoxSizing
 @mixin border-box-sizing{
   * {
     box-sizing: border-box;
   }
 }
 
-/* Clearfix: pour contrer le problème des enfants flottants*/
+// Clearfix
 @mixin clearfix {
   &:after {
     content: " ";
@@ -24,7 +24,7 @@
   }
 }
 
-/******** Utilitaires pour accessibilité *********/
+/******** Accessibility *********/
 // Hide only visually, but have it available for screenreaders:
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 @mixin visuallyhidden {
@@ -49,37 +49,15 @@
     width: auto;
   }
 }
-.visuallyhidden{
-  @include visuallyhidden;
-}
 
-/******** Utilitaires pour typographie *********/
-// Fonction pour convertir une valeur de font-size en pixels à son équivalent rem
+/******** Typography *********/
+// To convert a font-size value in pixels to rem equivalent
 @function calculateRem($size) {
   $remSize: $size / 10px;
   @return #{$remSize}rem;
 }
-// Mixin qui inclus la solution de repli en pixel suivi par la valeur calculée en rem
+// To include a fallback in pixels and the value in rem
 @mixin fontSize($size) {
   font-size: $size;
   font-size: calculateRem($size);
-}
-
-@mixin susy-use(
-  $config
-) {
-  //  parse and normalize any shorthand arguments
-  $config: susy-compile($config);
-
-  // record the global settings -
-  // and update the global variable with our new settings
-  $global: $susy;
-  $susy: map-merge($susy, $config) !global;
-
-  // any content inside this mixin
-  // will use the local settings
-  @content;
-
-  // return the global variable to its initial value
-  $susy: $global !global;
 }
