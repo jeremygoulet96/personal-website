@@ -15,6 +15,7 @@ $title = "Blog"
 <?php include $path."inc/fragments/header.php"; ?>
 
 <main class="blog">
+    <h1 class="title visuallyHidden"><?php echo $title; ?></h1>
     <article class="blog__post">
         <header class="blog__header">
             <h2 class="blog__title">Veggie Meals cooking app evolves for the iPhone X</h2>

@@ -31,6 +31,7 @@
 @import 'utilities/colors';
 @import 'utilities/variables';
 @import 'utilities/mediaqueries';
+@import 'utilities/icons';
 
 /****** BASE ******/
 @import 'base/typo';
@@ -48,6 +49,10 @@
 /****** GENERAL ******/
 
 // Reset
+* {
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5 {
   color: $darkerGrey;
 }
@@ -73,16 +78,37 @@ body {
 
 main {
   padding: $paddingGeneral;
+  max-width: 968px;
+  margin: 0 auto;
+
+  @media(min-width: $mq-Table) {
+    padding: 0;
+  }
+}
+
+.maxWidth {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 // Text
 h1.title {
   font-size: 1.75rem;
+
+  @media(min-width: $mq-Table) {
+    font-size: 3rem;
+  }
 }
 
 .subtitle {
   font-size: $fontSizeBig;
   margin: 1rem 0 0;
+
+  @media(min-width: $mq-Table) {
+    margin: 0;
+    font-size: 2.375rem;
+  }
 }
 
 p {

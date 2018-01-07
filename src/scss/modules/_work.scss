@@ -6,15 +6,65 @@ ul.work__list {
 
   // Item
   li.work__item {
+    @media(min-width: $mq-Table) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //padding: 2rem 0;
+
+      // Change order
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        // Left-to-right
+        div.work__info {
+          padding-left: 0;
+          padding-right: 3rem;
+        }
+      }
+    }
+
+    // Space between works
     &:not(:first-child) {
       padding-top: 4rem;
+
+      @media(min-width: $mq-Table) {
+        padding-top: 6rem;
+      }
+    }
+
+    // Last work space after
+    &:last-child {
+      padding-bottom: 4rem;
+
+      @media(min-width: $mq-Table) {
+        padding-bottom: 6rem;
+      }
     }
 
     // Image
-    img.work__image {
+    picture {
       display: block;
-      width: 100%;
-      border-radius: 6px;
+
+      img {
+        width: 100%;
+        border-radius: 6px;
+      }
+
+      @media(min-width: $mq-Table) {
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+    }
+
+    // Infos
+    div.work__info {
+      @media(min-width: $mq-Table) {
+        padding-right: 0;
+        padding-left: 3rem;
+        flex-basis: 0;
+        flex-grow: 1;
+      }
     }
 
     // Actions
@@ -22,9 +72,9 @@ ul.work__list {
       // Label
       label.actions--label {
         display: block;
-        font-size: $fontSizeSmall;
-        letter-spacing: 0.7px;
-        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 0.2px;
+        font-weight: 500;
         text-transform: uppercase;
         color: $grey;
         margin-bottom: 0.4rem;

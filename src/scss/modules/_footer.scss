@@ -6,6 +6,52 @@ footer.footer {
   margin-top: 3rem;
   padding: $paddingGeneral;
 
+  @media(min-width: $mq-Table) {
+    display: flex;
+    justify-content: space-between;
+
+    li.social__item:not(:first-child) {
+      padding-left: 2rem;
+    }
+  }
+
+  // Social icons
+  ul.social__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    box-shadow: 0 1px 0 0 rgba($black, 0.05);
+    width: 100%;
+
+    @media(min-width: $mq-Table) {
+      width: auto;
+    }
+
+    a.social__link {
+      display: flex;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      fill: $iconBase;
+
+      // Icon
+      svg.icon {
+        transition: $transitionSlow;
+      }
+    }
+  }
+
+  .maxWidth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(min-width: $mq-Table) {
+      flex-wrap: nowrap;
+    }
+  }
+
   // Small
   small.footer__copyright {
     padding: 1.2rem 0;

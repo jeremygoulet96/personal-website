@@ -1,9 +1,8 @@
 /****** HEADER ******/
 
 header.header {
-  display: flex;
-  flex-wrap: wrap;
   position: fixed;
+  width: 100%;
   top: 0;
   background-color: $white;
   //background-color: rgba(255, 255, 255, 0.8);
@@ -12,6 +11,17 @@ header.header {
   box-shadow: 0 1px 0 0 rgba($black, 0.05);
   transition: $transitionNormal;
   z-index: 999;
+
+  .maxWidth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(min-width: $mq-Table) {
+      flex-wrap: nowrap;
+    }
+  }
 
   // OPENED
   &.opened {
@@ -23,6 +33,7 @@ header.header {
     nav.nav {
       height: auto;
       padding: 1rem;
+      box-shadow: none;
 
       ul.nav__list {
         opacity: 1;
@@ -38,29 +49,33 @@ header.header {
     align-items: center;
     transition: $transitionNormal;
 
+    @media(min-width: $mq-Table) {
+      width: auto;
+
+      a.header__action {
+        display: none;
+      }
+    }
+
     // LOGO
-    h3.header__logo {
+    a.header__logo {
+      display: block;
+      padding: 1.2rem 0;
+      text-decoration: none;
+      color: $darkerGrey;
       font-size: 1.3rem;
       font-weight: 600;
+      transition: $transitionNormal;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     // Header actions
     a.header__action {
-      display: block;
       width: 22px;
       height: 22px;
-      font-size: 0;
-      background: center no-repeat;
-
-      // Hamburger
-      &.header__hamburger {
-        background-image: url(../images/hamburger.svg);
-      }
-
-      // Close
-      &.header__close {
-        background-image: url(../images/close.svg);
-      }
     }
   }
 
@@ -71,6 +86,20 @@ header.header {
 
     ul.nav__list {
       opacity: 0;
+    }
+
+    @media(min-width: $mq-Table) {
+      height: auto;
+      padding: 0;
+      box-shadow: none;
+
+      ul.nav__list {
+        opacity: 1;
+      }
+
+      li.nav__item:not(:last-child) {
+        padding-right: 2rem;
+      }
     }
   }
 }

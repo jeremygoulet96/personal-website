@@ -7,6 +7,10 @@ nav.nav {
   overflow: hidden;
   transition: $transitionNormal;
 
+  @media(min-width: $mq-Table) {
+    width: auto;
+  }
+
   // Nav List
   ul.nav__list {
     display: flex;
@@ -17,6 +21,7 @@ nav.nav {
     a.nav__link {
       color: $darkerGrey;
       text-decoration: none;
+      transition: $transitionNormal;
 
       &--active {
         font-weight: 600;
@@ -24,7 +29,7 @@ nav.nav {
       }
 
       &:hover {
-        text-decoration: underline;
+        opacity: 0.5;
       }
     }
   }
