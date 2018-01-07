@@ -1,0 +1,31 @@
+/****** BLOG ******/
+
+main.blog {
+  // Header
+  header.blog__header {
+    box-shadow: 0 1px 0 0 rgba($black, 0.05);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    // Title
+    h2.blog__title {
+      font-size: $fontSizeBigger;
+      margin-bottom: 1rem;
+      line-height: 2rem;
+    }
+
+    // Date
+    span.blog__date {
+      font-size: 1rem;
+      font-style: italic;
+      opacity: 0.5;
+    }
+  }
+
+  // Image
+  img.blog__image {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+  }
+}

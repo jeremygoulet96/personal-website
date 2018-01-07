@@ -43,6 +43,7 @@
 @import 'modules/footer';
 @import 'modules/work';
 @import 'modules/about';
+@import 'modules/blog';
 
 /****** GENERAL ******/
 
@@ -76,10 +77,10 @@ main {
 
 // Text
 h1.title {
-  font-size: $fontSizeBigger;
+  font-size: 1.75rem;
 }
 
-h2.subtitle {
+.subtitle {
   font-size: $fontSizeBig;
   margin: 1rem 0 0;
 }
@@ -90,10 +91,24 @@ p {
 }
 
 a.link {
-  color: $paleBlue;
+  color: $blue;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+.bold {
+  font-family: $font;
+  font-weight: 600;
+}
+
+.italic {
+  font-family: $font;
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
 }
