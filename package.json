@@ -23,6 +23,7 @@
     "gulp-connect-php7": "^1.0.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-svgo": "^1.2.5",
     "gulp-uglify": "^3.0.0"
   },
   "homepage": "https://github.com/jeremygoulet96/personal-website"

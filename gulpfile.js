@@ -1,10 +1,11 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var uglify = require('gulp-uglify');
-var browserSync = require('browser-sync').create();
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
+    uglify = require('gulp-uglify'),
+    browserSync = require('browser-sync').create(),
+    svgo = require('gulp-svgo');
 
 // SASS task
 gulp.task('sass', function () {
@@ -27,6 +28,13 @@ gulp.task('js', function () {
             }
         }))
         .pipe(gulp.dest('assets/js/'));
+});
+
+// SVG
+gulp.task('svg', function () {
+    return gulp.src('src/images/icons/**/*.svg')
+        .pipe(svgo())
+        .pipe(gulp.dest('assets/images/icons/'));
 });
 
 // Sass-Watch task

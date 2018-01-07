@@ -1,0 +1,44 @@
+a.icon {
+  display: block;
+  font-size: 0;
+  background: center no-repeat;
+
+  // Hamburger
+  &--hamburger {
+    background-image: url(../images/icons/hamburger.svg);
+  }
+
+  // Close
+  &--close {
+    background-image: url(../images/icons/close.svg);
+  }
+}
+
+svg.icon {
+  display: block;
+
+  // Twitter
+  &--twitter:hover {
+    fill: $twitter;
+  }
+
+  // Dribbble
+  &--dribbble:hover {
+    fill: $dribbble;
+  }
+
+  // GitHub
+  &--github:hover {
+    fill: $github;
+  }
+
+  // Instagram
+  &--instagram:hover {
+    fill: $instagram;
+  }
+
+  // LinkedIn
+  &--linkedin:hover {
+    fill: $linkedin;
+  }
+}
