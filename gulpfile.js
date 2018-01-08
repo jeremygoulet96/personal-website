@@ -40,6 +40,7 @@ gulp.task('svg', function () {
 // Sass-Watch task
 gulp.task('watch', ['sass'], function() {
     gulp.watch("src/scss/**/*.scss", ['sass']);
+    gulp.watch("assets/xml/**/*.xml").on('change', browserSync.reload);
     gulp.watch("**/*.php").on('change', browserSync.reload);
 });
 
