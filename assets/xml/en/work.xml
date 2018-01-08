@@ -1,0 +1,118 @@
+<work>
+    <title>Work</title>
+    <project>
+        <image>
+            <alt>Multiple iPhone X on a grey background.</alt>
+            <url>iphone-x</url>
+        </image>
+        <infos>
+            <title>iPhone X Mockup</title>
+            <description>
+                I've been working on this one for quite some time now. Here's a free download for you! The sketch file contains all of the icons, Control Center, and the device — all in vector. If you like it, don't hesitate to like and share! For commercial use, just ask me !
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>Download Sketch file</label>
+                </button>
+            </actions>
+        </infos>
+    </project>
+    <project>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+            <url>ncweather</url>
+        </image>
+        <infos>
+            <title>NCWeather</title>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. Apple got rid of the built-in weather widget with iOS 7, but NCWeather is the replacement! Tapping on the widget switches between current conditions, hourly weather, and weekly forecast views.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>App Store (Free)</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
+                </button>
+                <button>
+                    <label>Cydia ($0.99)</label>
+                    <target>target="_blank"</target>
+                    <url>http://cydia.saurik.com/package/org.thebigboss.ncweather/</url>
+                </button>
+            </actions>
+        </infos>
+    </project>
+    <project>
+        <image>
+            <alt>A MacBook on a grey background.</alt>
+            <url>macbook</url>
+        </image>
+        <infos>
+            <title>12" MacBook Mockup</title>
+            <description>
+                Lorem ipsum
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>Download Sketch file</label>
+                </button>
+            </actions>
+        </infos>
+    </project>
+    <project>
+        <image>
+            <alt>Multiple colored folders on a dark grey background.</alt>
+            <url>folders</url>
+        </image>
+        <infos>
+            <title>Custom folders for macOS</title>
+            <description>
+                Lorem ipsum
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>Download Sketch file</label>
+                </button>
+            </actions>
+        </infos>
+    </project>
+    <project>
+        <image>
+            <alt>Multiple hard drives on a dark grey background.</alt>
+            <url>hdd</url>
+        </image>
+        <infos>
+            <title>macOS HDD icons</title>
+            <description>
+                Lorem ipsum
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>Download Sketch file</label>
+                </button>
+            </actions>
+        </infos>
+    </project>
+    <project>
+        <image>
+            <alt>An iPhone with iOS 6 on a grey background.</alt>
+            <url>ios6</url>
+        </image>
+        <infos>
+            <title>iOS 6 Homescreen</title>
+            <description>
+                Lorem ipsum
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>Download Sketch file</label>
+                </button>
+            </actions>
+        </infos>
+    </project>
+</work>

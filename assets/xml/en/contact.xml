@@ -1,0 +1,16 @@
+<contact>
+    <title>Contact</title>
+    <subtitle>Feel free to send me an e-mail through this form! I’ll answer as fast as I can!</subtitle>
+    <form>
+        <input>
+            <firstName>First name</firstName>
+            <lastName>Last name</lastName>
+            <email>E-mail address</email>
+            <subject>Subject</subject>
+            <message>Message</message>
+        </input>
+        <button>
+            <label>Send message</label>
+        </button>
+    </form>
+</contact>

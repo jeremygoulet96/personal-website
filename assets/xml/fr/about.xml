@@ -1,0 +1,67 @@
+<about>
+    <title>À propos</title>
+    <image>
+        <alt>Une photo de moi.</alt>
+    </image>
+    <p1>
+        Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City studying multimedia.
+    </p1>
+    <p2>
+        I like to design and reverse engineer designs to understands what went through the head of the designer.
+        I also like to make websites and code. I am fluent in HTML, CSS (SASS), jQuery, Javascript, TypeScript, and SQL.
+    </p2>
+    <p3>
+        <p3a>In summer of 2016, I interned as a Web developer and designer at </p3a>
+        <link>
+            <title>Spektrum Media</title>
+            <url>#</url>
+        </link>
+        <p3b> in Quebec City, Canada.</p3b>
+    </p3>
+    <p4>
+        <p4a>Also, in my free-time, I’ve made a few projects in the iOS jailbreak community. I am the designer of </p4a>
+        <link1>
+            <title>ClassicFolders</title>
+            <url>#</url>
+        </link1>
+        <p4b>, </p4b>
+        <link2>
+            <title>NCWeather</title>
+            <url>#</url>
+        </link2>
+        <p4c>, </p4c>
+        <link3>
+            <title>BlurriedNCBackground</title>
+            <url>#</url>
+        </link3>
+        <p4d> and </p4d>
+        <link4>
+            <title>Ventana</title>
+            <url>#</url>
+        </link4>
+        <p4e> to name a few. To see more of my portfolio, go to my </p4e>
+        <link5>
+            <title>Work</title>
+            <url>../index.php</url>
+        </link5>
+        <p4f> page.</p4f>
+    </p4>
+    <p5>
+        <p5a>Feel free to contact me through my </p5a>
+        <link1>
+            <title>Contact</title>
+            <url>../contact/contact.php</url>
+        </link1>
+        <p5b> page, </p5b>
+        <link2>
+            <title>e-mail</title>
+            <url>mailto:info@jeremygoulet.ca</url>
+        </link2>
+        <p5c> or </p5c>
+        <link3>
+            <title>Twitter</title>
+            <url>https://twitter.com/jeremygoulet</url>
+        </link3>
+        <p5d>.</p5d>
+    </p5>
+</about>

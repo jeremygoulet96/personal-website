@@ -1,12 +1,17 @@
 <?php
 
 $path = "../";
-$title = "About me"
+
+include $path."inc/localization.php";
+
+$about = simplexml_load_file($path.'assets/xml/'.$lang.'/about.xml');
+
+$title = "about";
 
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>">
 
 <?php include $path."inc/fragments/head.php"; ?>
 
@@ -15,32 +20,49 @@ $title = "About me"
 <?php include $path."inc/fragments/header.php"; ?>
 
 <main>
-    <h1 class="title"><?php echo $title; ?></h1>
+    <h1 class="title"><?php echo $about->title; ?></h1>
+
     <picture>
         <source class="about__image" srcset="<?php echo $path; ?>assets/images/about/me.jpg 1x, <?php echo $path; ?>assets/images/about/me@2x.jpg 2x" type="image/jpeg" />
-        <img class="about__image" src="<?php echo $path; ?>assets/images/about/me.jpg" srcset="<?php echo $path; ?>assets/images/about/me.jpg 1x, <?php echo $path; ?>assets/images/about/me@2x.jpg 2x" alt="A photo of me." />
+        <img class="about__image" src="<?php echo $path; ?>assets/images/about/me.jpg" srcset="<?php echo $path; ?>assets/images/about/me.jpg 1x, <?php echo $path; ?>assets/images/about/me@2x.jpg 2x" alt="<?php echo $about->image->alt; ?>" />
     </picture>
+
     <p>
-        Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City studying multimedia.
+        <?php echo $about->p1; ?>
     </p>
+
     <p>
-        I like to design and reverse engineer designs to understands what went through the head of the designer.
-        I also like to make websites and code. I am fluent in HTML, CSS (SASS), jQuery, Javascript, TypeScript, and SQL.
+        <?php echo $about->p2; ?>
     </p>
+
     <p>
-        In summer of 2016, I interned as a Web developer and designer at <a class="link" href="#">Spektrum Media</a> in Quebec City, Canada.
+        <?php echo $about->p3->p3a.'<a class="link" href="'.$about->p3->link->url.'">'.$about->p3->link->title.'</a>'.$about->p3->p3b; ?>
     </p>
+
     <p>
-        Also, in my free-time, I’ve made a few projects in the iOS jailbreak community.
-        I am the designer of <a class="link" href="#">ClassicFolders</a>,
-        <a class="link" href="#">NCWeather</a>, <a class="link" href="#">NCBlurriedBackground</a> and
-        <a class="link" href="#">Ventana</a> to name a few.
-        To see more of my portfolio, go to my <a class="link" href="#">Work</a> page.
+        <?php echo $about->p4->p4a
+            .'<a class="link" href="'.$about->p4->link1->url.'">'.$about->p4->link1->title.'</a>'
+            .$about->p4->p4b
+            .'<a class="link" href="'.$about->p4->link2->url.'">'.$about->p4->link2->title.'</a>'
+            .$about->p4->p4c
+            .'<a class="link" href="'.$about->p4->link3->url.'">'.$about->p4->link3->title.'</a>'
+            .$about->p4->p4d
+            .'<a class="link" href="'.$about->p4->link4->url.'">'.$about->p4->link4->title.'</a>'
+            .$about->p4->p4e
+            .'<a class="link" href="'.$about->p4->link5->url.'">'.$about->p4->link5->title.'</a>'
+            .$about->p4->p4f
+        ; ?>
     </p>
+
     <p>
-        Feel free to contact me through my <a class="link" href="#">Contact</a> page,
-        <a class="link" href="mailto:info@jeremygoulet.ca">e-mail</a> or
-        <a class="link" href="https://twitter.com/jeremygoulet" target="_blank">Twitter</a>.
+        <?php echo $about->p5->p5a
+            .'<a class="link" href="'.$about->p5->link1->url.'">'.$about->p5->link1->title.'</a>'
+            .$about->p5->p5b
+            .'<a class="link" href="'.$about->p5->link2->url.'">'.$about->p5->link2->title.'</a>'
+            .$about->p5->p5c
+            .'<a class="link" target="_blank" href="'.$about->p5->link3->url.'">'.$about->p5->link3->title.'</a>'
+            .$about->p5->p5d
+        ; ?>
     </p>
 </main>
 
