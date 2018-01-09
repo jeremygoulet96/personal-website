@@ -1,12 +1,18 @@
 <?php
 
 $path = "../";
-$title = "Blog"
+$page = "blog";
+
+include $path."inc/localization.php";
+
+$blog = simplexml_load_file($path.'assets/xml/'.$lang.'/blog.xml');
+
+$title = $blog->title;
 
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>">
 
 <?php include $path."inc/fragments/head.php"; ?>
 

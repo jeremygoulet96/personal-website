@@ -1,12 +1,13 @@
 <?php
 
 $path = "../";
+$page = "about";
 
 include $path."inc/localization.php";
 
 $about = simplexml_load_file($path.'assets/xml/'.$lang.'/about.xml');
 
-$title = "about";
+$title = $about->title;
 
 ?>
 
@@ -20,7 +21,7 @@ $title = "about";
 <?php include $path."inc/fragments/header.php"; ?>
 
 <main>
-    <h1 class="title"><?php echo $about->title; ?></h1>
+    <h1 class="title"><?php echo $title; ?></h1>
 
     <picture>
         <source class="about__image" srcset="<?php echo $path; ?>assets/images/about/me.jpg 1x, <?php echo $path; ?>assets/images/about/me@2x.jpg 2x" type="image/jpeg" />

@@ -1,12 +1,13 @@
 <?php
 
 $path = "../";
+$page = "contact";
 
 include $path."inc/localization.php";
 
 $contact = simplexml_load_file($path.'assets/xml/'.$lang.'/contact.xml');
 
-$title = "contact";
+$title = $contact->title;
 
 ?>
 
@@ -20,7 +21,7 @@ $title = "contact";
 <?php include $path."inc/fragments/header.php"; ?>
 
 <main>
-    <h1 class="title"><?php echo $contact->title; ?></h1>
+    <h1 class="title"><?php echo $title; ?></h1>
 
     <p><?php echo $contact->subtitle; ?></p>
 

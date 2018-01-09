@@ -1,12 +1,13 @@
 <?php
 
 $path = "./";
+$page = "work";
 
 include $path."inc/localization.php";
 
 $work = simplexml_load_file($path.'assets/xml/'.$lang.'/work.xml');
 
-$title = "work";
+$title = $work->title;
 
 ?>
 
@@ -20,7 +21,7 @@ $title = "work";
 <?php include $path."inc/fragments/header.php"; ?>
 
 <main>
-    <h1 class="title"><?php echo $work->title; ?></h1>
+    <h1 class="title"><?php echo $title; ?></h1>
     <ul class="work__list">
 
         <?php foreach ($work->project as $projects) { ?>

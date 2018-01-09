@@ -4,22 +4,22 @@
         <alt>Une photo de moi.</alt>
     </image>
     <p1>
-        Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City studying multimedia.
+        Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement en technique d'intégration multimédia à Québec.
     </p1>
     <p2>
-        I like to design and reverse engineer designs to understands what went through the head of the designer.
-        I also like to make websites and code. I am fluent in HTML, CSS (SASS), jQuery, Javascript, TypeScript, and SQL.
+        J'aime faire du design et du "reverse engineer" afin de comprendre ce qui a poussé l'auteur d'un design à l'avoir fait ainsi.
+        J'aime aussi créer des sites web et programmer. Je tape couramment en HTML, CSS (SASS), jQuery, Javascript, TypeScript et SQL.
     </p2>
     <p3>
-        <p3a>In summer of 2016, I interned as a Web developer and designer at </p3a>
+        <p3a>À l'été 2016, j'ai eu la chance d'avoir un poste de stagiaire chez </p3a>
         <link>
             <title>Spektrum Media</title>
             <url>#</url>
         </link>
-        <p3b> in Quebec City, Canada.</p3b>
+        <p3b> dans la ville de Québec.</p3b>
     </p3>
     <p4>
-        <p4a>Also, in my free-time, I’ve made a few projects in the iOS jailbreak community. I am the designer of </p4a>
+        <p4a>Aussi, dans mes temps libres, j'ai pu faire plusieurs projets dans la communauté du jailbreak iOS. Je suis le designer de </p4a>
         <link1>
             <title>ClassicFolders</title>
             <url>#</url>
@@ -34,30 +34,30 @@
             <title>BlurriedNCBackground</title>
             <url>#</url>
         </link3>
-        <p4d> and </p4d>
+        <p4d> et </p4d>
         <link4>
             <title>Ventana</title>
             <url>#</url>
         </link4>
-        <p4e> to name a few. To see more of my portfolio, go to my </p4e>
+        <p4e> pour n'en nommer que quelques-uns. Pour voir mes projets, simplement vous rendre sur ma page </p4e>
         <link5>
-            <title>Work</title>
+            <title>Portfolio</title>
             <url>../index.php</url>
         </link5>
-        <p4f> page.</p4f>
+        <p4f>.</p4f>
     </p4>
     <p5>
-        <p5a>Feel free to contact me through my </p5a>
+        <p5a>N'hésitez pas à me joindre sur ma page </p5a>
         <link1>
-            <title>Contact</title>
+            <title>Me contacter</title>
             <url>../contact/contact.php</url>
         </link1>
-        <p5b> page, </p5b>
+        <p5b>, par </p5b>
         <link2>
-            <title>e-mail</title>
+            <title>courriel</title>
             <url>mailto:info@jeremygoulet.ca</url>
         </link2>
-        <p5c> or </p5c>
+        <p5c> ou sur </p5c>
         <link3>
             <title>Twitter</title>
             <url>https://twitter.com/jeremygoulet</url>
