@@ -17,11 +17,29 @@ nav.nav {
     justify-content: space-between;
     transition: $transitionNormal;
 
+    form:before {
+      content: "|";
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
     // Nav link
-    a.nav__link {
+    .nav__link {
       color: $darkerGrey;
       text-decoration: none;
       transition: $transitionNormal;
+
+      &--lang {
+        background: none;
+        box-shadow: none;
+        border: 0;
+        font-size: 1rem;
+        outline: 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
 
       &--active {
         font-weight: 600;

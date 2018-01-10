@@ -9,7 +9,7 @@ else {
 }
 
 if(isset($_GET["lang"])) {
-    if($_GET["lang"] == "En" || $_GET["lang"] == "English") {
+    if($_GET["lang"] == "en" || $_GET["lang"] == "English") {
         $lang = "en";
         setcookie("lang","en");
     }

@@ -33,7 +33,7 @@ else {
                 </li>
                 <li class="nav__items">
                     <form method="get">
-                        <input class="nav__link nav__link--small" name="lang" type="submit" value="<?php echo ucfirst($newLang); ?>"/>
+                        <button class="nav__link nav__link--lang" name="lang" type="submit" value="<?php echo $newLang; ?>"><?php echo ucfirst($newLang); ?></button>
                     </form>
                 </li>
             </ul>
