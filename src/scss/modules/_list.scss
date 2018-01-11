@@ -1,11 +1,11 @@
-/****** WORK ******/
+/****** List ******/
 
 // List
-ul.work__list {
+ul.list {
   width: 100%;
 
   // Item
-  li.work__item {
+  li.list__item {
     @media(min-width: $mq-Table) {
       display: flex;
       align-items: center;
@@ -17,14 +17,14 @@ ul.work__list {
         flex-direction: row-reverse;
 
         // Left-to-right
-        div.work__info {
+        div.item__info {
           padding-left: 0;
           padding-right: 3rem;
         }
       }
     }
 
-    // Space between works
+    // Space between lists
     &:not(:first-child) {
       padding-top: 4rem;
 
@@ -33,7 +33,7 @@ ul.work__list {
       }
     }
 
-    // Last work space after
+    // Last list space after
     &:last-child {
       padding-bottom: 4rem;
 
@@ -58,7 +58,7 @@ ul.work__list {
     }
 
     // Infos
-    div.work__info {
+    div.item__info {
       @media(min-width: $mq-Table) {
         padding-right: 0;
         padding-left: 3rem;
