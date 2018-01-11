@@ -1,14 +1,11 @@
 <work>
     <title>Work</title>
     <project>
-        <image>
-            <alt>Multiple iPhone X on a grey background.</alt>
-            <url>iphone-x</url>
-        </image>
         <infos>
             <title>iPhone X Mockup</title>
+            <friendlyName>iphone-x-mockup</friendlyName>
             <description>
-                I've been working on this one for quite some time now. Here's a free download for you! The sketch file contains all of the icons, Control Center, and the device — all in vector. If you like it, don't hesitate to like and share! For commercial use, just ask me !
+                I've been working on this one for quite some time now. Here's a free download for you! The sketch file contains all of the icons, Control Center, and the device — all in vector. If you like it, don't hesitate to share! For commercial use, just ask me!
             </description>
             <actions>
                 <label>More info</label>
@@ -17,16 +14,16 @@
                 </button>
             </actions>
         </infos>
+        <image>
+            <alt>Multiple iPhone X on a grey background.</alt>
+        </image>
     </project>
     <project>
-        <image>
-            <alt>NCWeather's icons on a dark grey background.</alt>
-            <url>ncweather</url>
-        </image>
         <infos>
             <title>NCWeather</title>
+            <friendlyName>ncweather</friendlyName>
             <description>
-                NCWeather is a minimalistic weather widget for iOS 7 and 8. Apple got rid of the built-in weather widget with iOS 7, but NCWeather is the replacement! Tapping on the widget switches between current conditions, hourly weather, and weekly forecast views.
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
             </description>
             <actions>
                 <label>More info</label>
@@ -40,36 +37,41 @@
                     <target>target="_blank"</target>
                     <url>http://cydia.saurik.com/package/org.thebigboss.ncweather/</url>
                 </button>
+                <button>
+                    <label>Thomas Finch's website</label>
+                    <target>target="_blank"</target>
+                    <url>http://thomasfinch.me/</url>
+                </button>
             </actions>
         </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
     </project>
     <project>
+        <infos>
+            <title>MacBook Pro Mockup</title>
+            <friendlyName>macbook-pro-mockup</friendlyName>
+            <description>
+                When the 2016 MacBook Pro was announced, despite the fact that I couldn't afford it at the moment, I wanted to have it immediately. So I jumped in Sketch and made my own device — in vector. If you like it, don't hesitate to share! For commercial use, just ask me!
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>Download Sketch file</label>
+                </button>
+            </actions>
+        </infos>
         <image>
             <alt>A MacBook on a grey background.</alt>
-            <url>macbook</url>
         </image>
-        <infos>
-            <title>12" MacBook Mockup</title>
-            <description>
-                Lorem ipsum
-            </description>
-            <actions>
-                <label>More info</label>
-                <button>
-                    <label>Download Sketch file</label>
-                </button>
-            </actions>
-        </infos>
     </project>
     <project>
-        <image>
-            <alt>Multiple colored folders on a dark grey background.</alt>
-            <url>folders</url>
-        </image>
         <infos>
             <title>Custom folders for macOS</title>
+            <friendlyName>macos-folders</friendlyName>
             <description>
-                Lorem ipsum
+                People say that I am a tidy person. I admit it, I like it when everything is in its own place. That's why I designed this fully editable folder icon pack in Sketch. You too can now make your own folder and use it to sort you files! If you like it, don't hesitate to share! For commercial use, just ask me!
             </description>
             <actions>
                 <label>More info</label>
@@ -78,16 +80,16 @@
                 </button>
             </actions>
         </infos>
+        <image>
+            <alt>Multiple colored folders on a dark grey background.</alt>
+        </image>
     </project>
     <project>
-        <image>
-            <alt>Multiple hard drives on a dark grey background.</alt>
-            <url>hdd</url>
-        </image>
         <infos>
             <title>macOS HDD icons</title>
+            <friendlyName>macos-hdd</friendlyName>
             <description>
-                Lorem ipsum
+                For fun, I made all of the icons of each different macOS hard drives in vector. If you like it, don't hesitate to share! For commercial use, just ask me!
             </description>
             <actions>
                 <label>More info</label>
@@ -96,16 +98,16 @@
                 </button>
             </actions>
         </infos>
+        <image>
+            <alt>Multiple hard drives on a dark grey background.</alt>
+        </image>
     </project>
     <project>
-        <image>
-            <alt>An iPhone with iOS 6 on a grey background.</alt>
-            <url>ios6</url>
-        </image>
         <infos>
             <title>iOS 6 Homescreen</title>
+            <friendlyName>ios6-homescreen</friendlyName>
             <description>
-                Lorem ipsum
+                We're way past the iOS 6 era, but making the homescreen in vector was a lot of fun! If you like it, don't hesitate to share! For commercial use, just ask me!
             </description>
             <actions>
                 <label>More info</label>
@@ -114,5 +116,8 @@
                 </button>
             </actions>
         </infos>
+        <image>
+            <alt>An iPhone with iOS 6 on a grey background.</alt>
+        </image>
     </project>
 </work>

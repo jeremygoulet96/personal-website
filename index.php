@@ -26,10 +26,10 @@ $title = $work->title;
 
         <?php foreach ($work->project as $projects) { ?>
 
-            <li class="work__item">
+            <li class="work__item" id="<?php echo $projects->infos->friendlyName; ?>">
                 <picture>
-                    <source class="work__image" srcset="<?php echo $path; ?>assets/images/work/<?php echo $projects->image->url; ?>/hero.jpg 1x, <?php echo $path; ?>assets/images/work/<?php echo $projects->image->url; ?>/hero@2x.jpg 2x, <?php echo $path; ?>assets/images/work/<?php echo $projects->image->url; ?>/hero@3x.jpg 3x" type="image/jpeg" />
-                    <img class="work__image" src="<?php echo $path; ?>assets/images/work/<?php echo $projects->image->url; ?>/hero.jpg" srcset="<?php echo $path; ?>assets/images/work/<?php echo $projects->image->url; ?>/hero.jpg 1x, <?php echo $path; ?>assets/images/work/<?php echo $projects->image->url; ?>/hero@2x.jpg 2x, <?php echo $path; ?>assets/images/work/<?php echo $projects->image->url; ?>/hero@3x.jpg 3x" alt="<?php echo $projects->image->alt; ?>" />
+                    <source class="work__image" srcset="<?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero.jpg 1x, <?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero@2x.jpg 2x, <?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero@3x.jpg 3x" type="image/jpeg" />
+                    <img class="work__image" src="<?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero.jpg" srcset="<?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero.jpg 1x, <?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero@2x.jpg 2x, <?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero@3x.jpg 3x" alt="<?php echo $projects->image->alt; ?>" />
                 </picture>
                 <div class="work__info">
                     <h2 class="subtitle"><?php echo $projects->infos->title; ?></h2>
@@ -40,7 +40,7 @@ $title = $work->title;
                         <label class="actions--label"><?php echo $projects->infos->actions->label; ?></label>
                         <div class="buttonContainer">
                             <?php foreach ($projects->infos->actions->button as $buttons) { ?>
-                                <a class="button" <?php if(isset($buttons->target)) { echo $buttons->target; } ?> href="<?php if(!isset($buttons->target)) { echo $path."assets/downloads/".$projects->image->url.".zip"; } else { echo $buttons->url; } ?>"><?php echo $buttons->label; ?></a>
+                                <a class="button" <?php if(isset($buttons->target)) { echo $buttons->target; } ?> href="<?php if(!isset($buttons->target)) { echo $path."assets/downloads/".$projects->infos->friendlyName.".zip"; } else { echo $buttons->url; } ?>"><?php echo $buttons->label; ?></a>
                             <?php } ?>
                         </div>
                     </div>
