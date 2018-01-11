@@ -1,5 +1,5 @@
-<work>
-    <title>Work</title>
+<downloads>
+    <title>Downloads</title>
     <project>
         <infos>
             <title>iPhone X Mockup</title>
@@ -16,36 +16,6 @@
         </infos>
         <image>
             <alt>Multiple iPhone X on a grey background.</alt>
-        </image>
-    </project>
-    <project>
-        <infos>
-            <title>NCWeather</title>
-            <friendlyName>ncweather</friendlyName>
-            <description>
-                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
-            </description>
-            <actions>
-                <label>More info</label>
-                <button>
-                    <label>App Store (Free)</label>
-                    <target>target="_blank"</target>
-                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
-                </button>
-                <button>
-                    <label>Cydia ($0.99)</label>
-                    <target>target="_blank"</target>
-                    <url>http://cydia.saurik.com/package/org.thebigboss.ncweather/</url>
-                </button>
-                <button>
-                    <label>Thomas Finch's website</label>
-                    <target>target="_blank"</target>
-                    <url>http://thomasfinch.me/</url>
-                </button>
-            </actions>
-        </infos>
-        <image>
-            <alt>NCWeather's icons on a dark grey background.</alt>
         </image>
     </project>
     <project>
@@ -120,4 +90,4 @@
             <alt>An iPhone with iOS 6 on a grey background.</alt>
         </image>
     </project>
-</work>
+</downloads>
