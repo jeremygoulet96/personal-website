@@ -12,6 +12,18 @@ ul.list {
       justify-content: space-between;
       //padding: 2rem 0;
 
+      // Item title
+      .item__title {
+        font-size: $fontSizeBig;
+        margin: 1rem 0 0;
+
+        @media(min-width: $mq-Table) {
+          margin: 0;
+          font-size: 2.35rem;
+          line-height: 2.5rem;
+        }
+      }
+
       // Change order
       &:nth-child(even) {
         flex-direction: row-reverse;

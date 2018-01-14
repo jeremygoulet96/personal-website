@@ -1,0 +1,80 @@
+/****** TEXT ******/
+
+// Article
+article {
+  padding-bottom: 2rem;
+}
+
+// Title
+h1.title {
+  font-size: 1.75rem;
+
+  @media(min-width: $mq-Table) {
+    font-size: 3rem;
+  }
+}
+
+// Subtitle
+.subtitle {
+  font-size: $fontSizeBig;
+  margin: 1rem 0 0;
+  font-weight: 600;
+
+  @media(min-width: $mq-Table) {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+
+// P
+p {
+  color: $darkGrey;
+  margin: 0.8rem 0 1rem;
+  line-height: 1.9rem;
+}
+
+// LINK
+a.link {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// FONT STYLES
+.bold {
+  font-family: $font;
+  font-weight: 600;
+}
+
+.italic {
+  font-family: $font;
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+// QUOTE
+div.quoteContainer {
+  margin: 2rem 0.35rem;
+
+  // Quote
+  p.quote {
+    display: block;
+    font-weight: 600;
+    padding-left: 1rem;
+    box-shadow: -3px 0 0 0 $darkerGrey;
+  }
+
+  // Author
+  span.quote__author {
+    a.link {
+      font-weight: 600;
+    }
+  }
+}

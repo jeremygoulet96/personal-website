@@ -48,6 +48,8 @@
 @import 'modules/list';
 @import 'modules/about';
 @import 'modules/blog';
+@import 'modules/work';
+@import 'modules/text';
 
 /****** GENERAL ******/
 
@@ -95,51 +97,18 @@ main {
   margin: 0 auto;
 }
 
-// Text
-h1.title {
-  font-size: 1.75rem;
-
-  @media(min-width: $mq-Table) {
-    font-size: 3rem;
-  }
+// Image
+img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
 }
 
-.subtitle {
-  font-size: $fontSizeBig;
-  margin: 1rem 0 0;
-
-  @media(min-width: $mq-Table) {
-    margin: 0;
-    font-size: 2.375rem;
-    line-height: 2.5rem;
-  }
+article section {
+  max-width: 42rem;
+  margin: 0 auto;
 }
 
-p {
-  color: $darkGrey;
-  margin: 0.8rem 0 1rem;
-  line-height: 1.7rem;
-}
-
-a.link {
-  color: $blue;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.bold {
-  font-family: $font;
-  font-weight: 600;
-}
-
-.italic {
-  font-family: $font;
-  font-style: italic;
-}
-
-.underline {
-  text-decoration: underline;
+.visuallyHidden {
+  @include visuallyhidden();
 }

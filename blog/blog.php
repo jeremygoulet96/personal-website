@@ -20,9 +20,9 @@ $title = $blog->title;
 
 <?php include $path."inc/fragments/header.php"; ?>
 
-<main class="blog">
+<main>
     <h1 class="title visuallyHidden"><?php echo $title; ?></h1>
-    <article class="blog__post">
+    <article class="blog__article">
         <header class="blog__header">
             <h2 class="blog__title">Veggie Meals cooking app evolves for the iPhone X</h2>
             <span class="blog__date">

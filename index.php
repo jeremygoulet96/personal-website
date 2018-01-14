@@ -32,7 +32,7 @@ $title = $work->title;
                     <img class="item__image" src="<?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero.jpg" srcset="<?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero.jpg 1x, <?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero@2x.jpg 2x, <?php echo $path; ?>assets/images/work/<?php echo $projects->infos->friendlyName; ?>/hero@3x.jpg 3x" alt="<?php echo $projects->image->alt; ?>" />
                 </picture>
                 <div class="item__info">
-                    <h2 class="subtitle"><?php echo $projects->infos->title; ?></h2>
+                    <h2 class="item__title"><?php echo $projects->infos->title; ?></h2>
                     <p>
                         <?php echo $projects->infos->description; ?>
                     </p>

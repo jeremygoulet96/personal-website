@@ -23,9 +23,6 @@ else {
                     <a class="nav__link<?php if($page == "work"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>index.php"><?php echo $header->work; ?></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link<?php if($page == "blog"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>blog/blog.php"><?php echo $header->blog; ?></a>
-                </li>
-                <li class="nav__item">
                     <a class="nav__link<?php if($page == "downloads"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>downloads/downloads.php"><?php echo $header->downloads; ?></a>
                 </li>
                 <li class="nav__item">
