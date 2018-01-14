@@ -44,7 +44,7 @@
             <actions>
                 <button>
                     <label>Téléchargements</label>
-                    <url>downloads/downloads.php</url>
+                    <url>downloads/</url>
                 </button>
             </actions>
         </infos>

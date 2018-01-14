@@ -20,16 +20,16 @@ else {
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__link<?php if($page == "work"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>index.php"><?php echo $header->work; ?></a>
+                    <a class="nav__link<?php if($page == "work"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>"><?php echo $header->work; ?></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link<?php if($page == "downloads"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>downloads/downloads.php"><?php echo $header->downloads; ?></a>
+                    <a class="nav__link<?php if($page == "downloads"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>downloads/"><?php echo $header->downloads; ?></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link<?php if($page == "about"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>about/about.php"><?php echo $header->about; ?></a>
+                    <a class="nav__link<?php if($page == "about"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>about/"><?php echo $header->about; ?></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link<?php if($page == "contact"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>contact/contact.php"><?php echo $header->contact; ?></a>
+                    <a class="nav__link<?php if($page == "contact"){echo ' nav__link--active';} ?>" href="<?php echo $path; ?>contact/"><?php echo $header->contact; ?></a>
                 </li>
                 <li class="nav__items">
                     <form method="get">
