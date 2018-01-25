@@ -21,7 +21,7 @@ $title = $downloads->title;
 <?php include $path."inc/fragments/header.php"; ?>
 
 <main>
-    <h1 class="title"><?php echo $title; ?></h1>
+    <h1 class="title" data-title="<?php echo $title; ?>"><?php echo $title; ?></h1>
     <ul class="list">
 
         <?php foreach ($downloads->project as $projects) { ?>
@@ -33,11 +33,16 @@ $title = $downloads->title;
                 </picture>
                 <div class="item__info">
                     <h2 class="item__title"><?php echo $projects->infos->title; ?></h2>
-                    <p>
+                    <p class="item__body">
                         <?php echo $projects->infos->description; ?>
                     </p>
                     <div class="actions">
-                        <label class="actions--label"><?php echo $projects->infos->actions->label; ?></label>
+                        <?php if(isset($projects->infos->actions->label)) { ?>
+                            <div class="labelContainer">
+                                <label class="actions--label"><?php echo $projects->infos->actions->label; ?></label>
+                                <div class="label__separator"></div>
+                            </div>
+                        <?php } ?>
                         <div class="buttonContainer">
                             <?php foreach ($projects->infos->actions->button as $buttons) { ?>
                                 <a class="button" <?php if(isset($buttons->target)) { echo $buttons->target; } ?> href="<?php if(!isset($buttons->target)) { echo $path."assets/downloads/".$projects->infos->friendlyName.".zip"; } else { echo $buttons->url; } ?>"><?php echo $buttons->label; ?></a>

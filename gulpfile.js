@@ -5,7 +5,9 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
     browserSync = require('browser-sync').create(),
-    svgo = require('gulp-svgo');
+    svgo = require('gulp-svgo'),
+    imagemin = require('gulp-imagemin'),
+    imageminMozjpeg = require('imagemin-mozjpeg');
 
 // SASS task
 gulp.task('sass', function () {
@@ -17,6 +19,18 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.stream());
+});
+
+// Img
+gulp.task('img', function () {
+    return gulp.src('src/images/**/*.jpg')
+        .pipe(imagemin([
+            imagemin.jpegtran({progressive: true}),
+            imageminMozjpeg({
+                quality: 85
+            })
+        ]))
+        .pipe(gulp.dest('assets/images'));
 });
 
 // JS task

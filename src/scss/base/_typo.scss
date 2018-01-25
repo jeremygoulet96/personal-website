@@ -1,57 +1,66 @@
 /****** TYPOGRAPHY ******/
 
-// Avenir Next
+// Larsseit
 
 // Regular
 @font-face {
-  font-family: 'Avenir Next';
-  src: url('../fonts/AvenirNext/AvenirNext-Regular.woff2') format('woff2'),
-  url('../fonts/AvenirNext/AvenirNext-Regular.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit/Larsseit-Regular.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 // Italic
 @font-face {
-  font-family: 'Avenir Next';
-  src: url('../fonts/AvenirNext/AvenirNext-Italic.woff2') format('woff2'),
-  url('../fonts/AvenirNext/AvenirNext-Italic.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit/Larsseit-Italic.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 // Medium (500)
 @font-face {
-  font-family: 'Avenir Next';
-  src: url('../fonts/AvenirNext/AvenirNext-Medium.woff2') format('woff2'),
-  url('../fonts/AvenirNext/AvenirNext-Medium.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit/Larsseit-Medium.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 // DemiBold (600)
 @font-face {
-  font-family: 'Avenir Next';
-  src: url('../fonts/AvenirNext/AvenirNext-DemiBold.woff2') format('woff2'),
-  url('../fonts/AvenirNext/AvenirNext-DemiBold.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit/Larsseit-DemiBold.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit-DemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 // DemiBold Italic
 @font-face {
-  font-family: 'Avenir Next';
-  src: url('../fonts/AvenirNext/AvenirNext-DemiBoldItalic.woff2') format('woff2'),
-  url('../fonts/AvenirNext/AvenirNext-DemiBoldItalic.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit/Larsseit-DemiBoldItalic.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit-DemiBoldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
 }
 
 // Bold (bold)
 @font-face {
-  font-family: 'Avenir Next';
-  src: url('../fonts/AvenirNext/AvenirNext-Bold.woff2') format('woff2'),
-  url('../fonts/AvenirNext/AvenirNext-Bold.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit/Larsseit-Bold.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit-Bold.woff') format('woff');
   font-weight: bold;
+  font-style: normal;
+}
+
+// Extra-Bold (800)
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit/Larsseit-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit-ExtraBold.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
 }

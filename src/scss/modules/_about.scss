@@ -2,7 +2,20 @@
 
 // Image
 img.about__image {
-  border-radius: 100%;
   display: block;
   margin: 0 auto;
+}
+
+ul.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    width: 25%;
+
+    img {
+      width: 100%;
+    }
+  }
 }

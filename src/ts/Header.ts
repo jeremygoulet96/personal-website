@@ -42,30 +42,13 @@ export class Header {
     private showHideHeader(e: Event):void {
         let scrollTop = $(e.currentTarget).scrollTop();
 
-        console.log('scrollTop = '+scrollTop);
-        console.log('scrollPosition = '+this.scrollPosition);
-
-        // Adds class minimized to header when scroll passed header's height
-        if(scrollTop > this.headerHeight) {
-            this.$header.addClass('header--minimized header--inTransition');
-        }
-
         // If scroll is at the top, removes minimized or maximized classes
-        if(scrollTop == 0) {
-            this.$header.removeClass('header--minimized').removeClass('header--maximized').removeClass('header--inTransition');
+        if(scrollTop <= 0) {
+            this.$header.removeClass('header--inTransition');
+        } else {
+            this.$header.addClass('header--inTransition');
         }
 
-        if (scrollTop > this.scrollPosition) {
-            // Scroll down
-            if(this.$header.hasClass('header--maximized')) {
-                this.$header.addClass('header--minimized').removeClass('header--maximized');
-            }
-        } else {
-            // Scroll up
-            if(this.$header.hasClass('header--minimized')) {
-                this.$header.addClass('header--maximized').removeClass('header--minimized');
-            }
-        }
         this.scrollPosition = scrollTop;
     }
 }

@@ -1,6 +1,1 @@
-define(["require", "exports", "./Header"], function (require, exports, Header_1) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    new Header_1.Header();
-});
-//# sourceMappingURL=main.js.map
+define(["require","exports","./Header"],function(e,r,t){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),new t.Header});

@@ -26,7 +26,7 @@
                 </button>
                 <button>
                     <label>Read more</label>
-                    <url>work/work.php?project=ncweather</url>
+                    <url>work/index.php?project=ncweather</url>
                 </button>
             </actions>
         </infos>

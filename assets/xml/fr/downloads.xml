@@ -20,36 +20,6 @@
     </project>
     <project>
         <infos>
-            <title>NCWeather</title>
-            <friendlyName>ncweather</friendlyName>
-            <description>
-                NCWeather est un widget météo minimaliste pour iOS 7 et 8. J'ai développé cette application/tweak en collaboration avec Thomas Finch, un développeur très talentueux. Vous pouvez voir plus de son travail dans la section ci-dessous.
-            </description>
-            <actions>
-                <label>Plus d'info</label>
-                <button>
-                    <label>App Store</label>
-                    <target>target="_blank"</target>
-                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
-                </button>
-                <button>
-                    <label>Cydia (0.99$)</label>
-                    <target>target="_blank"</target>
-                    <url>http://cydia.saurik.com/package/org.thebigboss.ncweather/</url>
-                </button>
-                <button>
-                    <label>Site web de Thomas Finch</label>
-                    <target>target="_blank"</target>
-                    <url>http://thomasfinch.me/</url>
-                </button>
-            </actions>
-        </infos>
-        <image>
-            <alt>Icônes de NCWeather sur un fond gris foncé.</alt>
-        </image>
-    </project>
-    <project>
-        <infos>
             <title>Mockup MacBook Pro</title>
             <friendlyName>macbook-pro-mockup</friendlyName>
             <description>
