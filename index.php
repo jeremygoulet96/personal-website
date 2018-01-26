@@ -36,6 +36,7 @@ $title = $work->title;
                     <p class="item__body">
                         <?php echo $projects->infos->description; ?>
                     </p>
+                    <?php if(isset($projects->infos->actions)) { ?>
                     <div class="actions">
                         <?php if(isset($projects->infos->actions->label)) { ?>
                         <div class="labelContainer">
@@ -49,6 +50,7 @@ $title = $work->title;
                             <?php } ?>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
             </li>
 

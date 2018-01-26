@@ -2,6 +2,66 @@
     <title>Work</title>
     <project>
         <infos>
+            <title>Institut d'Implantologie de Québec</title>
+            <friendlyName>institut-implantologie</friendlyName>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>See full size</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
+                </button>
+            </actions>
+        </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
+    </project>
+    <project>
+        <infos>
+            <title>St-Lawrence</title>
+            <friendlyName>st-lawrence-logo</friendlyName>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>See full size</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
+                </button>
+            </actions>
+        </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
+    </project>
+    <project>
+        <infos>
+            <title>Chasseurs Généreux</title>
+            <friendlyName>chasseurs-genereux</friendlyName>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>See full size</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
+                </button>
+            </actions>
+        </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
+    </project>
+    <project>
+        <infos>
             <title>NCWeather</title>
             <friendlyName>ncweather</friendlyName>
             <description>
@@ -27,6 +87,86 @@
                 <button>
                     <label>Read more</label>
                     <url>work/index.php?project=ncweather</url>
+                </button>
+            </actions>
+        </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
+    </project>
+    <project>
+        <infos>
+            <title>CFMS</title>
+            <friendlyName>cfms</friendlyName>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>See full size</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
+                </button>
+            </actions>
+        </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
+    </project>
+    <project>
+        <infos>
+            <title>Théo Turgeon</title>
+            <friendlyName>theo-turgeon</friendlyName>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>See full size</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
+                </button>
+            </actions>
+        </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
+    </project>
+    <project>
+        <infos>
+            <title>HeadFM</title>
+            <friendlyName>headfm</friendlyName>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>See full size</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
+                </button>
+            </actions>
+        </infos>
+        <image>
+            <alt>NCWeather's icons on a dark grey background.</alt>
+        </image>
+    </project>
+    <project>
+        <infos>
+            <title>Aurora</title>
+            <friendlyName>aurora</friendlyName>
+            <description>
+                NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+            </description>
+            <actions>
+                <label>More info</label>
+                <button>
+                    <label>See full size</label>
+                    <target>target="_blank"</target>
+                    <url>https://itunes.apple.com/us/app/ncweather/id937482069?mt=8</url>
                 </button>
             </actions>
         </infos>
