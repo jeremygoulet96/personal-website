@@ -22,12 +22,23 @@ gulp.task('sass', function () {
 });
 
 // Img
-gulp.task('img', function () {
+gulp.task('imgBase', function () {
     return gulp.src('src/images/**/*.jpg')
         .pipe(imagemin([
             imagemin.jpegtran({progressive: true}),
             imageminMozjpeg({
-                quality: 85
+                quality: 95
+            })
+        ]))
+        .pipe(gulp.dest('assets/images'));
+});
+
+gulp.task('img', ['imgBase'], function () {
+    return gulp.src('src/images/**/*{@2x,@3x}.jpg')
+        .pipe(imagemin([
+            imagemin.jpegtran({progressive: true}),
+            imageminMozjpeg({
+                quality: 75
             })
         ]))
         .pipe(gulp.dest('assets/images'));
