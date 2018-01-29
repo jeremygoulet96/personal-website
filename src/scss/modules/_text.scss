@@ -14,6 +14,7 @@ h1.title {
   letter-spacing: -2px;
   color: $branding;
   position: relative;
+  line-height: 3.8rem;
 
   &:before {
     content: attr(data-title);
@@ -28,6 +29,7 @@ h1.title {
 
   @media(min-width: $mq-Table) {
     font-size: 5.3rem;
+    line-height: 5.5rem;
   }
 }
 
@@ -42,36 +44,68 @@ a.link {
 }
 
 // FONT STYLES
-.bold {
+// Bold
+strong {
   font-family: $font;
   font-weight: 600;
 }
 
-.italic {
+// Italic
+em {
   font-family: $font;
   font-style: italic;
 }
 
-.underline {
-  text-decoration: underline;
+.highlighter-rouge {
+  margin-bottom: 1rem;
+
+  pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 100%;
+    line-height: 1.45;
+    background-color: rgba(27,31,35,0.05);
+    border-radius: 3px;
+
+    code {
+      background: none;
+
+      .kd, .o {
+        color: #d73a49;
+      }
+      .nx {
+        color: #6f42c1;
+      }
+    }
+  }
+}
+
+code {
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
 }
 
 // QUOTE
-div.quoteContainer {
-  margin: 2rem 0.35rem;
+blockquote {
+  margin: 2rem 0.35rem 0;
 
   // Quote
-  p.quote {
+  p {
     display: block;
     font-weight: 600;
     padding-left: 1rem;
     box-shadow: -3px 0 0 0 $darkerGrey;
   }
+}
 
-  // Author
-  span.quote__author {
-    a.link {
-      font-weight: 600;
-    }
+// Author
+p.quote__author {
+  margin: 0 0.35rem 2rem;
+  a.link {
+    font-weight: 600;
   }
 }

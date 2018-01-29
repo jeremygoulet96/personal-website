@@ -17,10 +17,18 @@ nav.nav {
     justify-content: space-between;
     transition: $transitionNormal;
 
-    form:before {
-      content: "|";
-      display: inline-block;
-      margin-right: 1rem;
+    // Languages
+    div.nav__languages {
+      // Links
+      a.nav__link:first-child {
+        margin-right: 1rem;
+      }
+
+      &:before {
+        content: "|";
+        display: inline-block;
+        margin-right: 1rem;
+      }
     }
 
     // Nav link

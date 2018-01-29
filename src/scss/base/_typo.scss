@@ -5,8 +5,8 @@
 // Regular
 @font-face {
   font-family: 'Larsseit';
-  src: url('../fonts/Larsseit/Larsseit-Regular.woff2') format('woff2'),
-  url('../fonts/Larsseit/Larsseit-Regular.woff') format('woff');
+  src: url('../fonts/Larsseit/Larsseit.woff2') format('woff2'),
+  url('../fonts/Larsseit/Larsseit.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,24 +27,6 @@
   url('../fonts/Larsseit/Larsseit-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-}
-
-// DemiBold (600)
-@font-face {
-  font-family: 'Larsseit';
-  src: url('../fonts/Larsseit/Larsseit-DemiBold.woff2') format('woff2'),
-  url('../fonts/Larsseit/Larsseit-DemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
-// DemiBold Italic
-@font-face {
-  font-family: 'Larsseit';
-  src: url('../fonts/Larsseit/Larsseit-DemiBoldItalic.woff2') format('woff2'),
-  url('../fonts/Larsseit/Larsseit-DemiBoldItalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
 }
 
 // Bold (bold)
