@@ -20,10 +20,14 @@ Thumbs.db
 .idea/
 
 # Sass Cache remove
-.sass-cache/
+.sass-cache
 
 # Ignore CSS & Map File
 *.map
 
 # Ignore Linter cache file
 *.eslintrc
+
+# Jekyll
+_site
+.jekyll-metadata

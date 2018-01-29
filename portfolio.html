@@ -1,0 +1,13 @@
+---
+title: Portfolio
+navItem: Portfolio
+lang: fr
+ref: work
+layout: page
+listCategory: work
+permalink: /portfolio/
+---
+
+{% assign sorted = site.portfolio | sort: 'date' | reverse | where:"lang", page.lang %}
+
+{% include list.html %}

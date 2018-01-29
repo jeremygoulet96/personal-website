@@ -1,0 +1,12 @@
+---
+title: Downloads
+navItem: Downloads
+lang: en
+ref: downloads
+layout: page
+listCategory: downloads
+---
+
+{% assign sorted = site.downloads | sort: 'date' | reverse | where:"lang", page.lang %}
+
+{% include list.html %}

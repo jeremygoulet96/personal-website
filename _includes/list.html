@@ -1,0 +1,41 @@
+<ul class="list">
+
+{% for item in sorted %}
+
+<li class="list__item" id="{{ item.ref }}">
+    <picture>
+        <source class="item__image" srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.jpg 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.jpg 2x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@3x.jpg 3x" type="image/jpeg" />
+        <img class="item__image" src="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.jpg" srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.jpg 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.jpg 2x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@3x.jpg 3x" alt="{{ item.title }}" />
+    </picture>
+    <div class="item__info">
+        <h2 class="item__title">{{ item.title }}</h2>
+        <p class="item__body">
+            {% if item.description %}
+                {{ item.description }}
+            {% else %}
+                {{ item.excerpt | remove: '<p>' | remove: '</p>' }}
+            {% endif %}
+        </p>
+        <div class="actions">
+            <div class="labelContainer">
+                <label class="actions--label">
+                    {% if page.lang == "en" %}
+                        More info
+                    {% else  %}
+                        Plus d'info
+                    {% endif %}
+                </label>
+                <div class="label__separator"></div>
+            </div>
+            <div class="buttonContainer">
+                {% for button in item.buttons %}
+                <a class="button" {% if button.target %} target="{{ button.target }}" {% endif %} href="{{ button.url }}">{{ button.label }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</li>
+
+{% endfor %}
+
+</ul>
