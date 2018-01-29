@@ -85,3 +85,5 @@ exclude:
   - bower.json
   - src
   - .idea
+  - tsconfig.json
+  - README.md
