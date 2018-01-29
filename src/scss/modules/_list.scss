@@ -13,6 +13,8 @@ ul.list {
 
     // Infos
     div.item__info {
+      animation-delay: 0.5s;
+
       @media(min-width: $mq-Table) {
         width: 50%;
         position: absolute;
@@ -88,9 +90,10 @@ ul.list {
       display: block;
       position: relative;
 
-      img {
+      img.item__image {
         display: block;
         width: 100%;
+        animation-delay: 0.25s;
 
         @media(min-width: $mq-Table) {
           width: auto;

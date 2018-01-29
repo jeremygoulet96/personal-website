@@ -5,7 +5,7 @@ $font: Larsseit, 'Larsseit', Avenir Next, -apple-system, BlinkMacSystemFont, "Se
 $paddingGeneral: 0 1.5rem;
 
 $widthLarge: 1280px;
-$widthMedium: 1080px;
+$widthMedium: $mq-Table;
 $widthSmall: 800px;
 
 // Transitions

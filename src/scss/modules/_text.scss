@@ -15,6 +15,7 @@ h1.title {
   color: $branding;
   position: relative;
   line-height: 3.8rem;
+  animation-delay: 0.25s;
 
   &:before {
     content: attr(data-title);
