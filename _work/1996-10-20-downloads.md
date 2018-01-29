@@ -9,4 +9,5 @@ description: Everyone likes free stuff, even you! Head over to my Downloads page
 buttons:
     - label: Downloads
       url: /downloads/
+sitemap: false
 ---

@@ -9,4 +9,5 @@ description: Tout le monde aime les choses gratuites, même vous! Rendez-vous su
 buttons:
     - label: Téléchargements
       url: /telechargements/
+sitemap: false
 ---
