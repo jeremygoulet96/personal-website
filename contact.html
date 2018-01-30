@@ -7,10 +7,12 @@ layout: page
 permalink: /contact/
 ---
 
-<p>
+<p class="subHead loadAnimated">
     Feel free to send me an e-mail through this form! I’ll answer as fast as I can!
 </p>
-<form class="form" method="get" action="<?php echo $path; ?>contact/contact.php">
+<form class="form loadAnimated" action="https://formspree.io/jeremy.goulet14@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="/contact/thank-you/" />
+
     <div class="inputContainer">
         <label for="firstname" class="form__label">First name:</label>
         <input type="text" class="form__input" id="firstname" name="firstname" placeholder="First name">
@@ -28,5 +30,5 @@ permalink: /contact/
     <label for="message" class="form__label">Message:</label>
     <textarea class="form__input" id="message" name="message" placeholder="Message"></textarea>
 
-    <input class="button" type="submit" value="Send">
+    <button class="button" type="submit">Send</button>
 </form>

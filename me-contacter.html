@@ -7,26 +7,26 @@ layout: page
 permalink: /me-contacter/
 ---
 
-<p>
-    Feel free to send me an e-mail through this form! I’ll answer as fast as I can!
+<p class="subHead loadAnimated">
+    N'hésitez pas à m'enovyer un courriel avec ce formulaire! Je tenterai d'y répondre le plus rapidement possible!
 </p>
-<form class="form" method="get" action="<?php echo $path; ?>contact/contact.php">
+<form class="form loadAnimated" method="get" action="<?php echo $path; ?>contact/contact.php">
     <div class="inputContainer">
-        <label for="firstname" class="form__label">First name:</label>
-        <input type="text" class="form__input" id="firstname" name="firstname" placeholder="First name">
+        <label for="firstname" class="form__label">Prénom:</label>
+        <input type="text" class="form__input" id="firstname" name="firstname" placeholder="Prénom">
 
-        <label for="lastname" class="form__label">Last name:</label>
-        <input type="text" class="form__input" id="lastname" name="lastname" placeholder="Last name">
+        <label for="lastname" class="form__label">Nom de famille:</label>
+        <input type="text" class="form__input" id="lastname" name="lastname" placeholder="Nom de famille">
     </div>
 
-    <label for="email" class="form__label">E-mail address:</label>
-    <input type="text" class="form__input" id="email" name="email" placeholder="E-mail address">
+    <label for="email" class="form__label">Courriel:</label>
+    <input type="text" class="form__input" id="email" name="email" placeholder="Courriel">
 
-    <label for="subject" class="form__label">Subject:</label>
-    <input type="text" class="form__input" id="subject" name="subject" placeholder="Subject">
+    <label for="subject" class="form__label">Sujet:</label>
+    <input type="text" class="form__input" id="subject" name="subject" placeholder="Sujet">
 
     <label for="message" class="form__label">Message:</label>
     <textarea class="form__input" id="message" name="message" placeholder="Message"></textarea>
 
-    <input class="button" type="submit" value="Send">
+    <button class="button" type="submit">Envoyer</button>
 </form>
