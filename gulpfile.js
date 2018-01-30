@@ -21,9 +21,22 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
-// Img
-gulp.task('imgBase', function () {
-    return gulp.src('src/images/**/*.jpg')
+// Sass-Watch task
+gulp.task('watch', ['sass'], function() {
+    gulp.watch("src/scss/**/*.scss", ['sass']);
+    gulp.watch("assets/xml/**/*.xml").on('change', browserSync.reload);
+    gulp.watch("**/*.php").on('change', browserSync.reload);
+});
+
+// Img Task
+gulp.task('img', ['img1x', 'img2x3x'], function () {
+    return gulp.src('src/images/**/fullsize.jpg')
+        .pipe(gulp.dest('assets/images'));
+});
+
+// Img 1x
+gulp.task('img1x', function () {
+    return gulp.src('src/images/**/hero.jpg')
         .pipe(imagemin([
             imagemin.jpegtran({progressive: true}),
             imageminMozjpeg({
@@ -33,8 +46,9 @@ gulp.task('imgBase', function () {
         .pipe(gulp.dest('assets/images'));
 });
 
-gulp.task('img', ['imgBase'], function () {
-    return gulp.src('src/images/**/*{@2x,@3x}.jpg')
+// Img 2x & 3x
+gulp.task('img2x3x', function () {
+    return gulp.src('src/images/**/hero{@2x,@3x}.jpg')
         .pipe(imagemin([
             imagemin.jpegtran({progressive: true}),
             imageminMozjpeg({
@@ -44,8 +58,8 @@ gulp.task('img', ['imgBase'], function () {
         .pipe(gulp.dest('assets/images'));
 });
 
-// JS task
-gulp.task('js', function () {
+// UglifyJS task
+gulp.task('uglify', function () {
     return gulp.src('assets/js/*.js')
         .pipe(uglify({
             compress: {
@@ -55,31 +69,12 @@ gulp.task('js', function () {
         .pipe(gulp.dest('assets/js/'));
 });
 
-// SVG
+// SVG task
 gulp.task('svg', function () {
     return gulp.src('src/images/icons/**/*.svg')
         .pipe(svgo())
         .pipe(gulp.dest('assets/images/icons/'));
 });
 
-// Sass-Watch task
-gulp.task('watch', ['sass'], function() {
-    gulp.watch("src/scss/**/*.scss", ['sass']);
-    gulp.watch("assets/xml/**/*.xml").on('change', browserSync.reload);
-    gulp.watch("**/*.php").on('change', browserSync.reload);
-});
-
-// JS-Watch task
-gulp.task('js-watch', ['js'], function(done) {
-    browserSync.reload();
-    done();
-});
-
 // Default task
-gulp.task('default', ['watch', 'js-watch'], function () {
-    // Browser-Sync
-    browserSync.init({
-        proxy: "localhost/~jeremygoulet/personal-website/",
-        browser: "google chrome"
-    });
-});
+gulp.task('default', ['watch']);

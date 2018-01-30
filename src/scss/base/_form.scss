@@ -18,7 +18,7 @@ form.form {
 
     input.form__input, textarea {
       &:nth-of-type(1) {
-        margin-right: 0.5rem;
+        margin-right: 0.6rem;
       }
     }
   }
@@ -28,23 +28,20 @@ form.form {
     width: 100%;
     font-family: $font;
     display: inline-block;
-    background: $white;
-    border-radius: 7px;
+    background: rgba($black, 0.05);
+    border: 0;
     padding: 1rem;
-    box-shadow: inset 0 2px 2px 0 rgba(0,0,0,0.10);
-    border: 1px solid #C8C8C8;
-    color: $darkerGrey;
-    font-weight: 500;
+    color: $black;
+    font-weight: normal;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     transition: $transitionNormal;
 
     &:focus {
-      border-color: $paleBlue;
-      box-shadow: inset 0 2px 2px 0 rgba($paleBlue, 0.3);
+      background: rgba($black, 0.075);
     }
   }
 
@@ -55,15 +52,15 @@ form.form {
 
   // Placeholder
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $grey;
+    color: rgba($black, 0.5);
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    color: $grey;
+    color: rgba($black, 0.5);
   }
   :-ms-input-placeholder { /* IE 10+ */
-    color: $grey;
+    color: rgba($black, 0.5);
   }
   :-moz-placeholder { /* Firefox 18- */
-    color: $grey;
+    color: rgba($black, 0.5);
   }
 }

@@ -93,7 +93,6 @@ ul.list {
       img.item__image {
         display: block;
         width: 100%;
-        animation-delay: 0.25s;
 
         @media(min-width: $mq-Table) {
           width: auto;

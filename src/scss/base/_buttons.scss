@@ -4,7 +4,9 @@
   display: inline-block;
   position: relative;
   padding: 1rem 0;
+  min-width: 250px;
   box-shadow: inset 0 0 0 2px $darkerGrey;
+  background: none;
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
@@ -58,4 +60,9 @@ a.button {
   &:nth-child(even) {
     margin-left: 1rem;
   }
+}
+
+// Form button
+button.button {
+  margin-top: 1rem;
 }
