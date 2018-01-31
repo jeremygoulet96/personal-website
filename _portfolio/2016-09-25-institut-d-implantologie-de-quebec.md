@@ -8,8 +8,10 @@ categories: work website
 permalink: /portfolio/institut-d-implantologie-de-quebec/
 description: Francais
 buttons:
-    - label: En savoir plus
-      url: /portfolio/institut-d-implantologie-de-quebec/
+    - label: Voir en pleine résolution
+      url: /assets/images/work/institut-implantologie/fullsize.jpg
+      target: _blank
+sitemap: false
 ---
 
 Desc fr

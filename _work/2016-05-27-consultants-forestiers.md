@@ -8,8 +8,10 @@ categories: work website
 permalink: /work/consultants-forestiers/
 description: CFMS desc
 buttons:
-    - label: Read more
-      url: /work/consultants-forestiers/
+    - label: See full size
+      url: /assets/images/work/consultants-forestiers/fullsize.jpg
+      target: _blank
+sitemap: false
 ---
 
 CFMS content

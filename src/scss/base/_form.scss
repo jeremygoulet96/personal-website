@@ -41,7 +41,7 @@ form.form {
     transition: $transitionNormal;
 
     &:focus {
-      background: rgba($black, 0.075);
+      background: rgba($black, 0.1);
     }
   }
 

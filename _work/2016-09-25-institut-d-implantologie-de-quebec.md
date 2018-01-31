@@ -8,8 +8,10 @@ categories: work website
 permalink: /work/institut-d-implantologie-de-quebec/
 description: Instritut descsss
 buttons:
-    - label: Read more
-      url: /work/institut-d-implantologie-de-quebec/
+    - label: See full size
+      url: /assets/images/work/institut-implantologie/fullsize.jpg
+      target: _blank
+sitemap: false
 ---
 
 Instrituts content
