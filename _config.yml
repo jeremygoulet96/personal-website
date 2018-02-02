@@ -82,8 +82,9 @@ exclude:
   - node_modules
   - gulpfile.js
   - package.json
-  - bower.json
   - src
   - .idea
+  - .icon
+  - .DS_Store
   - tsconfig.json
   - README.md

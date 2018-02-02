@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp'),
+    merge = require('merge-stream'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
@@ -76,5 +77,16 @@ gulp.task('svg', function () {
         .pipe(gulp.dest('assets/images/icons/'));
 });
 
+// Img Task
+gulp.task('npm', function () {
+    var jquery = gulp.src('node_modules/jquery/dist/jquery.min.js')
+        .pipe(gulp.dest('assets/js/jquery/'));
+
+    var requirejs = gulp.src('node_modules/requirejs/require.js')
+        .pipe(gulp.dest('assets/js/requirejs/'));
+
+    return merge(jquery, requirejs);
+});
+
 // Default task
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch', 'npm']);
