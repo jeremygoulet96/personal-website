@@ -5,16 +5,16 @@
     <link rel="alternate" href="{{ site.url }}{{ page.altUrl.url }}" hreflang="{{ page.altUrl.lang }}">
 
     <title>{{ site.title }} | {{ page.title }}</title>
-    <meta name="description" content="Lorem Ipsum">
+    <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="design, web, intégration, multimédia, french, quebec, québec, english, canada, TIM, ste-foy, sainte-foy, apple, iPhone, developer, front-end">
-    <meta name="author" content="Jérémy Goulet">
+    <meta name="author" content="{{ site.author }}">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta property="og:title" content="{{ site.title }} | {{ page.title }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:description" content="Lorem Ipsum">
+    <meta property="og:description" content="{{ site.description }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/images/favicons/ogp/{{ page.title | downcase }}.png">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
