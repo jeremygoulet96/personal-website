@@ -3,7 +3,7 @@ title: Théo Turgeon
 navItem: Work
 lang: en
 ref: theo-turgeon
-layout: work
+layout: article
 categories: work website
 permalink: /work/theo-turgeon/
 description: Théo Turgeon description

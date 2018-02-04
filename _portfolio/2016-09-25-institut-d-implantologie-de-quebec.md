@@ -3,7 +3,7 @@ title: Institut d'Implantologie de Québec
 navItem: Portfolio
 lang: fr
 ref: institut-implantologie
-layout: work
+layout: article
 categories: work website
 permalink: /portfolio/institut-d-implantologie-de-quebec/
 description: Francais

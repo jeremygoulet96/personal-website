@@ -3,7 +3,7 @@ title: Chasseurs Généreux
 navItem: Work
 lang: en
 ref: chasseurs-genereux
-layout: work
+layout: article
 categories: work website
 permalink: /work/chasseurs-genereux/
 description: Chasseurs desc

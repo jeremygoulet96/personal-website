@@ -3,7 +3,7 @@ title: NCWeather
 navItem: Work
 lang: en
 ref: ncweather
-layout: work
+layout: article
 categories: work icon app
 permalink: /work/ncweather/
 description: NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work on his [website](http://thomasfinch.me).
@@ -13,6 +13,9 @@ buttons:
       target: _blank
     - label: Cydia ($0.99)
       url: http://cydia.saurik.com/package/org.thebigboss.ncweather/
+      target: _blank
+    - label: Thomas Finch
+      url: http://thomasfinch.me/
       target: _blank
     - label: Read more
       url: /work/ncweather

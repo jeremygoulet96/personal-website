@@ -3,7 +3,7 @@ title: St-Lawrence
 navItem: Portfolio
 lang: fr
 ref: st-lawrence
-layout: work
+layout: article
 categories: work logo
 permalink: /portfolio/st-lawrence/
 description: Francais

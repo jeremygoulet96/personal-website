@@ -1,25 +1,17 @@
 ---
-layout: default
-permalink: "/"
+title: 404 :(
+lang: en
+ref: 404
+layout: page-narrow
+permalink: /404/
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="landingPage">
+    <section class="loadAnimated">
+        <h1 class="title" data-title="{{page.title}}">{{page.title}}</h1>
 
-<div class="container">
-  <h1>404</h1>
+        <p class="subHead">The page requested could not be found.</p>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+        <a class="button" href="/">Go back to Home</a>
+    </section>
 </div>

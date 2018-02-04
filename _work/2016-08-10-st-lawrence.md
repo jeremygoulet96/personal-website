@@ -3,7 +3,7 @@ title: St-Lawrence
 navItem: Work
 lang: en
 ref: st-lawrence
-layout: work
+layout: article
 categories: work logo
 permalink: /work/st-lawrence/
 description: St lawrence desc

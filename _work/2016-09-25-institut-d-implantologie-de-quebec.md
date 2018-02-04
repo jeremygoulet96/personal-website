@@ -3,7 +3,7 @@ title: Institut d'Implantologie de Québec
 navItem: Work
 lang: en
 ref: institut-implantologie
-layout: work
+layout: article
 categories: work website
 permalink: /work/institut-d-implantologie-de-quebec/
 description: Instritut descsss

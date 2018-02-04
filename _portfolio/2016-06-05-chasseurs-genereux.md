@@ -3,7 +3,7 @@ title: Chasseurs Généreux
 navItem: Portfolio
 lang: fr
 ref: chasseurs-genereux
-layout: work
+layout: article
 categories: work website
 permalink: /portfolio/chasseurs-genereux/
 description: Francais

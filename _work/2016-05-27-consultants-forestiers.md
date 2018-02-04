@@ -3,7 +3,7 @@ title: Les Consultants forestiers M.S.
 navItem: Work
 lang: en
 ref: consultants-forestiers
-layout: work
+layout: article
 categories: work website
 permalink: /work/consultants-forestiers/
 description: CFMS desc

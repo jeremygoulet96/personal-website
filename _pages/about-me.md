@@ -3,7 +3,7 @@ title: About me
 navItem: About me
 lang: en
 ref: about-me
-layout: page
+layout: page-narrow
 permalink: /about-me/
 altUrl:
     url: /a-propos/
