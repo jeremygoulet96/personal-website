@@ -12,6 +12,7 @@
  ** Icons
  * BASE ------------
  ** Typo
+ ** Text
  ** Button
  ** Form
  * MODULES ---------
@@ -20,10 +21,10 @@
  ** Footer
  ** List
  ** About me
- ** Blog
+ ** Work
  * GENERAL ---------
+ ** Reset
  ** Base
- ** Text
  */
 
 /****** LIB ******/
@@ -39,6 +40,7 @@
 
 /****** BASE ******/
 @import 'base/typo';
+@import 'base/text';
 @import 'base/buttons';
 @import 'base/form';
 
@@ -48,9 +50,7 @@
 @import 'modules/footer';
 @import 'modules/list';
 @import 'modules/about';
-@import 'modules/blog';
 @import 'modules/work';
-@import 'modules/text';
 
 /****** GENERAL ******/
 
@@ -69,18 +69,16 @@ ul, li {
   margin: 0;
 }
 
-// Base
+// BASE
 body {
   font-family: $font;
   font-weight: normal;
   font-size: 17px;
   overflow-x: hidden;
-  /*
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
-  */
   background-color: $background;
   color: $darkGrey;
   position: relative;
@@ -93,15 +91,34 @@ body {
 
 main {
   padding: $paddingGeneral;
-  max-width: $widthMedium;
+  //max-width: $widthMedium;
   margin: 0 auto;
 
   @media(min-width: $mq-Table) {
     padding: 0;
   }
+
+  &.large {
+    div.maxWidth {
+      max-width: $widthMedium;
+    }
+  }
+  &.narrow {
+    div.maxWidth {
+      max-width: $widthSmall;
+    }
+  }
 }
 
-.maxWidth {
+// Landing page
+div.landingPage {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
+
+// Max-width
+div.maxWidth {
   max-width: $widthLarge;
   width: 100%;
   margin: 0 auto;
@@ -110,12 +127,6 @@ main {
 // Image
 img {
   display: block;
-}
-
-// Article section
-article section {
-  max-width: $widthSmall;
-  margin: 0 auto;
 }
 
 .visuallyHidden {
