@@ -5,6 +5,9 @@ lang: en
 ref: about-me
 layout: page
 permalink: /about-me/
+altUrl:
+    url: /a-propos/
+    lang: ca-FR
 ---
 
 {:.loadAnimated}

@@ -5,6 +5,9 @@ lang: fr
 ref: about-me
 layout: page
 permalink: /a-propos/
+altUrl:
+    url: /about/
+    lang: en-US
 ---
 {:.loadAnimated}
 Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement en technique d'intégration multimédia à Québec.

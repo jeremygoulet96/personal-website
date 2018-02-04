@@ -6,6 +6,9 @@ ref: work
 layout: page
 listCategory: work
 permalink: /work/
+altUrl:
+    url: /portfolio/
+    lang: ca-FR
 ---
 
 {% assign sorted = site.work | sort: 'date' | reverse | where:"lang", page.lang %}

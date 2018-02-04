@@ -6,6 +6,9 @@ ref: downloads
 layout: page
 listCategory: downloads
 permalink: /downloads/
+altUrl:
+    url: /telechargements/
+    lang: ca-FR
 ---
 
 {% assign sorted = site.downloads | sort: 'date' | reverse | where:"lang", page.lang %}

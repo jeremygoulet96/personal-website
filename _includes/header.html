@@ -1,21 +1,19 @@
 <header class="header">
     <div class="maxWidth">
         <div class="headerContainer">
-            <a class="header__logo" href="{{ site.t[page.lang].work.url }}">Jérémy Goulet</a>
+            <a class="header__logo" href="{{ site.local[page.lang].work.url }}">Jérémy Goulet</a>
             <a href="#" class="header__action icon icon--hamburger">Menu</a>
         </div>
         <nav class="nav">
             <ul class="nav__list">
-                {% for menu in site.t[page.lang] %}
+                {% for menu in site.local[page.lang] %}
                 <li class="nav__item">
                     <a class="nav__link {% if page.navItem == menu[1].name %} nav__link--active {% endif %}" href="{{ menu[1].url }}">{{ menu[1].name }}</a>
                 </li>
                 {% endfor %}
-
                 <li class="nav__items">
                     <div class="nav__languages">
                         {% assign pages = site.pages | where:"ref", page.ref | sort: 'lang' %}
-
                         {% for thisPage in pages %}
                         <a class="nav__link nav__link--lang nav__link--{{ thisPage.lang }} {% if page.lang == thisPage.lang %} nav__link--active {% endif %}" href="{{ thisPage.url }}">{{ thisPage.lang | capitalize }}</a>
                         {% endfor %}
