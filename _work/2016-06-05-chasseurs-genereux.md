@@ -6,12 +6,12 @@ ref: chasseurs-genereux
 layout: article
 categories: work website
 permalink: /work/chasseurs-genereux/
-description: Chasseurs desc
 buttons:
-    - label: See full size
-      url: /assets/images/work/chasseurs-genereux/fullsize.jpg
+    - label: Go to website
+      url: http://chasseursgenereux.com/
       target: _blank
-sitemap: false
+    - label: Read more
+      url: /work/chasseurs-genereux/
 ---
 
-Chasseurs content
+This project was realized while I was working for Spektrum Media.

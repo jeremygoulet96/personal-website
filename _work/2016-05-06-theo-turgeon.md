@@ -6,10 +6,9 @@ ref: theo-turgeon
 layout: article
 categories: work website
 permalink: /work/theo-turgeon/
-description: Théo Turgeon description
 buttons:
     - label: Read more
       url: /work/theo-turgeon/
 ---
 
-Theo content
+This project was realized while I was working for Spektrum Media.

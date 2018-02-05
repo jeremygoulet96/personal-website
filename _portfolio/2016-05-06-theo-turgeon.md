@@ -6,10 +6,9 @@ ref: theo-turgeon
 layout: article
 categories: work website
 permalink: /portfolio/theo-turgeon/
-description: Francais
 buttons:
     - label: En savoir plus
       url: /portfolio/theo-turgeon/
 ---
 
-Desc cfr
+Ce mandat a été réalisé pendant que je travaillais pour Spektrum Media.

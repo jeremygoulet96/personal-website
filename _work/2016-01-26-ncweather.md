@@ -6,7 +6,7 @@ ref: ncweather
 layout: article
 categories: work icon app
 permalink: /work/ncweather/
-description: NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work on his [website](http://thomasfinch.me).
+description: NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work on his website.
 buttons:
     - label: App Store (Free)
       url: https://itunes.apple.com/us/app/ncweather/id937482069?mt=8
@@ -18,11 +18,11 @@ buttons:
       url: http://thomasfinch.me/
       target: _blank
     - label: Read more
-      url: /work/ncweather
+      url: /work/ncweather/
 ---
 
-## Title 2
-NCWeather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
+## Title 2sdf
+NCWesdfsdfsdfather is a minimalistic weather widget for iOS 7 and 8. I developed this app/tweak in collaboration with Thomas Finch, a talented developer. You can see more of his work in the section below.
 
 ### Subtitle 2
 

@@ -6,12 +6,9 @@ ref: consultants-forestiers
 layout: article
 categories: work website
 permalink: /work/consultants-forestiers/
-description: CFMS desc
 buttons:
-    - label: See full size
-      url: /assets/images/work/consultants-forestiers/fullsize.jpg
-      target: _blank
-sitemap: false
+    - label: Read more
+      url: /work/consultants-forestiers/
 ---
 
-CFMS content
+This project was realized while I was working for Spektrum Media.

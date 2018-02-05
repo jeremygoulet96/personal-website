@@ -6,12 +6,12 @@ ref: chasseurs-genereux
 layout: article
 categories: work website
 permalink: /portfolio/chasseurs-genereux/
-description: Francais
 buttons:
-    - label: Voir en pleine résolution
-      url: /assets/images/work/chasseurs-genereux/fullsize.jpg
+    - label: Aller sur le site Web
+      url: http://chasseursgenereux.com/
       target: _blank
-sitemap: false
+    - label: En savoir plus
+      url: /portfolio/chasseurs-genereux/
 ---
 
-Desc fr
+Ce mandat a été réalisé pendant que je travaillais pour Spektrum Media.
