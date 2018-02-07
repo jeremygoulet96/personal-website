@@ -13,7 +13,7 @@ descriptionFr: >- # this means to ignore newlines until "baseurl:"
   Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement en Techniques d'intégration multimédia à Québec.
   J'aime faire du design et programmer des choses.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jeremygoulet.ca"
+url: "https://www.jeremygoulet.ca"
 twitter_username: "JeremyGoulet"
 github_username:  "jeremygoulet96"
 
