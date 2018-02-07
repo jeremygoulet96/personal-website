@@ -69,6 +69,7 @@ local:
 # Include in processing.
 include:
   - "_pages"
+  - "_errors"
 
 # Exclude from processing.
 exclude:
