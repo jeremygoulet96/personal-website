@@ -7,8 +7,10 @@ layout: article
 categories: work website
 permalink: /portfolio/consultants-forestiers/
 buttons:
-    - label: En savoir plus
-      url: /portfolio/consultants-forestiers/
+    - label: Voir en pleine résolution
+      url: /assets/images/work/consultants-forestiers/fullsize.jpg
+      target: _blank
+sitemap: false
 ---
 
 Ce mandat a été réalisé pendant que je travaillais pour Spektrum Media.

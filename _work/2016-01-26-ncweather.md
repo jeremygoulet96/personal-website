@@ -17,8 +17,7 @@ buttons:
     - label: Thomas Finch
       url: http://thomasfinch.me/
       target: _blank
-    - label: Read more
-      url: /work/ncweather/
+sitemap: false
 ---
 
 ## Title 2sdf

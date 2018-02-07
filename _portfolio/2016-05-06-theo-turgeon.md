@@ -7,8 +7,10 @@ layout: article
 categories: work website
 permalink: /portfolio/theo-turgeon/
 buttons:
-    - label: En savoir plus
-      url: /portfolio/theo-turgeon/
+    - label: Voir en pleine résolution
+      url: /assets/images/work/theo-turgeon/fullsize.jpg
+      target: _blank
+sitemap: false
 ---
 
 Ce mandat a été réalisé pendant que je travaillais pour Spektrum Media.

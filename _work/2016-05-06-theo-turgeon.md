@@ -7,8 +7,10 @@ layout: article
 categories: work website
 permalink: /work/theo-turgeon/
 buttons:
-    - label: Read more
-      url: /work/theo-turgeon/
+    - label: See full size
+      url: /assets/images/work/theo-turgeon/fullsize.jpg
+      target: _blank
+sitemap: false
 ---
 
 This project was realized while I was working for Spektrum Media.

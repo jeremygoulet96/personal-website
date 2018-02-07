@@ -13,4 +13,4 @@ buttons:
 sitemap: false
 ---
 
-Ce mandat a été réalisé pendant que je travaillais pour Spektrum Media. Durant mon stage, j'ai eu comme mandat de rajeunir le site Web de l'Institut canadien d'implantologie. Finalement, nous avons décidé d'explorer un tout autre style. Tout de même, j'ai bien aimé travaillé sur ce projet.
+Ce mandat a été réalisé pendant que je travaillais pour Spektrum Media. Durant mon stage, j'ai eu comme mandat de rajeunir le site Web de l'Institut canadien d'implantologie. Finalement, nous avons décidé d'explorer un tout autre style. Tout de même, j'ai bien aimé travailler sur ce projet.
