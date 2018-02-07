@@ -10,7 +10,7 @@ altUrl:
     lang: en-US
 ---
 {:.loadAnimated}
-Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement en technique d'intégration multimédia à Québec.
+Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement en Techniques d'intégration multimédia à Québec.
 
 {:.loadAnimated}
 J'aime faire du design et du "reverse engineer" afin de comprendre ce qui a poussé l'auteur d'un design à l'avoir fait ainsi. J'aime aussi créer des sites web et programmer. Je tape couramment en HTML, CSS (SASS), jQuery, Javascript, TypeScript et SQL.

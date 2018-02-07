@@ -11,7 +11,7 @@ buttons:
     - label: App Store
       url: https://itunes.apple.com/us/app/ncweather/id937482069?mt=8
       target: _blank
-    - label: Cydia (0.99$)
+    - label: Cydia
       url: http://cydia.saurik.com/package/org.thebigboss.ncweather/
       target: _blank
     - label: Thomas Finch

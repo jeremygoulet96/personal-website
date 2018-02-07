@@ -4,7 +4,7 @@ lang: en
 ref: simpledialog
 categories: downloads plugin
 buttons:
-    - label: Github page
+    - label: See on Github
       url: https://github.com/jeremygoulet96/SimpleDialog
       target: _blank
 ---

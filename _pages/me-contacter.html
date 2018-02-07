@@ -13,7 +13,9 @@ altUrl:
 <p class="subHead loadAnimated">
     N'hésitez pas à m'envoyer un courriel avec ce formulaire! Je tenterai d'y répondre le plus rapidement possible!
 </p>
-<form class="form loadAnimated" method="get" action="<?php echo $path; ?>contact/contact.php">
+<form class="form loadAnimated" action="https://formspree.io/jeremy.goulet14@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="/contact/thank-you/" />
+
     <div class="inputContainer">
         <label for="firstname" class="form__label">Prénom:</label>
         <input type="text" class="form__input" id="firstname" name="firstname" placeholder="Prénom">
@@ -23,7 +25,7 @@ altUrl:
     </div>
 
     <label for="email" class="form__label">Courriel:</label>
-    <input type="text" class="form__input" id="email" name="email" placeholder="Courriel">
+    <input type="email" class="form__input" id="email" name="email" placeholder="Courriel">
 
     <label for="subject" class="form__label">Sujet:</label>
     <input type="text" class="form__input" id="subject" name="subject" placeholder="Sujet">

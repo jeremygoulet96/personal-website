@@ -15,6 +15,7 @@ nav.nav {
   ul.nav__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     transition: $transitionNormal;
 
     // Languages
@@ -24,18 +25,52 @@ nav.nav {
         margin-right: 1rem;
       }
 
-      &:before {
-        content: "|";
-        display: inline-block;
-        margin-right: 1rem;
+      @media(min-width: $mq-Table) {
+        &:before {
+          content: "|";
+          display: inline-block;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .nav__item {
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0;
+
+      @media(min-width: $mq-Table) {
+        width: auto;
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    .nav__items {
+      display: block;
+      width: 100%;
+      box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05);
+      padding: 1.5rem 0 0.5rem;
+      margin-top: 0.5rem;
+
+      @media(min-width: $mq-Table) {
+        width: auto;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
       }
     }
 
     // Nav link
     .nav__link {
+      font-size: 1.5rem;
       color: $darkerGrey;
       text-decoration: none;
       transition: $transitionNormal;
+
+      @media(min-width: $mq-Table) {
+        font-size: 1rem;
+      }
 
       &--lang {
         background: none;

@@ -8,7 +8,7 @@ categories: work website
 permalink: /work/festival-off/
 buttons:
     - label: Go to website
-      url: /festival-off/
+      url: http://festival-off.jeremygoulet.ca/
       target: _blank
 sitemap: false
 ---
