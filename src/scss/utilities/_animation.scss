@@ -14,4 +14,9 @@
   animation: fade-in ease 0.75s;
   animation-fill-mode: forwards;
   animation-delay: 0.25s;
+
+  @-moz-document url-prefix() {
+    animation: none;
+    opacity: 1;
+  }
 }

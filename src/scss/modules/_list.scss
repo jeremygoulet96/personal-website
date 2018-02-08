@@ -20,9 +20,14 @@ ul.list {
         position: absolute;
         z-index: 10;
         right: 0;
+
+        @-moz-document url-prefix() {
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
 
-      // TITLE
+        // TITLE
       h2.item__title {
         font-size: 2.5rem;
         margin: 2rem 0 0;
@@ -114,19 +119,19 @@ ul.list {
 
     // Space between lists
     &:not(:first-child) {
-      padding-top: 4rem;
+      margin-top: 4rem;
 
       @media(min-width: $mq-Table) {
-        padding-top: 6rem;
+        margin-top: 6rem;
       }
     }
 
     // Last list space after
     &:last-child {
-      padding-bottom: 4rem;
+      margin-bottom: 4rem;
 
       @media(min-width: $mq-Table) {
-        padding-bottom: 6rem;
+        margin-bottom: 6rem;
       }
     }
   }

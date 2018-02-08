@@ -5,6 +5,7 @@ lang: en
 ref: downloads
 layout: article
 categories: work
+permalink: /work/downloads/
 buttons:
     - label: Downloads
       url: /downloads/

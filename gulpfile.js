@@ -22,6 +22,16 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
+// SASS task
+gulp.task('prod', function () {
+    return gulp.src('src/scss/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
+        .pipe(gulp.dest('assets/css'));
+});
+
 // Sass-Watch task
 gulp.task('watch', ['sass'], function() {
     gulp.watch("src/scss/**/*.scss", ['sass']);

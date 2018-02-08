@@ -5,6 +5,7 @@ lang: fr
 ref: downloads
 layout: article
 categories: work
+permalink: /portfolio/downloads/
 buttons:
     - label: Téléchargements
       url: /telechargements/
