@@ -14,7 +14,7 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     <link rel="alternate" href="{{ site.url }}{{ page.altUrl.url }}" hreflang="{{ page.altUrl.lang }}">
 
-    <title>{{ site.title }} | {{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     {% if page.lang == "fr" %}
     <meta name="description" content="{{ site.descriptionFr }}">
     {% else if page.lang == "en" %}
@@ -26,10 +26,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:title" content="{{ site.title }} | {{ page.title }}">
+    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/assets/images/favicons/ogp/{{ page.title | downcase }}.png">
+    <meta property="og:image" content="{{ site.url }}/assets/images/favicons/ogp/{{ page.title | downcase }}.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
@@ -58,6 +58,8 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{ "/assets/images/favicons/favicon-96x96.png" | relative_url }}">
 
     <link rel="icon" type="image/png" sizes="192x192" href="{{ "/assets/images/favicons/android-chrome-192x192.png" | relative_url }}">
+
+    <link rel="icon" href="{{ "/assets/images/favicons/favicon.ico" | relative_url }}">
 
     <meta name="msapplication-TileColor" content="#843AFA">
     <meta name="msapplication-TileImage" content="{{ "/assets/images/favicons/mstile-144x144.png" | relative_url }}">

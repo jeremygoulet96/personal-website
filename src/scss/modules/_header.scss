@@ -8,6 +8,10 @@ header.header {
   z-index: 999;
   position: fixed;
 
+  @media(min-width: $mq-Table) {
+    padding: 0 2.5rem;
+  }
+
   &.header--inTransition {
     background-color: $white;
 

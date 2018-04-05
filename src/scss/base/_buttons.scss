@@ -56,9 +56,11 @@
 
 // Only on links
 a.button {
-  // When more than 1 button
-  &:nth-child(even) {
-    margin-left: 1rem;
+  @media(min-width: $minWidthTablette) {
+    // When more than 1 button
+    &:nth-child(even) {
+      margin-left: 1rem;
+    }
   }
 }
 

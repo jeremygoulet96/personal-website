@@ -6,14 +6,13 @@ footer.footer {
   right: 0;
   bottom: 0;
   left: 0;
-  //position: relative;
-  //bottom: 0;
   margin-top: 3rem;
   padding: $paddingGeneral;
 
   @media(min-width: $mq-Table) {
     display: flex;
     justify-content: space-between;
+    padding: 0 2.5rem;
 
     li.social__item:not(:first-child) {
       padding-left: 2rem;
