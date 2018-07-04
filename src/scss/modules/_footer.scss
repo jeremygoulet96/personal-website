@@ -9,6 +9,11 @@ footer.footer {
   margin-top: 3rem;
   padding: $paddingGeneral;
 
+  @supports(padding: max(0px)) {
+    padding-left: unquote('max(#{1.5rem}, env(safe-area-inset-left))');
+    padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
+  }
+
   @media(min-width: $mq-Table) {
     display: flex;
     justify-content: space-between;

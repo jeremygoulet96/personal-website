@@ -91,15 +91,22 @@ body {
   min-height: 100vh;
   margin: 0;
   padding-top: 66px;
-  padding-bottom: 8.5rem;
+  @supports(padding: max(0px)) {
+    padding-bottom: unquote('max(#{8.5rem}, env(safe-area-inset-bottom))');
+  }
 }
 
 main {
   padding: $paddingGeneral;
   margin: 0 auto;
 
+  @supports(padding: max(0px)) {
+    padding-left: unquote('max(#{1.5rem}, env(safe-area-inset-left))');
+    padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
+  }
+
   @media(min-width: $mq-Table) {
-    padding: 0;
+    //padding: 0;
   }
 
   &.large {

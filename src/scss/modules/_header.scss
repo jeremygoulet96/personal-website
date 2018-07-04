@@ -8,6 +8,11 @@ header.header {
   z-index: 999;
   position: fixed;
 
+  @supports(padding: max(0px)) {
+    padding-left: unquote('max(#{1.5rem}, env(safe-area-inset-left))');
+    padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
+  }
+
   @media(min-width: $mq-Table) {
     padding: 0 2.5rem;
   }

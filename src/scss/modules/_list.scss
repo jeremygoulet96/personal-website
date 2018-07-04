@@ -94,14 +94,15 @@ ul.list {
     picture {
       display: block;
       position: relative;
+      width: 100%;
 
       img.item__image {
         display: block;
         width: 100%;
+      }
 
-        @media(min-width: $mq-Table) {
-          width: auto;
-        }
+      @media(min-width: $mq-Table) {
+        width: auto;
       }
     }
 
