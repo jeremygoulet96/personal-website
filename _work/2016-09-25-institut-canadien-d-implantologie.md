@@ -8,7 +8,7 @@ categories: work website
 permalink: /work/institut-canadien-d-implantologie/
 buttons:
     - label: See full size
-      url: /assets/images/work/institut-implantologie/fullsize.jpg
+      url: /assets/images/work/institut-implantologie/fullsize.png
       target: _blank
 sitemap: false
 ---

@@ -8,7 +8,7 @@ categories: work website
 permalink: /portfolio/consultants-forestiers/
 buttons:
     - label: Voir en pleine résolution
-      url: /assets/images/work/consultants-forestiers/fullsize.jpg
+      url: /assets/images/work/consultants-forestiers/fullsize.png
       target: _blank
 sitemap: false
 ---

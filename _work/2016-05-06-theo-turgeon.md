@@ -9,7 +9,7 @@ categories: work website
 permalink: /work/theo-turgeon/
 buttons:
     - label: See full size
-      url: /assets/images/work/theo-turgeon/fullsize.jpg
+      url: /assets/images/work/theo-turgeon/fullsize.png
       target: _blank
 sitemap: false
 ---

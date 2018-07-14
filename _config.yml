@@ -86,3 +86,4 @@ exclude:
   - tsconfig.json
   - README.md
   - ssl
+  - yarn.lock

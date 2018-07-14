@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "My own personal website.",
   "main": "index.js",
   "homepage": "https://github.com/jeremygoulet96/personal-website",
@@ -23,13 +23,12 @@
     "browser-sync": "^2.23.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-gm": "0.0.9",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-svgo": "^1.2.5",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
-    "imagemin-mozjpeg": "^7.0.0",
     "merge-stream": "^1.0.1"
   }
 }

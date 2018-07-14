@@ -7,8 +7,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     browserSync = require('browser-sync').create(),
     svgo = require('gulp-svgo'),
-    imagemin = require('gulp-imagemin'),
-    imageminMozjpeg = require('imagemin-mozjpeg');
+    gm = require('gulp-gm');
 
 // SASS task
 gulp.task('sass', function () {
@@ -40,34 +39,33 @@ gulp.task('watch', ['sass'], function() {
 });
 
 // Img Task
-gulp.task('img', ['img1x', 'img2x3x'], function () {
-    return gulp.src('src/images/**/fullsize.jpg')
-        .pipe(gulp.dest('assets/images'));
-});
+gulp.task('img', ['imgConvert', 'fullsize']);
 
-// Img 1x
-gulp.task('img1x', function () {
-    return gulp.src('src/images/**/hero.jpg')
-        .pipe(imagemin([
-            imagemin.jpegtran({progressive: true}),
-            imageminMozjpeg({
-                quality: 95
-            })
-        ]))
+// Image convert
+gulp.task('imgConvert', function () {
+    // 1x
+    gulp.src('src/images/**/hero.png')
+        .pipe(gm(function (gmfile) {
+            return gmfile.setFormat('jpg').quality(95);
+        }, {
+            imageMagick: true
+        }))
         .pipe(gulp.dest('assets/images'));
-});
+    // 2x, 3x
+    gulp.src('src/images/**/hero{@2x,@3x}.png')
+        .pipe(gm(function (gmfile) {
+            return gmfile.setFormat('jpg').quality(75);
+        }, {
+            imageMagick: true
+        }))
+        .pipe(gulp.dest('assets/images'));
+})
 
-// Img 2x & 3x
-gulp.task('img2x3x', function () {
-    return gulp.src('src/images/**/hero{@2x,@3x}.jpg')
-        .pipe(imagemin([
-            imagemin.jpegtran({progressive: true}),
-            imageminMozjpeg({
-                quality: 75
-            })
-        ]))
+// Fullsize
+gulp.task('fullsize', ['imgConvert'], function () {
+    return gulp.src('src/images/**/fullsize.png')
         .pipe(gulp.dest('assets/images'));
-});
+})
 
 // UglifyJS task
 gulp.task('uglify', function () {
@@ -87,7 +85,7 @@ gulp.task('svg', function () {
         .pipe(gulp.dest('assets/images/icons/'));
 });
 
-// Img Task
+// Node Task
 gulp.task('npm', function () {
     var jquery = gulp.src('node_modules/jquery/dist/jquery.min.js')
         .pipe(gulp.dest('assets/js/jquery/'));
