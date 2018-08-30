@@ -11,13 +11,13 @@ altUrl:
 ---
 
 {:.loadAnimated}
-Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City studying in a program called [Techniques d'intégration multimédia](http://timcsf.ca/public/){:.link}{:target="_blank"}.
+Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City currently studying to obtain my bachelor's degree in [product design](https://www.design.ulaval.ca/programmes/baccalaureat-design-produits.html){:.link}{:target="_blank"}. I also studied in a program called [Techniques d'intégration multimédia](http://timcsf.ca/){:.link}{:target="_blank"} in CÉGEP from 2014 to 2018.
 
 {:.loadAnimated}
-I like to design and reverse engineer designs to understands what went through the head of the designer. I also like to make websites and code. I am fluent in HTML, CSS (SASS), jQuery, Javascript, TypeScript, and SQL.
+I like to design and reverse engineer designs to understands what went through the head of the designer. I also like to make websites and code. I am fluent in HTML, CSS (SASS/SCSS), jQuery, Javascript, TypeScript, and SQL. I'm also learning Swift with Xcode.
 
 {:.loadAnimated}
-In summer of 2016, I interned as a Web developer and designer at [Spektrum Media](https://spektrummedia.com/){:.link}{:target="_blank"} in Quebec City, Canada.
+In summer of 2016, I interned as a Web developer and designer at [Spektrum Media](https://spektrummedia.com/en/){:.link}{:target="_blank"} in Quebec City, Canada. For my final internship in spring of 2018, I interned as a Web developer at [O2 Web](https://o2web.ca/en/){:.link}{:target="_blank"}.
 
 {:.loadAnimated}
 Also, in my free-time, I’ve made a few projects in the iOS jailbreak community. I am the designer of [ClassicFolders](http://cydia.saurik.com/package/org.coolstar.classicfolders2){:.link}{:target="_blank"}, [NCWeather](/work/#ncweather){:.link}, [BlurriedNCBackground](http://cydia.saurik.com/package/org.thebigboss.blurriedncbackground/){:.link}{:target="_blank"} and [Ventana](http://cydia.saurik.com/package/org.coolstar.ventana/){:.link}{:target="_blank"} to name a few. To see more of my portfolio, go to my [Work]({{ site.local[page.lang].work.url }}){:.link} page.

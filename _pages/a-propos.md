@@ -10,13 +10,13 @@ altUrl:
     lang: en-US
 ---
 {:.loadAnimated}
-Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement en [Techniques d'intégration multimédia](http://timcsf.ca/public/){:.link}{:target="_blank"} à Québec.
+Bonjour! Je m'appelle Jérémy Goulet et je suis présentement au [Baccalauréat en design de produits](https://www.design.ulaval.ca/programmes/baccalaureat-design-produits.html){:.link}{:target="_blank"} à l'Université Laval. J'ai étudié en [Techniques d'intégration multimédia](http://timcsf.ca/){:.link}{:target="_blank"} au CÉGEP entre 2014 et 2018.
 
 {:.loadAnimated}
-J'aime faire du design et du "reverse engineer" afin de comprendre ce qui a poussé l'auteur d'un design à l'avoir fait ainsi. J'aime aussi créer des sites web et programmer. Je tape couramment en HTML, CSS (SASS), jQuery, Javascript, TypeScript et SQL.
+J'aime faire du design et du "reverse engineer" afin de comprendre ce qui a poussé l'auteur d'un design à l'avoir fait ainsi. J'aime aussi créer des sites web et programmer. Je tape couramment en HTML, CSS (SASS/SCSS), jQuery, Javascript, TypeScript et SQL. J'ai aussi commencé à apprendre Swift avec Xcode.
 
 {:.loadAnimated}
-À l'été 2016, j'ai eu la chance d'avoir un poste de stagiaire chez [Spektrum Media](https://spektrummedia.com/){:.link}{:target="_blank"} dans la ville de Québec.
+À l'été 2016, j'ai eu la chance d'avoir un poste de stagiaire chez [Spektrum Media](https://spektrummedia.com/){:.link}{:target="_blank"} dans la ville de Québec. Pour mon stage final au printemps 2018, j'ai travaillé chez [O2 Web](https://o2web.ca/){:.link}{:target="_blank"}.
 
 {:.loadAnimated}
 Aussi, dans mes temps libres, j'ai pu faire plusieurs projets dans la communauté du jailbreak iOS. 
