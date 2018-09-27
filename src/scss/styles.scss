@@ -78,7 +78,7 @@ html {
 body {
   font-family: $font;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 16px;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -94,6 +94,10 @@ body {
   @supports(padding: max(0px)) {
     padding-bottom: unquote('max(#{8.5rem}, env(safe-area-inset-bottom))');
   }
+
+  @media(min-width: $mq-Table) {
+    font-size: 17px;
+  }
 }
 
 main {
@@ -106,7 +110,11 @@ main {
   }
 
   @media(min-width: $mq-Table) {
-    //padding: 0;
+    padding: $paddingGeneral;
+  }
+
+  @media(min-width: $minWidthTable) {
+    padding: 0 3rem;
   }
 
   &.large {

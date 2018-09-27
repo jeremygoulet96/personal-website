@@ -13,6 +13,10 @@ header.header {
     padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
   }
 
+  @media(min-width: $minWidthTable) {
+    padding: 0 3rem;
+  }
+
   @media(min-width: $mq-Table) {
     padding: 0 2.5rem;
   }
