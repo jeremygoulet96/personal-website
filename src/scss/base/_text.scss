@@ -2,9 +2,19 @@
 
 ::selection {
   background: lighten($branding, 10%);
+
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    background: $branding;
+  }
 }
 ::-moz-selection {
   background: lighten($branding, 10%);
+
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    background: $branding;
+  }
 }
 
 // Title
@@ -17,6 +27,11 @@ h1.title {
   line-height: 3.8rem;
   animation-delay: 0.25s;
 
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    color: $branding-dark;
+  }
+
   &:before {
     content: attr(data-title);
     position: absolute;
@@ -26,6 +41,12 @@ h1.title {
     top: 50%;
     left: 0;
     transform: translateY(-50%) translateX(40%) scale(1.6);
+
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+      opacity: 0.05;
+    }
   }
 
   @media(min-width: $mq-Table) {
@@ -40,8 +61,13 @@ p.subHead {
 
 // LINK
 a.link {
-  color: $branding; //$blue
+  color: $branding;
   text-decoration: none;
+
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    color: $branding-dark;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -103,7 +129,7 @@ blockquote {
     display: block;
     font-weight: 600;
     padding-left: 1rem;
-    box-shadow: -3px 0 0 0 $darkerGrey;
+    box-shadow: -3px 0 0 0 $darkGrey;
   }
 }
 

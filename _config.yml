@@ -7,11 +7,9 @@ title: "Jérémy Goulet"
 author: "Jérémy Goulet"
 email: "info@jeremygoulet.ca"
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City studying multimedia.
-  I like to design and code things.
+  Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City studying product design. I like to design and code things.
 descriptionFr: >- # this means to ignore newlines until "baseurl:"
-  Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement en Techniques d'intégration multimédia à Québec.
-  J'aime faire du design et programmer des choses.
+  Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement au baccalauréat en design graphique à Québec. J'aime faire du design et programmer des choses.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jeremygoulet.ca"
 twitter_username: "JeremyGoulet"

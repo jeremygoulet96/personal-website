@@ -1,29 +1,70 @@
 /****** COLORS ******/
 
 // Base
-$background: #F2EEED;
+$background: #f2eeed;
+$background-dark: #1e1e1e;
 $white: #fff;
+$white-dark: rgba($white, 0.8);
 $black: #000;
-$branding: #843AF9;
+$branding: #843af9;
+$branding-dark: #6531bc;
 
 // Grey
-$darkerGrey: #252525;
-$darkGrey: #3C3C3C;
-$grey: #9A9A9A;
+$darkGrey: #252525;
+$lightGrey: #ababab;
 
-$body: rgba($black, 0.6);
+$header-footer: $white;
+$header-footer-dark: #2b2b2b;
+
+$body: rgba($black, 0.75);
+$body-list: rgba($black, 0.6);
+$body-list-dark: rgba($white, 0.6);
 
 // Blue
-$paleBlue: #53BCFF;
-$blue: #2582FF;
+$paleBlue: #53bcff;
+$blue: #2582ff;
+
+// Projects
+$tim: #f03061;
+$tim-dark: #B51B42;
+$stranger-quiz: #fe2f2f;
+$stranger-quiz-dark: #a60003;
+$implantologie: #39a3d2;
+$implantologie-dark: #00638e;
+$chasseurs-genereux: #ff5b36;
+$chasseurs-genereux-dark: #83240f;
+$cfms: #77dd74;
+$cfms-dark: #286a26;
+$off: #fc2c84;
+$off-dark: #9a1b51;
+$ncweather: #c8a5ff;
+$ncweather-dark: #352255;
+$aurora: #6abdf1;
+$aurora-dark: #2e678a;
+$downloads: #e6d5ff;
+$downloads-dark: $header-footer-dark;
+
+//Downloads
+$iphone-x-mockup: #d7d7d7;
+$iphone-x-mockup-dark: $header-footer-dark;
+$simpledialog: #5196ff;
+$simpledialog-dark: #325b9c;
+$macbook-pro-mockup: #ff7d7d;
+$macbook-pro-mockup-dark: #9b3b3b;
+$macos-folders: #fff393;
+$macos-folders-dark: $header-footer-dark;
+$macos-hdd: $simpledialog;
+$macos-hdd-dark: $simpledialog-dark;
+$ios6-homescreen: $iphone-x-mockup;
+$ios6-homescreen-dark: $iphone-x-mockup-dark;
 
 // Social icons
-$iconBase: #ABABAB;
-$twitter: #00AAEC;
-$dribbble: #EC4989;
-$github: #3E75C3;
-$instagram: #EF307C;
-$linkedin: #007EBB;
+$iconBase: $lightGrey;
+$twitter: #00aaec;
+$dribbble: #ec4989;
+$github: #3e75c3;
+$instagram: #ef307c;
+$linkedin: #007ebb;
 $codepen: $black;
-$medium: #02B875;
-$behance: #1769FF;
+$medium: #02b875;
+$behance: #1769ff;

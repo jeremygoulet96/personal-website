@@ -49,6 +49,7 @@
 @import 'modules/header';
 @import 'modules/footer';
 @import 'modules/list';
+@import 'modules/listcolors';
 @import 'modules/about';
 @import 'modules/work';
 
@@ -60,7 +61,12 @@
 }
 
 h1, h2, h3, h4, h5 {
-  color: $darkerGrey;
+  color: $darkGrey;
+
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    color: $white-dark;
+  }
 }
 
 ul, li {
@@ -85,7 +91,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
   background-color: $background;
-  color: $darkGrey;
+  color: $body;
   position: relative;
   max-width: 100vw;
   min-height: 100vh;
@@ -97,6 +103,12 @@ body {
 
   @media(min-width: $mq-Table) {
     font-size: 17px;
+  }
+
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-dark;
+    color: rgba($white, 0.6);
   }
 }
 

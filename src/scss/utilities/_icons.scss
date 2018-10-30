@@ -5,12 +5,24 @@ a.icon {
 
   // Hamburger
   &--hamburger {
-    background-image: url(../images/icons/hamburger.svg);
+    background-image: url(../images/icons/header/hamburger.svg);
+
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      background-image: url(../images/icons/header/hamburger--light.svg);
+      opacity: 0.8;
+    }
   }
 
   // Close
   &--close {
-    background-image: url(../images/icons/close.svg);
+    background-image: url(../images/icons/header/close.svg);
+
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      background-image: url(../images/icons/header/close--light.svg);
+      opacity: 0.8;
+    }
   }
 }
 

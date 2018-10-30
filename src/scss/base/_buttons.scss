@@ -5,7 +5,7 @@
   position: relative;
   padding: 1rem 0;
   min-width: 250px;
-  box-shadow: inset 0 0 0 2px $darkerGrey;
+  box-shadow: inset 0 0 0 2px $darkGrey;
   background: none;
   color: $white;
   text-decoration: none;
@@ -23,9 +23,14 @@
   outline: 0;
   transition: $transitionNormal;
 
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    box-shadow: inset 0 0 0 2px $branding;
+  }
+
   &:hover, &:focus {
     &:before {
-      box-shadow: inset 0 0 0 2px $darkerGrey;
+      //box-shadow: inset 0 0 0 2px $darkGrey;
       transform: none;
     }
   }
@@ -34,7 +39,7 @@
     transform: scale(0.95);
 
     &:before {
-      box-shadow: inset 0 0 0 2px $darkerGrey;
+      //box-shadow: inset 0 0 0 2px $darkGrey;
       transform: none;
     }
   }
@@ -51,6 +56,11 @@
     z-index: -2;
     transform: translateX(-4px) translateY(4px);
     transition: $transitionNormal;
+
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      background-color: $branding-dark;
+    }
   }
 }
 

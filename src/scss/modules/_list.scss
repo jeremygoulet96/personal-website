@@ -39,6 +39,11 @@ ul.list {
         margin: 2rem 0 0;
         line-height: 2.5rem;
 
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          color: rgba($white, 0.85);
+        }
+
         @media(min-width: $mq-Table) {
           margin: 0;
           font-size: 3.25rem;
@@ -48,9 +53,14 @@ ul.list {
 
       // BODY
       p.item__body {
-        color: $body;
+        color: $body-list;
         margin: 1.5rem 0 2rem;
         line-height: 1.9rem;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          color: $body-list-dark;
+        }
 
         @media(min-width: $mq-Table) {
           margin: 2rem 0 2.5rem;
@@ -73,8 +83,14 @@ ul.list {
             letter-spacing: 1px;
             font-weight: bold;
             text-transform: uppercase;
-            color: $darkerGrey;
+            color: $darkGrey;
             margin-right: 1rem;
+
+            // DARK MODE
+            @media (prefers-color-scheme: dark) {
+              color: $white-dark;
+              opacity: 0.5;
+            }
           }
 
           // Separator
@@ -82,8 +98,14 @@ ul.list {
             display: block;
             height: 2px;
             flex-grow: 1;
-            background-color: $darkerGrey;
+            background-color: $darkGrey;
             opacity: 0.8;
+
+            // DARK MODE
+            @media (prefers-color-scheme: dark) {
+              background-color: $white-dark;
+              opacity: 0.4;
+            }
           }
         }
 

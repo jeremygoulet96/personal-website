@@ -9,6 +9,11 @@ footer.footer {
   margin-top: 3rem;
   padding: $paddingGeneral;
 
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    background-color: $header-footer-dark;
+  }
+
   @supports(padding: max(0px)) {
     padding-left: unquote('max(#{1.5rem}, env(safe-area-inset-left))');
     padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
@@ -31,6 +36,11 @@ footer.footer {
     padding: 1.2rem 0;
     box-shadow: 0 1px 0 0 rgba($black, 0.05);
     width: 100%;
+
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 1px 0 0 rgba($white-dark, 0.1);
+    }
 
     @media(min-width: $mq-Table) {
       width: auto;
@@ -67,5 +77,10 @@ footer.footer {
     font-size: 1rem;
     display: block;
     text-align: center;
+
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      color: rgba($white, 0.8);
+    }
   }
 }

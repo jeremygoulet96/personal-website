@@ -29,9 +29,9 @@ form.form {
     font-family: $font;
     display: inline-block;
     background: rgba($black, 0.05);
+    color: $black;
     border: 0;
     padding: 1rem;
-    color: $black;
     font-weight: normal;
     font-size: 1rem;
     margin-bottom: 0.6rem;
@@ -40,8 +40,18 @@ form.form {
     -moz-appearance: none;
     transition: $transitionNormal;
 
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      background: rgba($white, 0.05);
+      color: $white;
+    }
+
     &:focus {
       background: rgba($black, 0.1);
+      // DARK MODE
+      @media (prefers-color-scheme: dark) {
+        background: rgba($white, 0.1);
+      }
     }
   }
 
@@ -54,6 +64,10 @@ form.form {
   // Placeholder
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: rgba($black, 0.5);
+    // DARK MODE
+    @media (prefers-color-scheme: dark) {
+      color: rgba($white, 0.5);
+    }
   }
   ::-moz-placeholder { /* Firefox 19+ */
     color: rgba($black, 0.5);

@@ -1,0 +1,157 @@
+ul.list {
+  li.list__item {
+    // Projects
+    &#tim-website {
+      picture {
+        background-color: $tim;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $tim-dark;
+        }
+      }
+    }
+    &#stranger-quiz {
+      picture {
+        background-color: $stranger-quiz;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $stranger-quiz-dark;
+        }
+      }
+    }
+    &#institut-implantologie {
+      picture {
+        background-color: $implantologie;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $implantologie-dark;
+        }
+      }
+    }
+    &#chasseurs-genereux {
+      picture {
+        background-color: $chasseurs-genereux;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $chasseurs-genereux-dark;
+        }
+      }
+    }
+    &#consultants-forestiers {
+      picture {
+        background-color: $cfms;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $cfms-dark;
+        }
+      }
+    }
+    &#festival-off {
+      picture {
+        background-color: $off;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $off-dark;
+        }
+      }
+    }
+    &#ncweather {
+      picture {
+        background-color: $ncweather;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $ncweather-dark;
+        }
+      }
+    }
+    &#aurora {
+      picture {
+        background-color: $aurora;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $aurora-dark;
+        }
+      }
+    }
+    &#downloads {
+      picture {
+        background-color: $downloads;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $downloads-dark;
+        }
+      }
+    }
+
+    // Downloads
+    &#iphone-x-mockup {
+      picture {
+        background-color: $iphone-x-mockup;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $iphone-x-mockup-dark;
+        }
+      }
+    }
+    &#simpledialog {
+      picture {
+        background-color: $simpledialog;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $simpledialog-dark;
+        }
+      }
+    }
+    &#macbook-pro-mockup {
+      picture {
+        background-color: $macbook-pro-mockup;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $macbook-pro-mockup-dark;
+        }
+      }
+    }
+    &#macos-folders {
+      picture {
+        background-color: $macos-folders;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $macos-folders-dark;
+        }
+      }
+    }
+    &#macos-hdd {
+      picture {
+        background-color: $macos-hdd;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $macos-hdd-dark;
+        }
+      }
+    }
+    &#ios6-homescreen {
+      picture {
+        background-color: $ios6-homescreen;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $ios6-homescreen-dark;
+        }
+      }
+    }
+  }
+}

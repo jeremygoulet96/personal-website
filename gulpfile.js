@@ -46,7 +46,7 @@ gulp.task('imgConvert', function () {
     // 1x
     gulp.src('src/images/**/hero.png')
         .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('jpg').quality(95);
+            return gmfile.setFormat('png').quality(95);
         }, {
             imageMagick: true
         }))
@@ -54,7 +54,7 @@ gulp.task('imgConvert', function () {
     // 2x, 3x
     gulp.src('src/images/**/hero{@2x,@3x}.png')
         .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('jpg').quality(75);
+            return gmfile.setFormat('png').quality(75);
         }, {
             imageMagick: true
         }))
