@@ -3,7 +3,7 @@
 {% for item in sorted %}
 
 <li class="list__item" id="{{ item.ref }}">
-    <picture>
+    <picture class="loadAnimated">
         <source class="item__image loadAnimated" srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@3x.png 3x" type="image/jpeg" />
         <img class="item__image loadAnimated" src="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png" srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@3x.png 3x" alt="{{ item.title }}" />
     </picture>
