@@ -11,7 +11,7 @@ altUrl:
 ---
 
 {:.loadAnimated}
-Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City currently studying to obtain my bachelor's degree in [product design](https://www.design.ulaval.ca/programmes/baccalaureat-design-produits.html){:.link}{:target="_blank"}. I also studied in a program called [Techniques d'intégration multimédia](http://timcsf.ca/){:.link}{:target="_blank"} in CÉGEP from 2014 to 2018.
+Hi! I’m Jérémy Goulet. I’m a french canadian living in Quebec City currently studying to obtain my bachelor's degree in [graphic design](https://www.design.ulaval.ca/programmes/baccalaureat-design-graphique.html){:.link}{:target="_blank"}. I also studied in a program called [Techniques d'intégration multimédia](http://timcsf.ca/){:.link}{:target="_blank"} in CÉGEP from 2014 to 2018.
 
 {:.loadAnimated}
 I like to design and reverse engineer designs to understands what went through the head of the designer. I also like to make websites and code. I am fluent in HTML, CSS (SASS/SCSS), jQuery, Javascript, TypeScript, and SQL. I'm also learning Swift with Xcode.
