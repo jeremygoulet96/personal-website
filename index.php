@@ -1,3 +1,8 @@
+<?php
+header("Location: /work/");
+exit;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,10 +59,5 @@
     <meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#843AFA">
 </head>
-
-<?php
-header("Location: /work/");
-exit;
-?>
 
 </html>

@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Canonical HTTPS/non-WWW
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} off [OR]
+	RewriteCond %{HTTP_HOST} ^www\.jeremygoulet\.ca [NC]
+	RewriteRule (.*) https://jeremygoulet.ca/$1 [L,R=301]
+</IfModule>
