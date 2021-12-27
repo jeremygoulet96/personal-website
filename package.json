@@ -1,34 +1,27 @@
 {
   "name": "personal-website",
-  "version": "1.0.0",
-  "description": "My own personal website.",
+  "version": "1.0.1",
+  "description": "My own personal website",
   "main": "index.js",
-  "homepage": "https://github.com/jeremygoulet96/personal-website",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jeremygoulet96/personal-website.git"
-  },
-  "author": {
-    "name": "Jérémy Goulet",
-    "email": "jeremy.goulet14@gmail.com"
-  },
+  "repository": "https://github.com/jeremygoulet96/personal-website.git",
+  "author": "Jeremy Goulet <jeremy.goulet14@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.2.1",
-    "normalize-scss": "^7.0.1",
-    "requirejs": "^2.3.5"
-  },
-  "devDependencies": {
-    "@types/jquery": "^3.2.17",
-    "browser-sync": "^2.23.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-gm": "0.0.9",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-svgo": "^1.2.5",
-    "gulp-uglify": "^3.0.0",
+    "@types/jquery": "^3.5.11",
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-gm": "^0.0.9",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
-    "merge-stream": "^1.0.1"
+    "jquery": "^3.6.0",
+    "merge-stream": "^2.0.0",
+    "normalize-scss": "^7.0.1",
+    "requirejs": "^2.3.6",
+    "sass": "^1.45.1"
   }
 }
