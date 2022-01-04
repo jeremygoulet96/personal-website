@@ -1,6 +1,6 @@
 'use strict';
 
-const { src, dest, watch } = require('gulp');
+const { src, dest, watch, series } = require('gulp');
 
 var gulp = require('gulp'),
     sass = require('gulp-sass')(require('sass')),
@@ -12,108 +12,140 @@ var gulp = require('gulp'),
     gm = require('gulp-gm');
 
 // Compile SASS task
-function compileSass(done) {
-  src('src/scss/**/*.scss')
-  .pipe(sourcemaps.init())
-  .pipe(sass({
-      outputStyle: 'expanded'
-  }).on('error', sass.logError))
-  .pipe(sourcemaps.write())
-  .pipe(dest('assets/css'))
-  .pipe(browserSync.stream());
-  done();
+function compileSass() {
+  return src('src/scss/**/*.scss', { sourcemaps: true })
+    .pipe(sass({outputStyle: 'expanded'})
+    .on('error', sass.logError))
+    .pipe(dest('assets/css/'));
 }
 exports.compileSass = compileSass
 
-// Compile SASS task for Prod
-function prod(done) {
-  src('src/scss/**/*.scss')
-  .pipe(sourcemaps.init())
-  .pipe(sass({
-      outputStyle: 'compressed'
-  }).on('error', sass.logError))
-  .pipe(sourcemaps.write())
-  .pipe(dest('assets/css'));
-  done();
+// Compile JS task
+function compileJS() {
+  return src('src/js/*.js')
+    .pipe(dest('assets/js/'));
 }
-exports.prod = prod
+exports.compileJS = compileJS;
 
-// Sass-Watch task
-gulp.task('watch', function() {
-  watch('src/scss/**/*.scss', compileSass);
-  watch('assets/xml/**/*.xml').on('change', browserSync.reload);
-  watch('**/*.php').on('change', browserSync.reload);
-});
+// Uglify SASS task
+function uglifySass() {
+  return src('src/scss/**/*.scss', { sourcemaps: true })
+    .pipe(sass({outputStyle: 'compressed'})
+    .on('error', sass.logError))
+    .pipe(dest('assets/css/'));
+}
+exports.uglifySass = uglifySass;
 
-// Image convert 1x
-gulp.task('img1x', function () {
-    // 1x
-    return src('src/images/**/hero.png')
-        .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('png').quality(95);
-        }, {
-            imageMagick: true
-        }))
-        .pipe(dest('assets/images'));
-})
+// Uglify JS task
+function uglifyJS() {
+  return src('src/js/*.js')
+    .pipe(uglify({
+      compress: { drop_console: true }
+    }))
+    .pipe(dest('assets/js/'));
+}
+exports.uglifyJS = uglifyJS;
 
-// Image convert 2-3x
-gulp.task('img2x', function () {
-    // 2x, 3x
-    return src('src/images/**/hero{@2x,@3x}.png')
-        .pipe(gm(function (gmfile) {
-            return gmfile.setFormat('png').quality(75);
-        }, {
-            imageMagick: true
-        }))
-        .pipe(dest('assets/images'));
-})
+// Browser-Sync Serve
+function browserSyncServe(cb) {
+  browserSync.init({
+    server: {
+      baseDir: 'app/'
+    }
+  });
+  cb();
+}
 
-// Fullsize
-gulp.task('fullsize', function() {
-    return gulp.src('src/images/**/fullsize.png')
-      .pipe(gulp.dest('assets/images'));
-});
+// Reload page
+function browserSyncReload(cb) {
+  browserSync.reload();
+  cb();
+}
 
-gulp.task('imgConvert', gulp.series('img1x', 'img2x', async function() {
-    console.log('Images converted successfully. IMG CONVERT');
-}));
+// Watch Task
+function watchTask() {
+  watch(['src/**/*.php', 'src/**/*.html', 'src/**/*.xml'], browserSyncReload);
+  watch(['src/**/*.scss', 'src/**/*.js'], gulp.series(compileSass, compileJS, browserSyncReload));
+}
+exports.watchTask = watchTask;
 
-gulp.task('img', gulp.series('fullsize', 'imgConvert', async function() {
-    console.log('Images converted successfully. IMG');
-}));
-
-// UglifyJS task
-gulp.task('uglify', function () {
-    return src('assets/js/*.js')
-        .pipe(uglify({
-            compress: {
-                drop_console: true
-            }
-        }))
-        .pipe(dest('assets/js/'));
-});
-
-// jQuery task
-gulp.task('copy-jquery', function() {
-   return src('node_modules/jquery/dist/jquery.min.js')
-      .pipe(dest('assets/js/jquery/'));
-});
+// Watch SASS + JS Task (when using Jekyll's livereload)
+function watchSassJS() {
+  watch(['src/**/*.scss', 'src/**/*.js'], gulp.series(compileSass, compileJS));
+}
+exports.watchSassJS = watchSassJS;
 
 // SVG task
-gulp.task('svg', function () {
-    return src('src/images/icons/**/*.svg')
-        .pipe(svgo())
-        .pipe(dest('assets/images/icons/'));
-});
+function svg() {
+  return src('src/images/**/*.svg')
+    .pipe(svgo())
+    .pipe(dest('assets/images/'));
+}
+exports.svg = svg;
 
-// RequireJS task
-gulp.task('copy-requirejs', function() {
-   return src('node_modules/requirejs/require.js')
-      .pipe(dest('assets/js/requirejs/'));
-});
+// Fonts task
+function fonts() {
+  return src('src/fonts/**/*')
+    .pipe(dest('app/fonts/'));
+}
+exports.fonts = fonts;
 
-// Default task
-gulp.task('default', gulp.series('copy-requirejs', 'copy-jquery', async function() {
-    console.log('Build completed.');
-}));
+// Image convert 1x
+function img1x() {
+  return src('src/images/**/hero.png')
+    .pipe(gm(function(gmfile){
+      return gmfile.setFormat('png').quality(95);
+    },{ imageMagick: true }))
+    .pipe(dest('assets/images'));
+}
+exports.img1x = img1x;
+
+// Image convert 2x-3x
+function img2x() {
+  return src('src/images/**/hero{@2x,@3x}.png')
+    .pipe(gm(function(gmfile){
+      return gmfile.setFormat('png').quality(75);
+    },{ imageMagick: true }))
+    .pipe(dest('assets/images'));
+}
+exports.img2x = img2x;
+
+// Fullsize
+function fullsize() {
+  return gulp.src('src/images/**/fullsize.png')
+    .pipe(gulp.dest('assets/images'));
+}
+exports.fullsize = fullsize;
+
+// Optimize images Gulp Task
+exports.optimizeImages = series(
+  img1x,
+  img2x,
+  fullsize
+);
+
+// Default Gulp Task
+exports.default = series(
+  compileSass,
+  compileJS,
+  browserSyncServe,
+  watchTask
+);
+
+// Prepare Gulp Task
+exports.prepare = series(
+  compileSass,
+  compileJS,
+  fonts,
+  svg,
+  img1x,
+  img2x,
+  fullsize
+);
+
+// Prod Gulp Task
+exports.prod = series(
+  svg,
+  uglifySass,
+  uglifyJS
+);
