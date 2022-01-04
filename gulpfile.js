@@ -86,7 +86,7 @@ exports.svg = svg;
 // Fonts task
 function fonts() {
   return src('src/fonts/**/*')
-    .pipe(dest('app/fonts/'));
+    .pipe(dest('assets/fonts/'));
 }
 exports.fonts = fonts;
 
