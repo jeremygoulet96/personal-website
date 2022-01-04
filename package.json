@@ -7,8 +7,8 @@
   "author": "Jeremy Goulet <jeremy.goulet14@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "gulp prod",
-    "dev": "gulp watch"
+    "jekyllserve": "bundle exec jekyll serve --open-url",
+    "jekyllprod": "JEKYLL_ENV=production bundle exec jekyll build"
   },
   "dependencies": {
     "jquery": "^3.6.0"

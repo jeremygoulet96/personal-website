@@ -14,8 +14,10 @@ var gulp = require('gulp'),
 // Compile SASS task
 function compileSass() {
   return src('src/scss/**/*.scss', { sourcemaps: true })
+    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'})
     .on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(dest('assets/css/'));
 }
 exports.compileSass = compileSass
@@ -29,7 +31,7 @@ exports.compileJS = compileJS;
 
 // Uglify SASS task
 function uglifySass() {
-  return src('src/scss/**/*.scss', { sourcemaps: true })
+  return src('src/scss/**/*.scss', { sourcemaps: false })
     .pipe(sass({outputStyle: 'compressed'})
     .on('error', sass.logError))
     .pipe(dest('assets/css/'));
@@ -71,7 +73,8 @@ exports.watchTask = watchTask;
 
 // Watch SASS + JS Task (when using Jekyll's livereload)
 function watchSassJS() {
-  watch(['src/**/*.scss', 'src/**/*.js'], gulp.series(compileSass, compileJS));
+  watch('src/**/*.scss', compileSass);
+  watch('src/**/*.js', compileJS);
 }
 exports.watchSassJS = watchSassJS;
 
@@ -119,7 +122,7 @@ exports.img2x = img2x;
 
 // Fullsize
 function fullsize() {
-  return gulp.src('src/images/**/fullsize.png')
+  return gulp.src('src/images/**/fullsize.{png,jpg,jpeg,pdf}')
     .pipe(gulp.dest('assets/images'));
 }
 exports.fullsize = fullsize;
