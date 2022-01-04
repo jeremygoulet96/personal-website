@@ -90,6 +90,13 @@ function fonts() {
 }
 exports.fonts = fonts;
 
+// jQuery copy task
+function jquery() {
+  return src('node_modules/jquery/dist/jquery.min.js')
+    .pipe(dest('assets/js/'));
+}
+exports.jquery = jquery;
+
 // Image convert 1x
 function img1x() {
   return src('src/images/**/hero.png')
@@ -136,6 +143,7 @@ exports.default = series(
 exports.prepare = series(
   compileSass,
   compileJS,
+  jquery,
   fonts,
   svg,
   img1x,
