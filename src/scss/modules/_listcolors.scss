@@ -1,6 +1,16 @@
 ul.list {
   li.list__item {
     // Projects
+    &#music-festival-poster {
+      picture {
+        background-color: $music-festival-poster;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $music-festival-poster;
+        }
+      }
+    }
     &#tim-website {
       picture {
         background-color: $tim;
