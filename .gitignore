@@ -3,7 +3,9 @@
 node_modules/
 assets/images/
 assets/downloads/
-src/images/
+assets/js/
+assets/fonts/
+assets/css/
 
 # OS generated files #
 ######################
@@ -15,9 +17,6 @@ src/images/
 Icon?
 ehthumbs.db
 Thumbs.db
-
-# PhpStorm Cache
-.idea/
 
 # Sass Cache remove
 .sass-cache
