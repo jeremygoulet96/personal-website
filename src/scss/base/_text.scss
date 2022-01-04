@@ -22,7 +22,8 @@ h1.title {
   font-size: 3.5rem;
   font-weight: 800;
   letter-spacing: -2px;
-  color: $branding;
+  //color: $branding;
+  color: $body;
   position: relative;
   line-height: 3.8rem;
   animation-delay: 0.25s;
@@ -32,22 +33,22 @@ h1.title {
     color: $branding-dark;
   }
 
-  &:before {
-    content: attr(data-title);
-    position: absolute;
-    opacity: 0.07;
-    color: $black;
-    z-index: -1;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) translateX(40%) scale(1.6);
-
-    // DARK MODE
-    @media (prefers-color-scheme: dark) {
-      color: $white;
-      opacity: 0.05;
-    }
-  }
+  // &:before {
+  //   content: attr(data-title);
+  //   position: absolute;
+  //   opacity: 0.07;
+  //   color: $black;
+  //   z-index: -1;
+  //   top: 50%;
+  //   left: 0;
+  //   transform: translateY(-50%) translateX(40%) scale(1.6);
+  //
+  //   // DARK MODE
+  //   @media (prefers-color-scheme: dark) {
+  //     color: $white;
+  //     opacity: 0.05;
+  //   }
+  // }
 
   @media(min-width: $mq-Table) {
     font-size: 5.3rem;

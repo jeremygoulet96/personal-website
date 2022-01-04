@@ -6,8 +6,8 @@ $background-dark: #1e1e1e;
 $white: #fff;
 $white-dark: rgba($white, 0.8);
 $black: #000;
-$branding: #843af9;
-$branding-dark: #6531bc;
+$branding: $white; //843af9
+$branding-dark: $white-dark; //6531bc
 
 // Grey
 $darkGrey: #252525;
@@ -43,6 +43,8 @@ $aurora: #6abdf1;
 $aurora-dark: #2e678a;
 $downloads: #e6d5ff;
 $downloads-dark: $header-footer-dark;
+$music-festival-poster: #f7298c;
+$music-festival-poster-dark: #992d74;
 
 //Downloads
 $iphone-x-mockup: #d7d7d7;

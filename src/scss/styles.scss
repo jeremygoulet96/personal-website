@@ -116,6 +116,7 @@ main {
   padding: $paddingGeneral;
   margin: 0 auto 7rem auto;
 
+  // iPhone X and +
   @supports(padding: max(0px)) {
     padding-left: unquote('max(#{1.5rem}, env(safe-area-inset-left))');
     padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
