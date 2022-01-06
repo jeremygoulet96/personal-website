@@ -7,9 +7,6 @@ layout: article
 categories: work design school
 permalink: /work/music-festival-poster/
 buttons:
-    - label: Go to website
-      url: https://timcsf.jeremygoulet.ca/
-      target: _blank
     - label: More info
       url: music-festival-poster
 sitemap: false
