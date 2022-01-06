@@ -97,11 +97,14 @@ body {
   min-height: 100vh;
   margin: 0;
   padding-top: 66px;
+
+  // iPhone X and +
   @supports(padding: max(0px)) {
     padding-bottom: unquote('max(#{8.5rem}, env(safe-area-inset-bottom))');
   }
 
-  @media(min-width: $mq-Table) {
+  // Desktop
+  @media(min-width: $mq-Desktop) {
     font-size: 17px;
   }
 
@@ -122,12 +125,9 @@ main {
     padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
   }
 
-  @media(min-width: $mq-Table) {
+  // Desktop
+  @media(min-width: $mq-Desktop) {
     padding: $paddingGeneral;
-  }
-
-  @media(min-width: $minWidthTable) {
-    padding: 0 3rem;
   }
 
   &.large {

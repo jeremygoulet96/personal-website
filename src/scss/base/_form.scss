@@ -48,6 +48,7 @@ form.form {
 
     &:focus {
       background: rgba($black, 0.1);
+
       // DARK MODE
       @media (prefers-color-scheme: dark) {
         background: rgba($white, 0.1);
@@ -64,6 +65,7 @@ form.form {
   // Placeholder
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: rgba($black, 0.5);
+    
     // DARK MODE
     @media (prefers-color-scheme: dark) {
       color: rgba($white, 0.5);

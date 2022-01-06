@@ -14,12 +14,14 @@ footer.footer {
     background-color: $header-footer-dark;
   }
 
+  // iPhone X and +
   @supports(padding: max(0px)) {
     padding-left: unquote('max(#{1.5rem}, env(safe-area-inset-left))');
     padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
   }
 
-  @media(min-width: $mq-Table) {
+  // Desktop
+  @media(min-width: $mq-Desktop) {
     display: flex;
     justify-content: space-between;
     padding: 0 2.5rem;
@@ -42,7 +44,8 @@ footer.footer {
       box-shadow: 0 1px 0 0 rgba($white-dark, 0.1);
     }
 
-    @media(min-width: $mq-Table) {
+    // Desktop
+    @media(min-width: $mq-Desktop) {
       width: auto;
     }
 
@@ -66,7 +69,8 @@ footer.footer {
     justify-content: space-between;
     align-items: center;
 
-    @media(min-width: $mq-Table) {
+    // Desktop
+    @media(min-width: $mq-Desktop) {
       flex-wrap: nowrap;
     }
   }

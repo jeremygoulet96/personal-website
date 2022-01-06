@@ -15,17 +15,18 @@ ul.list {
     div.item__info {
       animation-delay: 0.5s;
 
-      @media(min-width: $mq-Table) {
+      // Desktop
+      @media(min-width: $mq-Desktop) {
         width: 50%;
         margin: 0;
       }
 
-      @media(min-width: $minWidthTablette) {
+      // Tablet
+      @media(min-width: $minWidthTablet) {
         width: 58%;
         position: absolute;
         z-index: 10;
         right: 0;
-        margin-bottom: 10rem;
 
         @-moz-document url-prefix() {
           top: 50%;
@@ -44,7 +45,8 @@ ul.list {
           color: rgba($white, 0.85);
         }
 
-        @media(min-width: $mq-Table) {
+        // Desktop
+        @media(min-width: $mq-Desktop) {
           margin: 0;
           font-size: 3.25rem;
           line-height: 3.25rem;
@@ -62,7 +64,8 @@ ul.list {
           color: $body-list-dark;
         }
 
-        @media(min-width: $mq-Table) {
+        // Desktop
+        @media(min-width: $mq-Desktop) {
           margin: 2rem 0 2.5rem;
         }
       }
@@ -129,11 +132,13 @@ ul.list {
         width: 100%;
       }
 
-      @media(min-width: $mq-Table) {
+      // Desktop
+      @media(min-width: $mq-Desktop) {
         width: auto;
       }
 
-      @media(min-width: $minWidthTablette) {
+      // Tablet
+      @media(min-width: $minWidthTablet) {
         width: 50%;
       }
 
@@ -143,7 +148,8 @@ ul.list {
     &:nth-child(even) {
       flex-direction: row-reverse;
 
-      @media(min-width: $minWidthTablette) {
+      // Tablet
+      @media(min-width: $minWidthTablet) {
         div.item__info {
           left: 0;
         }
@@ -154,7 +160,8 @@ ul.list {
     &:not(:first-child) {
       margin-top: 4rem;
 
-      @media(min-width: $minWidthTablette) {
+      // Tablet
+      @media(min-width: $minWidthTablet) {
         margin-top: 6rem;
       }
     }
@@ -163,7 +170,8 @@ ul.list {
     &:last-child {
       margin-bottom: 4rem;
 
-      @media(min-width: $minWidthTablette) {
+      // Tablet
+      @media(min-width: $minWidthTablet) {
         margin-bottom: 6rem;
       }
     }
