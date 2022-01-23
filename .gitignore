@@ -1,14 +1,7 @@
 # Ignore any asset #
-#########################
 node_modules/
-assets/images/
-assets/downloads/
-assets/js/
-assets/fonts/
-assets/css/
 
 # OS generated files #
-######################
 .DS_Store
 .DS_Store?
 ._*
@@ -28,6 +21,5 @@ Thumbs.db
 *.eslintrc
 
 # Jekyll
-_site
 .jekyll-metadata
 .jekyll-cache
