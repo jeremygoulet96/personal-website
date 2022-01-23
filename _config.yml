@@ -32,24 +32,24 @@ collections:
   telechargements:
     output: false
   work:
-    output: true
+    output: false
   portfolio:
     output: true
 
 local:
-  en:
-    work:
-      name: "Work"
-      url: "/work/"
-    downloads:
-      name: "Downloads"
-      url: "/downloads/"
-    about:
-      name: "About me"
-      url: "/about-me/"
-    contact:
-      name: "Contact"
-      url: "/contact/"
+  # en:
+  #   work:
+  #     name: "Work"
+  #     url: "/work/"
+  #   downloads:
+  #     name: "Downloads"
+  #     url: "/downloads/"
+  #   about:
+  #     name: "About me"
+  #     url: "/about-me/"
+  #   contact:
+  #     name: "Contact"
+  #     url: "/contact/"
   fr:
     work:
       name: "Portfolio"

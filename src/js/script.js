@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
 
   $('.header__action').on('click', function(event) {
     event.preventDefault();

@@ -1,162 +1,187 @@
-'use strict';
+"use strict";
 
-const { src, dest, watch, series } = require('gulp');
+const { src, dest, watch, series } = require("gulp");
 
-var gulp = require('gulp'),
-    sass = require('gulp-sass')(require('sass')),
-    merge = require('merge-stream'),
-    sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify'),
-    browserSync = require('browser-sync').create(),
-    svgo = require('gulp-svgo'),
-    gm = require('gulp-gm');
+let gulp = require("gulp"),
+    del = require("del"),
+    gm = require("gulp-gm"),
+    sass = require("gulp-sass")(require("sass")),
+    sourcemaps = require("gulp-sourcemaps"),
+    svgo = require("gulp-svgo"),
+    uglify = require("gulp-uglify");
 
-// Compile SASS task
-function compileSass() {
-  return src('src/scss/**/*.scss', { sourcemaps: true })
-    .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'expanded'})
-    .on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(dest('assets/css/'));
+/*
+  ----------------------------------
+  PREPARE ASSETS
+  ----------------------------------
+*/
+// Copy Downloads to assets
+function downloads() {
+  return src("src/downloads/**/*.zip")
+    .pipe(dest("assets/downloads/"));
 }
-exports.compileSass = compileSass
+exports.downloads = downloads;
 
-// Compile JS task
-function compileJS() {
-  return src('src/js/*.js')
-    .pipe(dest('assets/js/'));
+// Image convert 1x
+function hero1x() {
+  return src("src/images/**/hero.png")
+    .pipe(gm(function(gmfile){
+      return gmfile.setFormat("png").quality(95);
+    },{ imageMagick: true }))
+    .pipe(dest("assets/images/"));
 }
-exports.compileJS = compileJS;
+exports.hero1x = hero1x;
 
-// Uglify SASS task
-function uglifySass() {
-  return src('src/scss/**/*.scss', { sourcemaps: false })
-    .pipe(sass({outputStyle: 'compressed'})
-    .on('error', sass.logError))
-    .pipe(dest('assets/css/'));
+// Image convert 2x
+function hero2x() {
+  return src("src/images/**/hero@2x.png")
+    .pipe(gm(function(gmfile){
+      return gmfile.setFormat("png").quality(75);
+    },{ imageMagick: true }))
+    .pipe(dest("assets/images/"));
 }
-exports.uglifySass = uglifySass;
+exports.hero2x = hero2x;
 
-// Uglify JS task
-function uglifyJS() {
-  return src('src/js/*.js')
-    .pipe(uglify({
-      compress: { drop_console: true }
-    }))
-    .pipe(dest('assets/js/'));
+// Fullsize
+function fullsize() {
+  return gulp.src("src/images/**/fullsize{.png,.jpg,.jpeg,.pdf}")
+    .pipe(gulp.dest("assets/images/"));
 }
-exports.uglifyJS = uglifyJS;
-
-// Browser-Sync Serve
-function browserSyncServe(cb) {
-  browserSync.init({
-    server: {
-      baseDir: 'app/'
-    }
-  });
-  cb();
-}
-
-// Reload page
-function browserSyncReload(cb) {
-  browserSync.reload();
-  cb();
-}
-
-// Watch Task
-function watchTask() {
-  watch(['src/**/*.php', 'src/**/*.html', 'src/**/*.xml'], browserSyncReload);
-  watch(['src/**/*.scss', 'src/**/*.js'], gulp.series(compileSass, compileJS, browserSyncReload));
-}
-exports.watchTask = watchTask;
-
-// Watch SASS + JS Task (when using Jekyll's livereload)
-function watchSassJS() {
-  watch('src/**/*.scss', compileSass);
-  watch('src/**/*.js', compileJS);
-}
-exports.watchSassJS = watchSassJS;
+exports.fullsize = fullsize;
 
 // SVG task
 function svg() {
-  return src('src/images/**/*.svg')
+  return src("src/images/**/*.svg")
     .pipe(svgo())
-    .pipe(dest('assets/images/'));
+    .pipe(dest("assets/images/"))
 }
 exports.svg = svg;
 
 // Fonts task
 function fonts() {
-  return src('src/fonts/**/*')
-    .pipe(dest('assets/fonts/'));
+  return src("src/fonts/**/*")
+    .pipe(dest("assets/fonts/"))
 }
 exports.fonts = fonts;
 
-// jQuery copy task
-function jquery() {
-  return src('node_modules/jquery/dist/jquery.min.js')
-    .pipe(dest('assets/js/'));
+// favicons task
+function favicons() {
+  return src("src/images/favicons/*{.webmanifest,.xml,.ico,.png}", { "allowEmpty": true })
+    .pipe(dest("assets/images/favicons/"))
 }
-exports.jquery = jquery;
+exports.favicons = favicons;
 
-// Image convert 1x
-function img1x() {
-  return src('src/images/**/hero.png')
-    .pipe(gm(function(gmfile){
-      return gmfile.setFormat('png').quality(95);
-    },{ imageMagick: true }))
-    .pipe(dest('assets/images'));
+// Node modules task
+function nodeModules() {
+  return src([
+    "node_modules/jquery/dist/jquery.min.js"
+  ])
+    .pipe(dest("assets/js/"))
 }
-exports.img1x = img1x;
+exports.nodeModules = nodeModules;
 
-// Image convert 2x-3x
-function img2x() {
-  return src('src/images/**/hero{@2x,@3x}.png')
-    .pipe(gm(function(gmfile){
-      return gmfile.setFormat('png').quality(75);
-    },{ imageMagick: true }))
-    .pipe(dest('assets/images'));
+/*
+  ----------------------------------
+  LOCAL
+  ----------------------------------
+*/
+// Local SASS task
+function sassLocal() {
+  return src("src/scss/**/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "expanded" })
+    .on("error", sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(dest("assets/css/"));
 }
-exports.img2x = img2x;
+exports.sassLocal = sassLocal;
 
-// Fullsize
-function fullsize() {
-  return gulp.src('src/images/**/fullsize.{png,jpg,jpeg,pdf}')
-    .pipe(gulp.dest('assets/images'));
+// Local JS task
+function jsLocal() {
+  return src([
+    "src/js/*.js"
+  ])
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write())
+    .pipe(dest("assets/js/"));
 }
-exports.fullsize = fullsize;
+exports.jsLocal = jsLocal;
 
-// Optimize images Gulp Task
-exports.optimizeImages = series(
-  img1x,
-  img2x,
-  fullsize
-);
+// Watch Task
+function watchTask() {
+  watch("src/**/*.scss", gulp.series(sassLocal)),
+  watch("src/**/*.js", gulp.series(jsLocal)),
+  watch("src/**/hero{*}{.png,.jpg,.jpeg,.ico,.webp}", gulp.series(hero1x, hero2x)),
+  watch("src/**/fullsize{.png,.jpg,.jpeg,.pdf}", gulp.series(fullsize)),
+  watch("src/**/*.svg", gulp.series(svg));
+}
+exports.watchTask = watchTask;
+
+/*
+  ----------------------------------
+  PROD
+  ----------------------------------
+*/
+// Prod SASS task
+function sassProd() {
+  return src("src/scss/**/*.scss", { sourcemaps: false })
+    .pipe(sass({ outputStyle: "compressed" })
+    .on("error", sass.logError))
+    .pipe(dest("assets/css/"));
+}
+exports.sassProd = sassProd;
+
+// Prod JS task
+function jsProd() {
+  return src([
+    "src/js/*.js"
+  ])
+    .pipe(uglify({
+      compress: { drop_console: true }
+    }))
+    .pipe(dest("assets/js/"));
+}
+exports.jsProd = jsProd;
+
+// Clean assets folders
+function cleanAssets() {
+  return del("assets/*/",{ force: true });
+}
+exports.cleanAssets = cleanAssets;
 
 // Default Gulp Task
 exports.default = series(
-  compileSass,
-  compileJS,
-  browserSyncServe,
+  sassLocal,
+  jsLocal,
   watchTask
 );
 
 // Prepare Gulp Task
 exports.prepare = series(
-  compileSass,
-  compileJS,
-  jquery,
+  cleanAssets,
+  sassLocal,
+  jsLocal,
+  nodeModules,
   fonts,
   svg,
-  img1x,
-  img2x,
-  fullsize
+  hero1x,
+  hero2x,
+  fullsize,
+  favicons,
+  downloads
 );
 
 // Prod Gulp Task
 exports.prod = series(
+  cleanAssets,
+  sassProd,
+  jsProd,
+  nodeModules,
+  fonts,
   svg,
-  uglifySass,
-  uglifyJS
+  hero1x,
+  hero2x,
+  fullsize,
+  favicons,
+  downloads
 );

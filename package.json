@@ -1,20 +1,20 @@
 {
   "name": "personal-website",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "My own personal website",
   "main": "index.js",
   "repository": "https://github.com/jeremygoulet96/personal-website.git",
   "author": "Jeremy Goulet <jeremy.goulet14@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "jekyllserve": "bundle exec jekyll serve --open-url",
+    "jekyllserve": "bundle exec jekyll serve",
     "jekyllprod": "JEKYLL_ENV=production bundle exec jekyll build"
   },
   "dependencies": {
     "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cli": "^2.3.0",
@@ -24,8 +24,6 @@
     "gulp-svgo": "^2.2.1",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
-    "merge-stream": "^2.0.0",
-    "normalize-scss": "^7.0.1",
     "sass": "^1.45.1"
   }
 }
