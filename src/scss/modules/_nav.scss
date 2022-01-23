@@ -8,7 +8,7 @@ nav.nav {
   bottom: 0;
   left: 0;
   background-color: $background;
-  transition: transform .6s cubic-bezier(0.50, 0.15, 0.25, 1), background-color 0.25s ease-in-out;
+  transition: transform .6s cubic-bezier(0.50, 0.15, 0.25, 1), background-color 0.25s ease-in-out, backdrop-filter 0.25s ease-in-out;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -48,7 +48,7 @@ nav.nav {
       align-items: center;
       padding: 0;
       width: auto;
-      margin: 0;
+      margin: 0 0 0 5rem;
     }
 
     // Languages

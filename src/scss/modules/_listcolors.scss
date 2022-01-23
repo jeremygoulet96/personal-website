@@ -1,8 +1,88 @@
 ul.list {
   li.list__item {
     // Projects
+    &#william-j-walter-terminal {
+      .itemLink {
+        background-color: $william-j-walter-terminal;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $william-j-walter-terminal;
+        }
+      }
+    }
+    &#william-j-walter-website {
+      .itemLink {
+        background-color: $william-j-walter-website;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $william-j-walter-website;
+        }
+      }
+    }
+    &#electric-car-vi {
+      .itemLink {
+        background-color: $electric-car-vi;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $electric-car-vi;
+        }
+      }
+    }
+    &#square-book-layout {
+      .itemLink {
+        background-color: $square-book-layout;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $square-book-layout;
+        }
+      }
+    }
+    &#faber-castell {
+      .itemLink {
+        background-color: $faber-castell;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $faber-castell;
+        }
+      }
+    }
+    &#magazine-layout {
+      .itemLink {
+        background-color: $magazine-layout;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $magazine-layout;
+        }
+      }
+    }
+    &#nuancier-logo {
+      .itemLink {
+        background-color: $nuancier-logo;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $nuancier-logo;
+        }
+      }
+    }
+    &#pictogram-system {
+      .itemLink {
+        background-color: $pictogram-system;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $pictogram-system;
+        }
+      }
+    }
     &#music-festival-poster {
-      picture {
+      .itemLink {
         background-color: $music-festival-poster;
 
         // DARK MODE
@@ -11,8 +91,38 @@ ul.list {
         }
       }
     }
+    &#photo-contemporary-narcissism {
+      .itemLink {
+        background-color: $photo-contemporary-narcissism;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $photo-contemporary-narcissism;
+        }
+      }
+    }
+    &#olfa-manual {
+      .itemLink {
+        background-color: $olfa-manual;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $olfa-manual;
+        }
+      }
+    }
+    &#book-cover {
+      .itemLink {
+        background-color: $book-cover;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $book-cover;
+        }
+      }
+    }
     &#tim-website {
-      picture {
+      .itemLink {
         background-color: $tim;
 
         // DARK MODE
@@ -22,7 +132,7 @@ ul.list {
       }
     }
     &#stranger-quiz {
-      picture {
+      .itemLink {
         background-color: $stranger-quiz;
 
         // DARK MODE
@@ -32,7 +142,7 @@ ul.list {
       }
     }
     &#institut-implantologie {
-      picture {
+      .itemLink {
         background-color: $implantologie;
 
         // DARK MODE
@@ -42,7 +152,7 @@ ul.list {
       }
     }
     &#chasseurs-genereux {
-      picture {
+      .itemLink {
         background-color: $chasseurs-genereux;
 
         // DARK MODE
@@ -52,7 +162,7 @@ ul.list {
       }
     }
     &#consultants-forestiers {
-      picture {
+      .itemLink {
         background-color: $cfms;
 
         // DARK MODE
@@ -61,8 +171,18 @@ ul.list {
         }
       }
     }
+    &#theo-turgeon {
+      .itemLink {
+        background-color: $theoturgeon;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $theoturgeon-dark;
+        }
+      }
+    }
     &#festival-off {
-      picture {
+      .itemLink {
         background-color: $off;
 
         // DARK MODE
@@ -71,8 +191,18 @@ ul.list {
         }
       }
     }
+    &#headfm {
+      .itemLink {
+        background-color: $headfm;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: $headfm-dark;
+        }
+      }
+    }
     &#ncweather {
-      picture {
+      .itemLink {
         background-color: $ncweather;
 
         // DARK MODE
@@ -82,7 +212,7 @@ ul.list {
       }
     }
     &#aurora {
-      picture {
+      .itemLink {
         background-color: $aurora;
 
         // DARK MODE
@@ -92,7 +222,7 @@ ul.list {
       }
     }
     &#downloads {
-      picture {
+      .itemLink {
         background-color: $downloads;
 
         // DARK MODE
@@ -104,7 +234,7 @@ ul.list {
 
     // Downloads
     &#iphone-x-mockup {
-      picture {
+      .itemLink {
         background-color: $iphone-x-mockup;
 
         // DARK MODE
@@ -114,7 +244,7 @@ ul.list {
       }
     }
     &#simpledialog {
-      picture {
+      .itemLink {
         background-color: $simpledialog;
 
         // DARK MODE
@@ -124,7 +254,7 @@ ul.list {
       }
     }
     &#macbook-pro-mockup {
-      picture {
+      .itemLink {
         background-color: $macbook-pro-mockup;
 
         // DARK MODE
@@ -134,7 +264,7 @@ ul.list {
       }
     }
     &#macos-folders {
-      picture {
+      .itemLink {
         background-color: $macos-folders;
 
         // DARK MODE
@@ -144,7 +274,7 @@ ul.list {
       }
     }
     &#macos-hdd {
-      picture {
+      .itemLink {
         background-color: $macos-hdd;
 
         // DARK MODE
@@ -154,7 +284,7 @@ ul.list {
       }
     }
     &#ios6-homescreen {
-      picture {
+      .itemLink {
         background-color: $ios6-homescreen;
 
         // DARK MODE

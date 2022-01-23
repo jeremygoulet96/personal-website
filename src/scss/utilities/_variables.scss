@@ -1,13 +1,15 @@
 /****** VARIABLES ******/
 
 // $font: Inter, "Inter", Avenir Next, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-$font: Larsseit, "Larsseit", Avenir Next, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+// $font: Larsseit, "Larsseit", Avenir Next, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$font: Inter, "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 
 $paddingGeneral: 0 1.5rem;
 
 $widthLarge: 1280px; // nav
 $widthMedium: $mq-Desktop; // main
-$widthSmall: 800px; // article
+$widthSmall: 980px; // article
+$widthArticle: 700px; // article
 
 // Transitions
 $transitionSlow: all 0.4s ease-in-out;

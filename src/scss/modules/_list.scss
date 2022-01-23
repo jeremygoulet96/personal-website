@@ -2,177 +2,83 @@
 
 // List
 ul.list {
+  display: flex;
   width: 100%;
+  flex-wrap: wrap;
 
   // Item
   li.list__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 0.5em;
 
-    // Infos
-    div.item__info {
-      animation-delay: 0.5s;
+    // Desktop
+    @media(min-width: $mq-Desktop) {
 
-      // Desktop
-      @media(min-width: $mq-Desktop) {
-        width: 50%;
-        margin: 0;
+    }
+
+    // Tablet
+    @media(min-width: $minWidthTablet) {
+      width: 50%;
+
+      &:nth-child(even) {
+        padding-left: 0.25em;
       }
 
-      // Tablet
-      @media(min-width: $minWidthTablet) {
-        width: 58%;
-        position: absolute;
-        z-index: 10;
-        right: 0;
-
-        @-moz-document url-prefix() {
-          top: 50%;
-          transform: translateY(-50%);
-        }
-      }
-
-        // TITLE
-      h2.item__title {
-        font-size: 2.5rem;
-        margin: 2rem 0 0;
-        line-height: 2.5rem;
-
-        // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          color: rgba($white, 0.85);
-        }
-
-        // Desktop
-        @media(min-width: $mq-Desktop) {
-          margin: 0;
-          font-size: 3.25rem;
-          line-height: 3.25rem;
-        }
-      }
-
-      // BODY
-      p.item__body {
-        color: $body-list;
-        margin: 1.5rem 0 2rem;
-        line-height: 1.9rem;
-
-        // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          color: $body-list-dark;
-        }
-
-        // Desktop
-        @media(min-width: $mq-Desktop) {
-          margin: 2rem 0 2.5rem;
-        }
-      }
-
-      // Actions
-      div.actions {
-
-        div.labelContainer {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-bottom: 1.5rem;
-
-          // Label
-          label.actions--label {
-            display: block;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: $darkGrey;
-            margin-right: 1rem;
-
-            // DARK MODE
-            @media (prefers-color-scheme: dark) {
-              color: $white-dark;
-              opacity: 0.5;
-            }
-          }
-
-          // Separator
-          div.label__separator {
-            display: block;
-            height: 2px;
-            flex-grow: 1;
-            background-color: $darkGrey;
-            opacity: 0.8;
-
-            // DARK MODE
-            @media (prefers-color-scheme: dark) {
-              background-color: $white-dark;
-              opacity: 0.4;
-            }
-          }
-        }
-
-        // Buttons
-        div.buttonContainer {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
+      &:nth-child(odd) {
+        padding-right: 0.25em;
       }
     }
 
-    // Image
-    picture {
+    a.itemLink {
       display: block;
-      position: relative;
       width: 100%;
+      position: relative;
 
-      img.item__image {
-        display: block;
-        width: 100%;
-      }
-
-      // Desktop
-      @media(min-width: $mq-Desktop) {
-        width: auto;
-      }
-
-      // Tablet
-      @media(min-width: $minWidthTablet) {
-        width: 50%;
-      }
-
-    }
-
-    // Change order
-    &:nth-child(even) {
-      flex-direction: row-reverse;
-
-      // Tablet
-      @media(min-width: $minWidthTablet) {
+      &:hover {
         div.item__info {
-          left: 0;
+          filter: none;
+        }
+
+        picture {
+          filter: opacity(15%);
         }
       }
-    }
 
-    // Space between lists
-    &:not(:first-child) {
-      margin-top: 4rem;
+      // Image
+      picture {
+        display: block;
+        position: relative;
+        width: 100%;
+        transition: $transitionSlow;
 
-      // Tablet
-      @media(min-width: $minWidthTablet) {
-        margin-top: 6rem;
+        .item__image {
+          display: block;
+          width: 100%;
+        }
+
       }
-    }
 
-    // Last list space after
-    &:last-child {
-      margin-bottom: 4rem;
+      // Infos
+      div.item__info {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        filter: opacity(0%);
+        transition: $transitionSlow;
 
-      // Tablet
-      @media(min-width: $minWidthTablet) {
-        margin-bottom: 6rem;
+          // TITLE
+        h2.item__title {
+          width: 100%;
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          color: $background;
+        }
       }
     }
   }
