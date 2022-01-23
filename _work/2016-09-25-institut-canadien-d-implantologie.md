@@ -10,7 +10,7 @@ buttons:
     - label: See full size
       url: /assets/images/work/institut-implantologie/fullsize.png
       target: _blank
-sitemap: false
+published: true
 ---
 
 This project was realized while I was working for Spektrum Media. During my internship, I had to rejuvenate the *Institut canadien d'implantologie*'s website. In the end, we decided to explore a completely different style. Nonetheless, I really enjoyed working on this project.

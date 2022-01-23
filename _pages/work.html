@@ -11,6 +11,6 @@ altUrl:
     lang: ca-FR
 ---
 
-{% assign sorted = site.work | sort: 'date' | reverse | where:"lang", page.lang %}
+{% assign list = site.work | sort: 'date' | reverse | where:"lang", page.lang %}
 
-{% include list.html %}
+{% include list-portfolio.html %}

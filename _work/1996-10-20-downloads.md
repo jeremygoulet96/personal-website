@@ -9,7 +9,7 @@ permalink: /work/downloads/
 buttons:
     - label: Downloads
       url: /downloads/
-sitemap: false
+published: true
 ---
 
 Everyone likes free stuff, even you! Head over to my Downloads page!

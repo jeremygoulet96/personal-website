@@ -17,7 +17,7 @@ buttons:
     - label: Thomas Finch
       url: http://thomasfinch.me/
       target: _blank
-sitemap: false
+published: true
 ---
 
 ## Title 2sdf

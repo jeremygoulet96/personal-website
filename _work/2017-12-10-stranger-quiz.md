@@ -10,7 +10,7 @@ buttons:
     - label: Go to website
       url: https://stranger-quiz.herokuapp.com/
       target: _blank
-sitemap: false
+published: true
 ---
 
 The project was to create an interactive quiz based on Service Workers on the subject of our choice. The quiz had to be accessible for everyone, with a certain focus on keyboard controls. It was also necessary that the quiz be readable by a screen reader. The project had to be as light as possible because, through Progressive Web Apps, users could install it on their mobile devices.

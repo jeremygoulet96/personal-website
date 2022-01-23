@@ -17,7 +17,7 @@ buttons:
     - label: Thomas Finch
       url: http://thomasfinch.me/
       target: _blank
-sitemap: false
+published: true
 ---
 
 NCWeather est un widget météo minimaliste pour iOS 7 et 8. J'ai développé cette application/tweak en collaboration avec Thomas Finch, un développeur très talentueux. Vous pouvez voir plus de son travail dans la section ci-dessous.

@@ -9,7 +9,7 @@ permalink: /portfolio/downloads/
 buttons:
     - label: Téléchargements
       url: /telechargements/
-sitemap: false
+published: true
 ---
 
 Tout le monde aime les choses gratuites, même vous! Rendez-vous sur ma page Téléchargements!

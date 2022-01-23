@@ -3,6 +3,7 @@ title: Mockup iPhone X
 lang: fr
 ref: iphone-x-mockup
 categories: downloads sketch
+permalink: /assets/downloads/iphone-x-mockup/iphone-x-mockup.zip
 buttons:
     - label: Télécharger le fichier Sketch
       url: /assets/downloads/iphone-x-mockup/iphone-x-mockup.zip
