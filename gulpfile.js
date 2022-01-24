@@ -22,30 +22,50 @@ function downloads() {
 }
 exports.downloads = downloads;
 
-// Image convert 1x
+// Hero convert 1x
 function hero1x() {
   return src("src/images/**/hero.png")
     .pipe(gm(function(gmfile){
-      return gmfile.setFormat("png").quality(95);
+      return gmfile.quality(95);
     },{ imageMagick: true }))
     .pipe(dest("assets/images/"));
 }
 exports.hero1x = hero1x;
 
-// Image convert 2x
+// Hero convert 2x
 function hero2x() {
   return src("src/images/**/hero@2x.png")
     .pipe(gm(function(gmfile){
-      return gmfile.setFormat("png").quality(75);
+      return gmfile.quality(75);
     },{ imageMagick: true }))
     .pipe(dest("assets/images/"));
 }
 exports.hero2x = hero2x;
 
+// Image convert 1x
+function imgArticle1x() {
+  return src("src/images/work/**/article/*.{png,jpg,jpeg}")
+    .pipe(gm(function(gmfile){
+      return gmfile.quality(95);
+    },{ imageMagick: true }))
+    .pipe(dest("assets/images/work/"));
+}
+exports.imgArticle1x = imgArticle1x;
+
+// Image convert 2x
+function imgArticle2x() {
+  return src("src/images/work/**/article/*@2x.{png,jpg,jpeg}")
+    .pipe(gm(function(gmfile){
+      return gmfile.quality(75);
+    },{ imageMagick: true }))
+    .pipe(dest("assets/images/work/"));
+}
+exports.imgArticle2x = imgArticle2x;
+
 // Fullsize
 function fullsize() {
-  return gulp.src("src/images/**/fullsize{.png,.jpg,.jpeg,.pdf}")
-    .pipe(gulp.dest("assets/images/"));
+  return gulp.src("src/images/work/**/fullsize.{png,jpg,jpeg,pdf}")
+    .pipe(gulp.dest("assets/images/work/"));
 }
 exports.fullsize = fullsize;
 
@@ -66,7 +86,7 @@ exports.fonts = fonts;
 
 // favicons task
 function favicons() {
-  return src("src/images/favicons/*{.webmanifest,.xml,.ico,.png}", { "allowEmpty": true })
+  return src("src/images/favicons/*.{webmanifest,xml,ico,png}", { "allowEmpty": true })
     .pipe(dest("assets/images/favicons/"))
 }
 exports.favicons = favicons;
@@ -111,8 +131,11 @@ exports.jsLocal = jsLocal;
 function watchTask() {
   watch("src/**/*.scss", gulp.series(sassLocal)),
   watch("src/**/*.js", gulp.series(jsLocal)),
-  watch("src/**/hero{*}{.png,.jpg,.jpeg,.ico,.webp}", gulp.series(hero1x, hero2x)),
-  watch("src/**/fullsize{.png,.jpg,.jpeg,.pdf}", gulp.series(fullsize)),
+  watch("src/**/hero.{png,jpg,jpeg,ico,webp}", gulp.series(hero1x)),
+  watch("src/**/hero@2x.{png,jpg,jpeg,ico,webp}", gulp.series(hero2x)),
+  watch("src/images/work/*/article/*.{png,jpg,jpeg,ico,webp}", gulp.series(imgArticle1x)),
+  watch("src/images/work/*/article/*@2x.{png,jpg,jpeg,ico,webp}", gulp.series(imgArticle2x)),
+  watch("src/**/fullsize.{png,jpg,jpeg,pdf}", gulp.series(fullsize)),
   watch("src/**/*.svg", gulp.series(svg));
 }
 exports.watchTask = watchTask;
@@ -166,6 +189,8 @@ exports.prepare = series(
   svg,
   hero1x,
   hero2x,
+  imgArticle1x,
+  imgArticle2x,
   fullsize,
   favicons,
   downloads
