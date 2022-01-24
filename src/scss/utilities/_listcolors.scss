@@ -1,23 +1,13 @@
 ul.list {
   li.list__item {
     // Projects
-    &#william-j-walter-terminal {
+    &#william-j-walter {
       .itemLink {
-        background-color: $william-j-walter-terminal;
+        background-color: $william-j-walter;
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $william-j-walter-terminal;
-        }
-      }
-    }
-    &#william-j-walter-website {
-      .itemLink {
-        background-color: $william-j-walter-website;
-
-        // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: $william-j-walter-website;
+          background-color: $william-j-walter;
         }
       }
     }
