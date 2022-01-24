@@ -8,7 +8,7 @@ categories:
     - label: Design graphique
     - label: Design imprimé
 permalink: /portfolio/photo-narcissisme-contemporain/
-published: false
+published: true
 ---
 
 ![My helpful screenshot](/assets/images/work/music-festival-poster/article/code.png)

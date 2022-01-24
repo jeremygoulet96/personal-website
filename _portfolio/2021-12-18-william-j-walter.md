@@ -1,14 +1,14 @@
 ---
-title: Borne William J. Walter
+title: William J. Walter
 navItem: Portfolio
 lang: fr
-ref: william-j-walter-terminal
+ref: william-j-walter
 layout: article
 categories:
     - label: Design graphique
     - label: Design imprimé
-permalink: /portfolio/borne-epicerie-william-j-walter/
-published: false
+permalink: /portfolio/william-j-walter/
+published: true
 ---
 
 ![My helpful screenshot](/assets/images/work/music-festival-poster/article/code.png)
