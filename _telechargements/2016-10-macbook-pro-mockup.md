@@ -3,6 +3,7 @@ title: Mockup MacBook Pro
 lang: fr
 ref: macbook-pro-mockup
 categories: downloads sketch
+permalink: /assets/downloads/macbook-pro-mockup/macbook-pro-mockup.zip
 buttons:
  -  label: Télécharger le fichier Sketch
     url: /assets/downloads/macbook-pro-mockup/macbook-pro-mockup.zip

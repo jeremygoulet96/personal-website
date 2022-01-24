@@ -3,6 +3,7 @@ title: iOS 6 Homescreen
 lang: en
 ref: ios6-homescreen
 categories: downloads sketch
+permalink: /assets/downloads/ios6-homescreen/ios6-homescreen.zip
 buttons:
  -  label: Download Sketch file
     url: /assets/downloads/ios6-homescreen/ios6-homescreen.zip

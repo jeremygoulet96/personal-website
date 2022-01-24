@@ -3,6 +3,7 @@ title: Icônes des disques macOS
 lang: fr
 ref: macos-hdd
 categories: downloads sketch
+permalink: /assets/downloads/macos-hdd/macos-hdd.zip
 buttons:
  -  label: Télécharger le fichier Sketch
     url: /assets/downloads/macos-hdd/macos-hdd.zip

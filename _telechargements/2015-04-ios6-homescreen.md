@@ -3,6 +3,7 @@ title: Écran d'accueil iOS 6
 lang: fr
 ref: ios6-homescreen
 categories: downloads sketch
+permalink: /assets/downloads/ios6-homescreen/ios6-homescreen.zip
 buttons:
  -  label: Télécharger le fichier Sketch
     url: /assets/downloads/ios6-homescreen/ios6-homescreen.zip

@@ -3,6 +3,7 @@ title: Custom folders for macOS
 lang: en
 ref: macos-folders
 categories: downloads sketch
+permalink: /assets/downloads/macos-folders/macos-folders.zip
 buttons:
  -  label: Download Sketch file
     url: /assets/downloads/macos-folders/macos-folders.zip

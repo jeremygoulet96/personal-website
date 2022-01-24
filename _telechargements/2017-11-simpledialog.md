@@ -3,6 +3,7 @@ title: SimpleDialog
 lang: fr
 ref: simpledialog
 categories: downloads plugin
+permalink: https://github.com/jeremygoulet96/SimpleDialog
 buttons:
     - label: Voir sur Github
       url: https://github.com/jeremygoulet96/SimpleDialog

@@ -3,6 +3,7 @@ title: Dossiers personnalisés pour macOS
 lang: fr
 ref: macos-folders
 categories: downloads sketch
+permalink: /assets/downloads/macos-folders/macos-folders.zip
 buttons:
  -  label: Télécharger le fichier Sketch
     url: /assets/downloads/macos-folders/macos-folders.zip

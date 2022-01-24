@@ -8,6 +8,7 @@ permalink: /about-me/
 altUrl:
     url: /a-propos/
     lang: ca-FR
+published: false
 ---
 
 {:.loadAnimated}

@@ -8,6 +8,7 @@ permalink: /a-propos/
 altUrl:
     url: /about/
     lang: en-US
+published: true
 ---
 {:.loadAnimated}
 Bonjour! Je m'appelle Jérémy Goulet et je suis présentement au [Baccalauréat en design graphique](https://www.design.ulaval.ca/programmes/baccalaureat-design-graphique.html){:.link}{:target="_blank"} à l'Université Laval. J'ai étudié en [Techniques d'intégration multimédia](http://timcsf.ca/){:.link}{:target="_blank"} au CÉGEP entre 2014 et 2018.
