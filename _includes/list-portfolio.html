@@ -1,24 +1,67 @@
+{% assign list = site.portfolio | sort: "date" | reverse | where:"lang", page.lang %}
+
 <ul class="list">
 
-{% for item in list %}
+  {% for item in list %}
 
-<li class="list__item" id="{{ item.ref }}">
-  <a href="{{ item.permalink }}" class="itemLink loadAnimated">
-    <picture class="loadAnimated">
-        <source class="item__image loadAnimated" srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@3x.png 3x" type="image/jpeg" />
-        <img class="item__image loadAnimated" src="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png" srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@3x.png 3x" alt="{{ item.title }}" />
-    </picture>
-    <div class="item__info">
+  {% assign year = item.date | date: "%Y" %}
+
+  <li class="list__item loadAnimated" id="{{ item.ref }}">
+
+    {% if item.layout == "article" %}
+    <a href="{{ item.permalink }}" class="itemLink">
+    {% else %}
+    <div class="itemLink">
+    {% endif %}
+
+      <picture>
+        <source class="item__image"
+          srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x"
+          type="image/jpeg" />
+        <img class="item__image" src="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png"
+          srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x"
+          alt="{{ item.title }}" />
+      </picture>
+      <div class="item__info">
+
+        <span class="date">{{ year }}</span>
         <h2 class="item__title">{{ item.title }}</h2>
-        <div class="categories">
-            {% for categorie in item.categories %}
-            <span class="categorie">{{ categorie.label }}</span>
-            {% endfor %}
-        </div>
-    </div>
-  </a>
-</li>
 
-{% endfor %}
+        {% if item.categories %}
+        <ul class="categories">
+          {% for category in item.categories %}
+          <li class="category">#{{ category | downcase }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if item.description %}
+        <p class="description">
+          {{ item.description }}
+        </p>
+        {% endif %}
+
+        <ul class="buttonList">
+          {% if item.layout == "article" %}
+          <li><span class="button">Voir ma démarche</span></li></li>
+          {% else %}
+            {% for button in item.buttons %}
+            <li>
+              <a class="button{% if button.target == "external" %} external{% endif %}" href="{{ button.url }}"{% if button.target == "external" %} target="_blank"{% endif %}>{{ button.label }}</a></li>
+            {% endfor %}
+          {% endif %}
+        </ul>
+
+      </div>
+
+    {% if item.layout == "article" %}
+    </a>
+    {% else %}
+    </div>
+    {% endif %}
+
+  </li>
+
+  {% endfor %}
 
 </ul>

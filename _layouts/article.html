@@ -1,19 +1,30 @@
 ---
 layout: default
+assetsLink: /assets/images/work/
 ---
+
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign day = page.date | date: "%d" %}
+{% assign month = site.data.fr.months[m] %}
+{% assign year = page.date | date: "%Y" %}
+
+{% capture category %}{{ page.categories | first }}{% endcapture %}
 
 <main class="narrow">
     <div class="maxWidth">
-
         <article class="article-container loadAnimated">
-            <!-- <section> -->
-
+            <section class="title-container">
+                <span class="date">{{ month | upcase }} {{ year }}&nbsp;&nbsp;—&nbsp;&nbsp;{{ page.where | upcase }}</span>
                 <h1 class="title">{{ page.title }}</h1>
+                <ul class="categories">
+                    {% for category in page.categories %}
+                    <li class="category">#{{ category | downcase }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
 
-                {{ content }}
+            {{ content }}
 
-            <!-- </section> -->
         </article>
-
     </div>
 </main>
