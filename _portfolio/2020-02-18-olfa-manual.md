@@ -4,10 +4,15 @@ navItem: Portfolio
 lang: fr
 ref: olfa-manual
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Design imprimé
+softwares:
+    - Illustrator
 permalink: /portfolio/schematisation-graphique-dun-objet-industriel/
+assetsLink: /assets/images/work/
+buttons:
+    - Voir ma démarche
 published: true
 ---
 

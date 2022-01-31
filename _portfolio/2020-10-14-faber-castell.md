@@ -1,12 +1,16 @@
 ---
-title: Publicité Faber-Castell
+title: Faber-Castell
 navItem: Portfolio
 lang: fr
 ref: faber-castell
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Publicité
+    - 3D
+softwares:
+    - Cinema 4D
+    - Photoshop
 permalink: /portfolio/faber-castell/
 published: true
 ---

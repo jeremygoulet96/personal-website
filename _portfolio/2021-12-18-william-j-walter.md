@@ -5,8 +5,13 @@ lang: fr
 ref: william-j-walter
 layout: article
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Logo
+    - Site web
+    - Design
+    - UX
+    - Interface
+softwares:
+    - Figma
 permalink: /portfolio/william-j-walter/
 published: true
 ---

@@ -4,9 +4,13 @@ navItem: Portfolio
 lang: fr
 ref: book-cover
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Design imprimé
+softwares:
+    - Illustrator
+    - Photoshop
+    - InDesign
 permalink: /portfolio/jaquette-livre/
 published: true
 ---

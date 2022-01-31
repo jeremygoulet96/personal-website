@@ -4,9 +4,12 @@ navItem: Portfolio
 lang: fr
 ref: square-book-layout
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Design imprimé
+softwares:
+    - InDesign
+    - Illustrator
 permalink: /portfolio/mise-en-page-livre/
 published: true
 ---

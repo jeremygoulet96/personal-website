@@ -4,9 +4,12 @@ navItem: Portfolio
 lang: fr
 ref: magazine-layout
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Mise en page
+    - Design imprimé
+softwares:
+    - InDesign
 permalink: /portfolio/mise-en-page-magazine/
 published: true
 ---

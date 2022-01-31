@@ -4,9 +4,14 @@ navItem: Portfolio
 lang: fr
 ref: pictogram-system
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Design imprimé
+    - Icônes
+    - UX
+softwares:
+    - Illustrator
+    - Sketch
 permalink: /portfolio/systeme-de-pictogrammes/
 published: true
 ---

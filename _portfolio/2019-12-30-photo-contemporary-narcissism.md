@@ -4,10 +4,17 @@ navItem: Portfolio
 lang: fr
 ref: photo-contemporary-narcissism
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Photographie
+    - Retouche photo
+softwares:
+    - Photoshop
+    - Bridge
 permalink: /portfolio/photo-narcissisme-contemporain/
+assetsLink: /assets/images/work/
+buttons:
+    - Voir ma démarche
 published: true
 ---
 

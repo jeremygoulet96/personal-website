@@ -1,18 +1,18 @@
 ---
-title: Visualisation d'information d'une voiture électrique
+title: La mer est belle
 navItem: Portfolio
 lang: fr
-ref: electric-car-vi
+ref: la-mer-est-belle
 layout: article
-where: Bac. en design graphique (Université Laval)
 categories:
-    - Icônes
-    - UX
-    - Design imprimé
+    - Emballage
+    - Image de marque
 softwares:
     - Figma
-permalink: /portfolio/visualisation-dinformation-dune-voiture-electrique/
-published: true
+    - Photoshop
+    - Illustrator
+permalink: /portfolio/la-mer-est-belle/
+published: false
 ---
 
 ![My helpful screenshot](/assets/images/work/music-festival-poster/article/code.png)

@@ -1,12 +1,16 @@
 ---
-title: Logo Nuancier
+title: Le Nuancier
 navItem: Portfolio
 lang: fr
 ref: nuancier-logo
 layout: article
+where: Bac. en design graphique (Université Laval)
 categories:
-    - label: Design graphique
-    - label: Design imprimé
+    - Image de marque
+    - Design imprimé
+softwares:
+    - Illustrator
+    - InDesign
 permalink: /portfolio/logo-nuancier/
 published: true
 ---
