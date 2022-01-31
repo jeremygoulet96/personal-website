@@ -4,23 +4,23 @@
   background: rgba($black, 0.3);
 
   // DARK MODE
-  @media (prefers-color-scheme: dark) {
-    background: rgba($branding, 0.3);
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   background: rgba($branding, 0.3);
+  // }
 }
 ::-moz-selection {
   background: rgba($black, 0.3);
 
   // DARK MODE
-  @media (prefers-color-scheme: dark) {
-    background: rgba($branding, 0.3);
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   background: rgba($branding, 0.3);
+  // }
 }
 
 // Title
 h1.title {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -2px;
   color: $body;
   position: relative;
@@ -28,9 +28,9 @@ h1.title {
   animation-delay: 0.25s;
 
   // DARK MODE
-  @media (prefers-color-scheme: dark) {
-    color: $branding-dark;
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   color: $branding-dark;
+  // }
 
   @media(min-width: $mq-Desktop) {
     font-size: 5.3rem;
@@ -48,11 +48,34 @@ a.link {
   text-decoration: none;
 
   // DARK MODE
-  @media (prefers-color-scheme: dark) {
-    color: $branding-dark;
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   color: $branding-dark;
+  // }
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+p {
+  font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+article.article-container {
+	
+	p {
+		letter-spacing: 0.25px;
+	}
+
+    code {
+        font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+        padding: 1em 1em;
+        margin: 0;
+        font-size: 85%;
+        background-color: rgba(27,31,35,0.05);
+        border-radius: 6px;
+        display: block;
+    }
 }

@@ -1,11 +1,6 @@
 /****** ARTICLE ******/
 
-.article-container {
-	// text-align: justify;
-	font-weight: 500;
-	font-size: 1rem;
-	line-height: 1.6rem;
-	letter-spacing: 0.25px;
+article.article-container {
 
 	section, .article-img-description, .article-text {
 		max-width: $widthArticle;
@@ -13,22 +8,48 @@
 		margin: 0 auto;
 	}
 
-	.title {
-		font-size: 2.5rem;
-		text-align: left;
-		letter-spacing: 0.025px;
-		line-height: 3rem;
-		font-weight: 700;
-		max-width: $widthArticle;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	h2, h3, h4, h5 {
+		padding-top: 2rem;
 	}
 
-	.article-img-container {
+	section.title-container {
+		padding: 6rem 0 1rem;
+
+		span.date {
+			font-size: 0.8rem;
+			font-weight: 600;
+			letter-spacing: 0.8px;
+			color: rgba($body, 0.5);
+		}
+	
+		h1.title {
+			font-size: 3rem;
+			text-align: left;
+			letter-spacing: 0.025px;
+			line-height: 3rem;
+			font-weight: 700;
+			margin: 2rem 0 2rem;
+		}
+
+		// CATEGORIES
+        ul.categories {
+			display: flex;
+			flex-wrap: wrap;
+  
+			li.category {
+			  display: inline-block;
+			  padding: 0.5rem 1rem;
+			  color: $background;
+			  background-color: $body;
+			  font-size: 0.8rem;
+			  border-radius: 100px;
+			  margin: 0 0.5rem 0.5rem 0;
+			}
+		  }
+	}
+
+	div.article-img-container {
 		margin: 2rem 0;
-		font-size: 0.9rem;
-		font-weight: 500;
 
 		&.img-large {
 			width: 100%;
@@ -44,52 +65,13 @@
 		img {
 			width: 100%;
 			margin-bottom: 1rem;
-			border-radius: 6px;
+			border-radius: 8px;
 		}
-	}
-}
 
-// FONT STYLES
-// Bold
-strong {
-	// font-family: $font;
-	// font-weight: 600;
-}
-  
-// Italic
-em {
-	// font-family: $font;
-	// font-style: italic;
-}
-  
-code {
-	font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-	padding: 1em 1em;
-	margin: 0;
-	font-size: 85%;
-	background-color: rgba(27,31,35,0.05);
-	border-radius: 6px;
-	display: block;
-}
-  
-// QUOTE
-blockquote {
-	margin: 2rem 0.35rem 0;
-
-	// Quote
-	p {
-		display: block;
-		font-weight: 600;
-		padding-left: 1rem;
-		box-shadow: -3px 0 0 0 $darkGrey;
-	}
-}
-  
-// Author
-p.quote__author {
-	margin: 0 0.35rem 2rem;
-
-	a.link {
-		font-weight: 600;
+		span.article-img-description {
+			font-size: 0.8rem;
+			color: rgba($body, 0.5);
+			font-weight: 500;
+		}
 	}
 }

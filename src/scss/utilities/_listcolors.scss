@@ -7,7 +7,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $william-j-walter;
+          background-color: darken($william-j-walter, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($william-j-walter, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken(darken($william-j-walter, 15%), 5%);
         }
       }
     }
@@ -17,7 +25,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $electric-car-vi;
+          background-color: darken($electric-car-vi, 15%);
+        }
+      }
+      li.category {
+        background-color: darken($electric-car-vi, 10%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken(darken($electric-car-vi, 15%), 5%);
         }
       }
     }
@@ -27,7 +43,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $square-book-layout;
+          background-color: darken($square-book-layout, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($square-book-layout, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($square-book-layout, 10%);
         }
       }
     }
@@ -37,7 +61,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $faber-castell;
+          background-color: darken($faber-castell, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($faber-castell, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($faber-castell, 20%);
         }
       }
     }
@@ -47,7 +79,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $magazine-layout;
+          background-color: darken($magazine-layout, 15%);
+        }
+      }
+      li.category {
+        background-color: darken($magazine-layout, 10%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($magazine-layout, 20%)
         }
       }
     }
@@ -57,7 +97,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $nuancier-logo;
+          background-color: darken($nuancier-logo, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($nuancier-logo, 10%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($nuancier-logo, 5%);
         }
       }
     }
@@ -67,7 +115,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $pictogram-system;
+          background-color: darken($pictogram-system, 20%);
+        }
+      }
+      li.category {
+        background-color: darken($pictogram-system, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($pictogram-system, 15%);
         }
       }
     }
@@ -77,17 +133,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $music-festival-poster;
+          background-color: darken($music-festival-poster, 5%);
         }
       }
-    }
-    &#photo-contemporary-narcissism {
-      .itemLink {
-        background-color: $photo-contemporary-narcissism;
+      li.category {
+        background-color: lighten($music-festival-poster, 15%);
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $photo-contemporary-narcissism;
+          background-color: lighten($music-festival-poster, 5%);
         }
       }
     }
@@ -97,17 +151,55 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $olfa-manual;
+          background-color: darken($olfa-manual, 15%);
+        }
+      }
+      li.category {
+        background-color: darken($olfa-manual, 10%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($olfa-manual, 20%);
+        }
+      }
+    }
+    &#photo-contemporary-narcissism {
+      .itemLink {
+        background-color: $photo-contemporary-narcissism;
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($photo-contemporary-narcissism, 15%);
+        }
+      }
+      li.category {
+        background-color: darken($photo-contemporary-narcissism, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($photo-contemporary-narcissism, 20%);
         }
       }
     }
     &#book-cover {
       .itemLink {
         background-color: $book-cover;
+        
+        .item__info .item__title {
+          color: $body;
+        }
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $book-cover;
+          background-color: darken($book-cover, 30%);
+        }
+      }
+      li.category {
+        background-color: darken($book-cover, 65%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          // background-color: darken($book-cover, 65%);
         }
       }
     }
@@ -117,7 +209,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $tim-dark;
+          background-color: darken($tim, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($tim, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($tim, 25%);
         }
       }
     }
@@ -127,7 +227,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $stranger-quiz-dark;
+          background-color: darken($stranger-quiz, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($stranger-quiz, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($stranger-quiz, 25%);
         }
       }
     }
@@ -137,7 +245,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $implantologie-dark;
+          background-color: darken($implantologie, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($implantologie, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($implantologie, 25%);
         }
       }
     }
@@ -147,7 +263,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $chasseurs-genereux-dark;
+          background-color: darken($chasseurs-genereux, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($chasseurs-genereux, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($chasseurs-genereux, 25%);
         }
       }
     }
@@ -157,7 +281,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $cfms-dark;
+          background-color: darken($cfms, 15%);
+        }
+      }
+      li.category {
+        background-color: darken($cfms, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($cfms, 30%);
         }
       }
     }
@@ -167,7 +299,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $theoturgeon-dark;
+          background-color: darken($theoturgeon, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($theoturgeon, 10%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($theoturgeon, 20%);
         }
       }
     }
@@ -177,7 +317,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $off-dark;
+          background-color: darken($off, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($off, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($off, 25%);
         }
       }
     }
@@ -187,7 +335,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $headfm-dark;
+          background-color: darken($headfm, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($headfm, 15%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($headfm, 25%);
         }
       }
     }
@@ -197,7 +353,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $ncweather-dark;
+          background-color: darken($ncweather, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($ncweather, 5%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($ncweather, 25%);
         }
       }
     }
@@ -207,7 +371,15 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $aurora-dark;
+          background-color: darken($aurora, 15%);
+        }
+      }
+      li.category {
+        background-color: lighten($aurora, 5%);
+
+        // DARK MODE
+        @media (prefers-color-scheme: dark) {
+          background-color: darken($aurora, 25%);
         }
       }
     }
@@ -217,7 +389,7 @@ ul.list {
 
         // DARK MODE
         @media (prefers-color-scheme: dark) {
-          background-color: $downloads-dark;
+          background-color: darken($downloads, 15%);
         }
       }
     }

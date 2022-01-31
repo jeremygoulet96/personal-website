@@ -19,7 +19,6 @@
  * Footer
  * List
  * About me
- * Work
  * Article
  * GENERAL ---------
 */
@@ -35,7 +34,7 @@
 
 /****** BASE ******/
 @import "base/inter";
-@import "base/larsseit";
+// @import "base/larsseit";
 @import "base/text";
 @import "base/buttons";
 @import "base/form";
@@ -46,7 +45,6 @@
 @import "modules/footer";
 @import "modules/list";
 @import "modules/about";
-@import "modules/work";
 @import "modules/article";
 
 /****** GENERAL ******/
@@ -55,14 +53,21 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
-  color: $darkGrey;
+// h1, h2, h3, h4, h5 {
+//   color: $darkGrey;
 
-  // DARK MODE
-  @media (prefers-color-scheme: dark) {
-    color: $white-dark;
-  }
-}
+//   // DARK MODE
+//   @media (prefers-color-scheme: dark) {
+//     color: $white-dark;
+//   }
+// }
+
+// a {
+//   transition: $transitionNormal;
+//   &:active {
+//     transform: scale(0.95);
+//   }
+// }
 
 ul, li {
   list-style: none;
@@ -103,10 +108,10 @@ body {
   }
 
   // DARK MODE
-  @media (prefers-color-scheme: dark) {
-    background-color: $background-dark;
-    color: rgba($white, 0.6);
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   background-color: $background-dark;
+  //   color: rgba($white, 0.6);
+  // }
 }
 
 main {

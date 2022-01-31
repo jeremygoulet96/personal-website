@@ -43,15 +43,15 @@ header.header {
       }
 
       // DARK MODE
-      @media (prefers-color-scheme: dark) {
-        background-color: $header-footer-dark;
+      // @media (prefers-color-scheme: dark) {
+      //   background-color: $header-footer-dark;
 
-        @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
-          background: rgba(lighten($header-footer-dark, 1.3), 0.7);
-          -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
-        }
-      }
+      //   @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+      //     background: rgba(lighten($header-footer-dark, 1.3), 0.7);
+      //     -webkit-backdrop-filter: saturate(180%) blur(20px);
+      //     backdrop-filter: saturate(180%) blur(20px);
+      //   }
+      // }
     }
 
     // On desktop, the header has the backdrop-filter and background-color
@@ -67,20 +67,20 @@ header.header {
       }
 
       @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba($background, 0.8);
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
       }
 
-      @media (prefers-color-scheme: dark) {
-        background-color: $header-footer-dark;
+      // @media (prefers-color-scheme: dark) {
+      //   background-color: $header-footer-dark;
 
-        @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
-          background: rgba(lighten($header-footer-dark, 1.3), 0.7);
-          -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
-        }
-      }
+      //   @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+      //     background: rgba(lighten($header-footer-dark, 1.3), 0.7);
+      //     -webkit-backdrop-filter: saturate(180%) blur(20px);
+      //     backdrop-filter: saturate(180%) blur(20px);
+      //   }
+      // }
     }
   }
 
@@ -116,9 +116,9 @@ header.header {
       transition: $transitionNormal;
 
       // DARK MODE
-      @media (prefers-color-scheme: dark) {
-        color: $white-dark;
-      }
+      // @media (prefers-color-scheme: dark) {
+      //   color: $white-dark;
+      // }
 
       &:hover {
         opacity: 0.5;

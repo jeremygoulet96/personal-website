@@ -41,18 +41,18 @@ form.form {
     transition: $transitionNormal;
 
     // DARK MODE
-    @media (prefers-color-scheme: dark) {
-      background: rgba($white, 0.05);
-      color: $white;
-    }
+    // @media (prefers-color-scheme: dark) {
+    //   background: rgba($white, 0.05);
+    //   color: $white;
+    // }
 
     &:focus {
       background: rgba($black, 0.1);
 
       // DARK MODE
-      @media (prefers-color-scheme: dark) {
-        background: rgba($white, 0.1);
-      }
+      // @media (prefers-color-scheme: dark) {
+      //   background: rgba($white, 0.1);
+      // }
     }
   }
 
@@ -67,9 +67,9 @@ form.form {
     color: rgba($black, 0.5);
     
     // DARK MODE
-    @media (prefers-color-scheme: dark) {
-      color: rgba($white, 0.5);
-    }
+    // @media (prefers-color-scheme: dark) {
+    //   color: rgba($white, 0.5);
+    // }
   }
   ::-moz-placeholder { /* Firefox 19+ */
     color: rgba($black, 0.5);

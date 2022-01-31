@@ -1,73 +1,59 @@
 /****** BUTTONS ******/
 
+.buttonList {
+  padding-top: 1rem;
+  text-align: left;
+  width: 100%;
+  //display: flex;
+  //flex-wrap: wrap;
+
+  li {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 .button {
   display: inline-block;
-  position: relative;
-  padding: 1rem 0;
-  min-width: 250px;
-  box-shadow: inset 0 0 0 2px $darkGrey;
   background: none;
-  color: $black;
+  position: relative;
   text-decoration: none;
+  color: $background;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-family: $font;
-  border: 0;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  flex-grow: 1;
-  flex-basis: 40%; //when 3 buttons
-  cursor: pointer;
-  outline: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   transition: $transitionNormal;
-  background-color: $background;
 
-  @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
-    background-color: rgba($white, 0.3);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -5px;
+    background-color: $background;
+    opacity: 1;
+    transition: $transitionNormal;
   }
 
-  // DARK MODE
-  @media (prefers-color-scheme: dark) {
-    background-color: $background-dark;
-    box-shadow: inset 0 0 0 2px $branding;
-    color: $white-dark;
-
-    &:hover, &:focus {
-      color: $body;
-    }
-
-    @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
-      background-color: rgba($darkGrey, 0.7);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      backdrop-filter: saturate(180%) blur(20px);
-    }
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url("../images/icons/external-link.svg");
+    position: relative;
+    top: 0;
+    margin-left: 4px;
   }
 
   &:hover, &:focus {
-    background-color: $white;
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
-}
-
-// Only on links
-a.button {
-  // Tablet
-  @media(min-width: $minWidthTablet) {
-    // When more than 1 button
-    &:nth-child(even) {
-      margin-left: 1rem;
+    &:before {
+      width: 100%;
     }
   }
-}
-
-// Form button
-button.button {
-  margin-top: 1rem;
 }
