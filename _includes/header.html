@@ -11,6 +11,9 @@
                     <a class="nav__link {% if page.navItem == menu[1].name %} nav__link--active {% endif %}" href="{{ menu[1].url }}">{{ menu[1].name }}</a>
                 </li>
                 {% endfor %}
+                <li class="nav__item">
+                    <a class="nav__link" href="mailto: info@jeremygoulet.ca">Me contacter</a>
+                </li>
                 <!-- <li class="nav__items">
                     <div class="nav__languages">
                         {% assign pages = site.pages | where:"ref", page.ref | sort: 'lang' %}

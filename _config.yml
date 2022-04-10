@@ -60,9 +60,9 @@ local:
     about:
       name: "À propos"
       url: "/a-propos/"
-    contact:
-      name: "Me contacter"
-      url: "/me-contacter/"
+    # contact:
+    #   name: "Me contacter"
+    #   url: "/me-contacter/"
 
 # Include in processing.
 include:

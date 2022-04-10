@@ -20,9 +20,9 @@ exit;
 
     <title>Jérémy Goulet | Portfolio</title>
 
-    <meta name="description" content="Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement au baccalauréat en design graphique à Québec. J'aime faire du design et programmer des choses.">
+    <meta name="description" content="Bonjour! Je m'appelle Jérémy Goulet et je termine actuellement mon baccalauréat en design graphique à Québec.">
 
-    <meta name="keywords" content="design, web, intégration, multimédia, french, quebec, québec, english, canada, TIM, ste-foy, sainte-foy, apple, iPhone, developer, front-end">
+    <meta name="keywords" content="design, web, intégration, multimédia, french, quebec, québec, english, canada, TIM, ste-foy, sainte-foy, ulaval, Laval, bdg, apple, iPhone, developer, front-end">
     <meta name="author" content="Jérémy Goulet">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -34,7 +34,7 @@ exit;
     <meta property="og:image" content="/assets/images/favicons/ogp/portfolio.png">
     <meta property="og:url" content="https://www.jeremygoulet.ca/portfolio/">
 
-    <meta property="og:description" content="Bonjour! Je m'appelle Jérémy Goulet et j'étudie actuellement au baccalauréat en design graphique à Québec. J'aime faire du design et programmer des choses.">
+    <meta property="og:description" content="Bonjour! Je m'appelle Jérémy Goulet et je termine actuellement mon baccalauréat en design graphique à Québec.">
     <meta property="og:locale" content="fr_CA">
     <meta property="og:locale:alternate" content="en_US">
 
