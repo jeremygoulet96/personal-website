@@ -3,7 +3,8 @@ title: Vous voulez des goodies gratuits?
 navItem: Portfolio
 lang: fr
 ref: downloads
-layout: article
+layout: none
+# layout: article
 permalink: /portfolio/downloads/
 buttons:
     - label: Téléchargements

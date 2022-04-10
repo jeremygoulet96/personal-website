@@ -87,10 +87,6 @@ La solution finale devait allier le confort de lecture (lisibilité), l’expres
 
 ## Couleurs
 
-L'affiche a prioritairement été créée dans Illustrator, puis finalisée dans Photoshop.
-
-La solution finale devait allier le confort de lecture (lisibilité), l’expression du thème et l’impact visuel propre au format affiche.
-
 </section>
 
 
@@ -117,13 +113,13 @@ La solution finale devait allier le confort de lecture (lisibilité), l’expres
 
 
 
-<section markdown="1">
+<!-- <section markdown="1">
 
-Objectifs
+## Objectifs
 
 - Maîtriser différentes notions et variables typographiques dans le contexte de l’impact visuel du format affiche.
 - Maîtriser la composition du contenu de l’affiche à l’aide de différents types de systèmes d’organisation typographique.
 - Développer différents systèmes graphiques ayant un équilibre et une cohérence entre l’aspect fonctionnel de l’objet et l’expression du thème étudié.
 - Développer une versatilité et une originalité dans sa méthodologie de recherche et dans l’ensemble de ses compositions.
 
-</section>
+</section> -->

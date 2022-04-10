@@ -3,7 +3,8 @@ title: Institut canadien d'implantologie
 navItem: Portfolio
 lang: fr
 ref: institut-implantologie
-layout: article
+layout: none
+# layout: article
 categories: work website
 permalink: /portfolio/institut-canadien-d-implantologie/
 buttons:

@@ -26,6 +26,7 @@ h1.title {
   position: relative;
   line-height: 3.8rem;
   animation-delay: 0.25s;
+  // font-family: PPAgrandir-Wide, "PPAgrandir-Wide", Inter, "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 
   // DARK MODE
   // @media (prefers-color-scheme: dark) {
@@ -44,7 +45,7 @@ p.subHead {
 
 // LINK
 a.link {
-  color: $branding;
+  color: rgba($black, 0.5);
   text-decoration: none;
 
   // DARK MODE

@@ -3,7 +3,8 @@ title: Jaquette d'un livre
 navItem: Portfolio
 lang: fr
 ref: book-cover
-layout: article
+layout: none
+# layout: article
 where: Bac. en design graphique (Université Laval)
 categories:
     - Design imprimé

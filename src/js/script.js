@@ -5,13 +5,13 @@ jQuery(function() {
     openCloseNav();
   });
 
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 0) {
-       $('.header').addClass('header--inTransition');
-    } else {
-       $('.header').removeClass('header--inTransition');
-    }
-  });
+  // $(window).scroll(function(){
+  //   if($(this).scrollTop() > 0) {
+  //      $('.header').addClass('header--inTransition');
+  //   } else {
+  //      $('.header').removeClass('header--inTransition');
+  //   }
+  // });
 });
 
 function openCloseNav() {

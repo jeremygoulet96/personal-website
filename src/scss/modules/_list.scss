@@ -27,14 +27,12 @@ ul.list {
       display: block;
       width: 100%;
       position: relative;
+      transition: $transitionNormal;
 
       &:hover {
+        transform: translateY(-3px);
         div.item__info {
           filter: none;
-        }
-
-        picture {
-          filter: opacity(15%);
         }
       }
 
@@ -43,7 +41,7 @@ ul.list {
         display: block;
         position: relative;
         width: 100%;
-        transition: $transitionSlow;
+        transition: $transitionNormal;
 
         // filter: opacity(15%);
 
@@ -64,18 +62,20 @@ ul.list {
         height: 100%;
         display: flex;
         flex-flow: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         padding: 4rem;
+        background: linear-gradient(0deg,rgba(0,0,0,.5) 14%, transparent);
         filter: opacity(0%);
-        transition: $transitionSlow;
+        transition: $transitionNormal;
 
         span.date {
           align-self: flex-start;
           font-size: 1rem;
           font-weight: 600;
           letter-spacing: 0.8px;
-          color: rgba($background, 0.8);
+          // color: rgba($background, 0.8);
+          color: white;
           margin-bottom: 1rem;
         }
 
@@ -83,10 +83,11 @@ ul.list {
         h2.item__title {
           width: 100%;
           font-size: 2.5rem;
+          font-weight: 400;
           line-height: 2.5rem;
           color: $background;
           margin: 0;
-          padding-bottom: 2rem;
+          // padding-bottom: 2rem;
         }
 
         // CATEGORIES

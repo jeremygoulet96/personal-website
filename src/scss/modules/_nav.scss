@@ -7,11 +7,20 @@ nav.nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: $background;
+  // background-color: $background;
   transition: transform .6s cubic-bezier(0.50, 0.15, 0.25, 1), background-color 0.25s ease-in-out, backdrop-filter 0.25s ease-in-out;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  // mobile
+  @media(max-width: $mq-Desktop) {
+    @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+      background-color: rgba($background, 0.75);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+  }
 
   // DARK MODE
   // @media (prefers-color-scheme: dark) {

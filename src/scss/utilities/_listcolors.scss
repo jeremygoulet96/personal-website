@@ -14,9 +14,9 @@ ul.list {
         background-color: lighten($william-j-walter, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken(darken($william-j-walter, 15%), 5%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken(darken($william-j-walter, 15%), 5%);
+        // }
       }
     }
     &#electric-car-vi {
@@ -32,9 +32,9 @@ ul.list {
         background-color: darken($electric-car-vi, 10%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken(darken($electric-car-vi, 15%), 5%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken(darken($electric-car-vi, 15%), 5%);
+        // }
       }
     }
     &#square-book-layout {
@@ -50,9 +50,9 @@ ul.list {
         background-color: lighten($square-book-layout, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($square-book-layout, 10%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($square-book-layout, 10%);
+        // }
       }
     }
     &#faber-castell {
@@ -68,9 +68,9 @@ ul.list {
         background-color: lighten($faber-castell, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($faber-castell, 20%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($faber-castell, 20%);
+        // }
       }
     }
     &#magazine-layout {
@@ -86,9 +86,9 @@ ul.list {
         background-color: darken($magazine-layout, 10%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($magazine-layout, 20%)
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($magazine-layout, 20%)
+        // }
       }
     }
     &#nuancier-logo {
@@ -104,9 +104,9 @@ ul.list {
         background-color: lighten($nuancier-logo, 10%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($nuancier-logo, 5%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($nuancier-logo, 5%);
+        // }
       }
     }
     &#pictogram-system {
@@ -122,9 +122,9 @@ ul.list {
         background-color: darken($pictogram-system, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($pictogram-system, 15%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($pictogram-system, 15%);
+        // }
       }
     }
     &#music-festival-poster {
@@ -140,9 +140,9 @@ ul.list {
         background-color: lighten($music-festival-poster, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: lighten($music-festival-poster, 5%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: lighten($music-festival-poster, 5%);
+        // }
       }
     }
     &#olfa-manual {
@@ -158,9 +158,9 @@ ul.list {
         background-color: darken($olfa-manual, 10%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($olfa-manual, 20%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($olfa-manual, 20%);
+        // }
       }
     }
     &#photo-contemporary-narcissism {
@@ -176,17 +176,31 @@ ul.list {
         background-color: darken($photo-contemporary-narcissism, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($photo-contemporary-narcissism, 20%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($photo-contemporary-narcissism, 20%);
+        // }
       }
     }
     &#book-cover {
       .itemLink {
         background-color: $book-cover;
-        
-        .item__info .item__title {
-          color: $body;
+
+        .item__title {
+          color: lighten($body, 10%);
+        }
+        .date {
+          color: lighten($body, 10%);
+        }
+        .button {
+          color: lighten($body, 10%);
+
+          &:before {
+            background-color: lighten($body, 10%);
+          }
+
+          &:after {
+            background-image: url("../images/icons/external-link-dark.svg");
+          }
         }
 
         // DARK MODE
@@ -198,9 +212,9 @@ ul.list {
         background-color: darken($book-cover, 65%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          // background-color: darken($book-cover, 65%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($book-cover, 65%);
+        // }
       }
     }
     &#tim-website {
@@ -216,9 +230,9 @@ ul.list {
         background-color: lighten($tim, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($tim, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($tim, 25%);
+        // }
       }
     }
     &#stranger-quiz {
@@ -234,9 +248,9 @@ ul.list {
         background-color: lighten($stranger-quiz, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($stranger-quiz, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($stranger-quiz, 25%);
+        // }
       }
     }
     &#institut-implantologie {
@@ -252,9 +266,9 @@ ul.list {
         background-color: lighten($implantologie, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($implantologie, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($implantologie, 25%);
+        // }
       }
     }
     &#chasseurs-genereux {
@@ -270,9 +284,9 @@ ul.list {
         background-color: lighten($chasseurs-genereux, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($chasseurs-genereux, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($chasseurs-genereux, 25%);
+        // }
       }
     }
     &#consultants-forestiers {
@@ -288,9 +302,9 @@ ul.list {
         background-color: darken($cfms, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($cfms, 30%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($cfms, 30%);
+        // }
       }
     }
     &#theo-turgeon {
@@ -306,9 +320,9 @@ ul.list {
         background-color: lighten($theoturgeon, 10%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($theoturgeon, 20%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($theoturgeon, 20%);
+        // }
       }
     }
     &#festival-off {
@@ -324,9 +338,9 @@ ul.list {
         background-color: lighten($off, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($off, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($off, 25%);
+        // }
       }
     }
     &#headfm {
@@ -342,9 +356,9 @@ ul.list {
         background-color: lighten($headfm, 15%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($headfm, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($headfm, 25%);
+        // }
       }
     }
     &#ncweather {
@@ -360,9 +374,9 @@ ul.list {
         background-color: lighten($ncweather, 5%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($ncweather, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($ncweather, 25%);
+        // }
       }
     }
     &#aurora {
@@ -378,9 +392,9 @@ ul.list {
         background-color: lighten($aurora, 5%);
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($aurora, 25%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($aurora, 25%);
+        // }
       }
     }
     &#downloads {
@@ -388,9 +402,9 @@ ul.list {
         background-color: $downloads;
 
         // DARK MODE
-        @media (prefers-color-scheme: dark) {
-          background-color: darken($downloads, 15%);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   background-color: darken($downloads, 15%);
+        // }
       }
     }
 

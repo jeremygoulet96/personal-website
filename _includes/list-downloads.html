@@ -2,29 +2,48 @@
 
 <ul class="list">
 
-  {% for item in list %}
+  {% for download in list %}
 
-  <li class="list__item loadAnimated" id="{{ item.ref }}">
-    <a href="{{ item.permalink }}" class="itemLink">
+  {% assign year = download.date | date: "%Y" %}
+
+  <li class="list__item loadAnimated" id="{{ download.ref }}">
+    <div class="itemLink">
+
       <picture>
         <source class="item__image"
-          srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x"
+          srcset="/assets/images/{{ page.listCategory }}/{{ download.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ download.ref }}/hero@2x.png 2x"
           type="image/jpeg" />
-        <img class="item__image" src="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png"
-          srcset="/assets/images/{{ page.listCategory }}/{{ item.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ item.ref }}/hero@2x.png 2x"
-          alt="{{ item.title }}" />
+        <img class="item__image" src="/assets/images/{{ page.listCategory }}/{{ download.ref }}/hero.png"
+          srcset="/assets/images/{{ page.listCategory }}/{{ download.ref }}/hero.png 1x, /assets/images/{{ page.listCategory }}/{{ download.ref }}/hero@2x.png 2x"
+          alt="{{ download.title }}" />
       </picture>
       <div class="item__info">
-        <h2 class="item__title">{{ item.title }}</h2>
-        <!-- <div class="actions">
-            <div class="buttonContainer">
-                {% for button in item.buttons %}
-                <a class="button" {% if button.target %} target="{{ button.target }}" {% endif %} href="{{ button.url }}">{{ button.label }}</a>
-                {% endfor %}
-            </div>
-        </div> -->
+
+        <span class="date">{{ year }}</span>
+        <h2 class="item__title">{{ download.title }}</h2>
+
+        {% if download.categories %}
+        <ul class="categories">
+          {% for category in download.categories %}
+          <li class="category">#{{ category | downcase }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if download.description %}
+        <p class="description">
+          {{ download.description }}
+        </p>
+        {% endif %}
+
+        <ul class="buttonList">
+          {% for button in download.buttons %}
+          <li><a class="button{% if button.target == "external" %} external{% endif %}" href="{{ button.url }}"{% if button.target == "external" %} target="_blank"{% endif %}>{{ button.label }}</a></li>
+          {% endfor %}
+        </ul>
+
       </div>
-    </a>
+    </div>
   </li>
 
   {% endfor %}

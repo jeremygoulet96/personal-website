@@ -8,11 +8,7 @@
 
   <li class="list__item loadAnimated" id="{{ item.ref }}">
 
-    {% if item.layout == "article" %}
     <a href="{{ item.permalink }}" class="itemLink">
-    {% else %}
-    <div class="itemLink">
-    {% endif %}
 
       <picture>
         <source class="item__image"
@@ -27,21 +23,21 @@
         <span class="date">{{ year }}</span>
         <h2 class="item__title">{{ item.title }}</h2>
 
-        {% if item.categories %}
+        <!-- {% if item.categories %}
         <ul class="categories">
           {% for category in item.categories %}
           <li class="category">#{{ category | downcase }}</li>
           {% endfor %}
         </ul>
-        {% endif %}
+        {% endif %} -->
 
-        {% if item.description %}
+        <!-- {% if item.description %}
         <p class="description">
           {{ item.description }}
         </p>
-        {% endif %}
+        {% endif %} -->
 
-        <ul class="buttonList">
+        <!-- <ul class="buttonList">
           {% if item.layout == "article" %}
           <li><span class="button">Voir ma démarche</span></li></li>
           {% else %}
@@ -50,15 +46,10 @@
               <a class="button{% if button.target == "external" %} external{% endif %}" href="{{ button.url }}"{% if button.target == "external" %} target="_blank"{% endif %}>{{ button.label }}</a></li>
             {% endfor %}
           {% endif %}
-        </ul>
+        </ul> -->
 
       </div>
-
-    {% if item.layout == "article" %}
     </a>
-    {% else %}
-    </div>
-    {% endif %}
 
   </li>
 
