@@ -21,7 +21,7 @@ J’ai toujours aimé le design et la technologie. Dans mon parcours scolaire, j
 J'aime faire du design et du "reverse engineer" afin de comprendre ce qui a poussé l'auteur d'un design à l'avoir fait ainsi. J'aime aussi créer des sites web et programmer. Je tape couramment en HTML, CSS (SASS/SCSS), jQuery, Javascript, TypeScript et SQL. J'ai aussi commencé à apprendre Swift avec Xcode.
 
 {:.loadAnimated}
-À l'été 2016, j'ai eu la chance d'avoir un poste de stagiaire chez [Spektrum Media](https://spektrummedia.com/){:.link}{:target="_blank"} dans la ville de Québec. Pour mon stage final au printemps 2018, j'ai travaillé chez [O2 Web](https://o2web.ca/){:.link}{:target="_blank"}.
+À l'été 2016, j'ai eu la chance d'avoir un poste de stagiaire chez [Spektrum Media](https://spektrummedia.com/){:.link}{:target="_blank"}. Pour mon stage final au printemps 2018, j'ai travaillé chez [O2 Web](https://o2web.ca/){:.link}{:target="_blank"}.
 
 
 <!-- {:.loadAnimated}
