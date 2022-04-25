@@ -120,6 +120,46 @@ published: true
 
 <section markdown="1">
 
+## Maquette réelle
+
+</section>
+
+![Maquette réelle 2](/assets/images/work/la-mer-est-belle/article/realbox2.jpg)
+<!-- <span class="article-img-description">Maquette réelle 2</span> -->
+{: .article-img-container .img-large }
+
+![Maquette réelle 1](/assets/images/work/la-mer-est-belle/article/realbox1.jpg)
+<!-- <span class="article-img-description">Maquette réelle 1</span> -->
+{: .article-img-container .img-large }
+
+
+
+<section markdown="1">
+
+## Modèle 3D
+
+</section>
+
+![Adobe Dimension](/assets/images/work/la-mer-est-belle/article/dimension.jpg)
+<!-- <span class="article-img-description">Adobe Dimension</span> -->
+{: .article-img-container .img-large }
+
+
+
+<section markdown="1">
+
+## Die-cut
+
+</section>
+
+![Plans](/assets/images/work/la-mer-est-belle/article/plans.jpg)
+<!-- <span class="article-img-description">Plans</span> -->
+{: .article-img-container .img-large }
+
+
+
+<section markdown="1">
+
 ## Logo
 
 </section>
