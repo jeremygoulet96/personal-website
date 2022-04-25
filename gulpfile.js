@@ -206,6 +206,8 @@ exports.prod = series(
   svg,
   hero1x,
   hero2x,
+  imgArticle1x,
+  imgArticle2x,
   fullsize,
   favicons,
   downloads
