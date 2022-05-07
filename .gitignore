@@ -23,4 +23,4 @@ Thumbs.db
 # Jekyll
 .jekyll-metadata
 .jekyll-cache
-.vendor
+vendor/
