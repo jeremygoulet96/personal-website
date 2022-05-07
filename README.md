@@ -34,17 +34,10 @@ brew install ruby@3.0
 
 #### Finalize Ruby installation
 
-Type `echo $SHELL`. The result will be either `zsh` or `bash`.
-
-For `zsh`, type:
+Type:
 
 ```
-echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
-```
-
-For `bash`, type:
-```
-echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/opt/homebrew/opt/ruby@3.0/bin:$PATH"' >> ~/.zshrc
 ```
 
 Type `exit`
@@ -64,18 +57,16 @@ gem install --user-install bundler jekyll
 
 >Make sure there is no error (red text) in the Terminal window after installation.
 
-Type `echo $SHELL`. The result will be either `zsh` or `bash`.
-
-For `zsh`, type:
+Type:
 ```
 echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.zshrc
+```
 
+Then, type:
 ```
-For `bash`, type:
+gem env
 ```
-echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.bash_profile
-```
-Then, type `gem env`. Look for the `GEM PATHS` section and make sure they all refer to 3.0.0
+Look for the `GEM PATHS` section and make sure they all refer to 3.0.X
 
 #### Validate the installation of Jekyll and Bundler
 
@@ -94,7 +85,7 @@ bundle config set --local path 'vendor/bundle'
 bundle install
 bundle exec jekyll new --force --skip-bundle .
 bundle add webrick
-bundle install
+bundle install --redownload
 bundle update
 ```
 
@@ -109,6 +100,16 @@ If everything works as expected, you can delete the folder we just created.
 ### 4. Install dependencies
 
 Go to the main project's directory
+
+To install `node`, type:
+```
+brew install node
+```
+
+To install `yarn` (it is used to install dependencies), type:
+```
+brew install yarn
+```
 
 To install `imagemagick` (it is used to compress images), type:
 ```
