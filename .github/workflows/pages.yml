@@ -43,12 +43,15 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Setup assets
         id: assets
-        run: yarn && yarn gulp prod
+        run: yarn && yarn gulp prepare
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Setup prod
+        id: prod
+        run: yarn gulp prod
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
