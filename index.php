@@ -1,8 +1,3 @@
-<?php
-header("Location: /portfolio/");
-exit;
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
