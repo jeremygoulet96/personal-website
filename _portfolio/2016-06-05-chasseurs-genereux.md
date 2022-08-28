@@ -6,7 +6,7 @@ ref: chasseurs-genereux
 layout: article
 categories: work website
 permalink: http://chasseursgenereux.com/
-# permalink: /portfolio/chasseurs-genereux/
+# permalink: /chasseurs-genereux/
 buttons:
     - label: Aller sur le site Web
       url: http://chasseursgenereux.com/

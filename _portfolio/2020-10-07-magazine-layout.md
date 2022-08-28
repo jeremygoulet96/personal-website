@@ -10,7 +10,7 @@ categories:
     - Design imprimé
 softwares:
     - InDesign
-permalink: /portfolio/mise-en-page-magazine/
+permalink: /mise-en-page-magazine/
 published: true
 ---
 

@@ -9,7 +9,7 @@ categories:
     - Design imprimé
 softwares:
     - Illustrator
-permalink: /portfolio/schematisation-graphique-dun-objet-industriel/
+permalink: /schematisation-graphique-dun-objet-industriel/
 published: true
 ---
 

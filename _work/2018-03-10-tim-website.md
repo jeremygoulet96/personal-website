@@ -6,7 +6,7 @@ ref: tim-website
 layout: article
 categories: work website
 permalink: /work/tim-website/
-alternate: /portfolio/site-web-tim/
+alternate: /site-web-tim/
 buttons:
     - label: Go to website
       url: https://timcsf.jeremygoulet.ca/

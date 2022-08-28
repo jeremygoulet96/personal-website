@@ -13,7 +13,7 @@ softwares:
     - Photoshop
     - Illustrator
     - Dimension
-permalink: /portfolio/la-mer-est-belle/
+permalink: /la-mer-est-belle/
 published: true
 ---
 

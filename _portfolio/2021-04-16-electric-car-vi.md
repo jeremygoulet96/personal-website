@@ -11,7 +11,7 @@ categories:
     - Design imprimé
 softwares:
     - Figma
-permalink: /portfolio/visualisation-dinformation-dune-voiture-electrique/
+permalink: /visualisation-dinformation-dune-voiture-electrique/
 published: true
 ---
 

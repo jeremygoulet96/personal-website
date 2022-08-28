@@ -11,7 +11,7 @@ softwares:
     - Illustrator
     - Photoshop
     - InDesign
-permalink: /portfolio/jaquette-livre/
+permalink: /jaquette-livre/
 published: true
 ---
 

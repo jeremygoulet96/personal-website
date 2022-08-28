@@ -6,7 +6,7 @@ ref: institut-implantologie
 layout: none
 # layout: article
 categories: work website
-permalink: /portfolio/institut-canadien-d-implantologie/
+permalink: /institut-canadien-d-implantologie/
 buttons:
     - label: Voir en pleine résolution
       url: /assets/images/work/institut-implantologie/fullsize.png

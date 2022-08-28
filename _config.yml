@@ -53,7 +53,7 @@ local:
   fr:
     work:
       name: "Portfolio"
-      url: "/portfolio/"
+      url: "/"
     downloads:
       name: "Téléchargements"
       url: "/telechargements/"

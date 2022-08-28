@@ -5,7 +5,7 @@ lang: fr
 ref: downloads
 layout: none
 # layout: article
-permalink: /portfolio/downloads/
+permalink: /downloads/
 buttons:
     - label: Téléchargements
       url: /telechargements/

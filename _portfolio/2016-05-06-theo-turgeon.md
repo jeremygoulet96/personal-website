@@ -6,7 +6,7 @@ ref: theo-turgeon
 layout: none
 # layout: article
 categories: work website
-permalink: /portfolio/theo-turgeon/
+permalink: /theo-turgeon/
 buttons:
     - label: Voir en pleine résolution
       url: /assets/images/work/theo-turgeon/fullsize.png

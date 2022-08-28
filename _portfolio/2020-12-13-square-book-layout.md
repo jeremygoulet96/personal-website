@@ -10,7 +10,7 @@ categories:
 softwares:
     - InDesign
     - Illustrator
-permalink: /portfolio/mise-en-page-livre/
+permalink: /mise-en-page-livre/
 published: false
 ---
 

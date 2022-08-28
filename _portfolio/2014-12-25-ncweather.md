@@ -11,7 +11,7 @@ categories:
     - Design
 softwares:
     - Photoshop
-permalink: /portfolio/ncweather/
+permalink: /ncweather/
 description: NCWeather est un widget météo minimaliste pour iOS 7 et 8. J'ai développé cette application/tweak en collaboration avec Thomas Finch, un développeur très talentueux. Vous pouvez voir plus de ses projets sur son site Web.
 buttons:
     # - label: App Store

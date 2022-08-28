@@ -11,7 +11,7 @@ categories:
 softwares:
     - Photoshop
     - Bridge
-permalink: /portfolio/photo-narcissisme-contemporain/
+permalink: /photo-narcissisme-contemporain/
 published: true
 ---
 

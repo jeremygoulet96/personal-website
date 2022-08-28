@@ -11,7 +11,7 @@ categories:
 softwares:
     - Cinema 4D
     - Photoshop
-permalink: /portfolio/faber-castell/
+permalink: /faber-castell/
 published: true
 ---
 

@@ -13,7 +13,7 @@ categories:
     - Interface
 softwares:
     - Figma
-permalink: /portfolio/william-j-walter/
+permalink: /william-j-walter/
 published: true
 ---
 

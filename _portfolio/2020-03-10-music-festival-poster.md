@@ -11,7 +11,7 @@ categories:
 softwares:
     - Illustrator
     - Photoshop
-permalink: /portfolio/affiche-festival-de-musique/
+permalink: /affiche-festival-de-musique/
 published: true
 ---
 
@@ -25,7 +25,7 @@ published: true
                 {{ layout.assetsLink }}{{ page.ref }}/article/main.jpg 1x,
                 {{ layout.assetsLink }}{{ page.ref }}/article/main@2x.jpg 2x"
             type="image/jpeg" />
-        <img 
+        <img
             class="item__image loadAnimated"
             src="{{ layout.assetsLink }}{{ page.ref }}/article/main.jpg"
             srcset="

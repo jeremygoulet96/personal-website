@@ -7,7 +7,7 @@ layout: article
 categories: work design school
 permalink: /work/music-festival-poster/
 altUrl:
-    url: /portfolio/affiche-festival-musique/
+    url: /affiche-festival-musique/
     lang: ca_FR
 buttons:
     - label: Read about it

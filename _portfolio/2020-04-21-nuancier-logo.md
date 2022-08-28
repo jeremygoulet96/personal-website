@@ -11,7 +11,7 @@ categories:
 softwares:
     - Illustrator
     - InDesign
-permalink: /portfolio/logo-nuancier/
+permalink: /logo-nuancier/
 published: true
 ---
 

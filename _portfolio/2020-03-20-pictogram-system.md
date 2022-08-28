@@ -12,7 +12,7 @@ categories:
 softwares:
     - Illustrator
     - Sketch
-permalink: /portfolio/systeme-de-pictogrammes/
+permalink: /systeme-de-pictogrammes/
 published: true
 ---
 
