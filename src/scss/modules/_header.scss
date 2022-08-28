@@ -14,15 +14,14 @@ header.header {
     padding-right: unquote('max(#{1.5rem}, env(safe-area-inset-right))');
   }
 
-  @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
-    background-color: rgba($background, 0.75);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-
   // Desktop
   @media(min-width: $mq-Desktop) {
     padding: 0 2.5rem;
+    @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+        background-color: rgba($background, 0.75);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
   }
 
   .maxWidth {
