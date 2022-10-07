@@ -19,5 +19,5 @@ buttons:
     - label: Aller sur le site Web
       url: https://stranger-quiz.herokuapp.com/
       target: external
-published: true
+published: false
 ---
